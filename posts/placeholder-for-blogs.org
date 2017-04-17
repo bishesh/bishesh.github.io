@@ -1,0 +1,14 @@
+#+BEGIN_COMMENT
+.. title: Hard to start writing!!
+.. hidetitle: True
+.. slug: placeholder-for-blogs
+.. date: 2017-04-17 21:39:50 UTC+01:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+If I actually start writing a blog ...
+नेपालीमा नि केहि लेखिन्छ कि !!

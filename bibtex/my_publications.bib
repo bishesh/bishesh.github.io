@@ -1,0 +1,126 @@
+@ARTICLE{Khanal_2017,
+  AUTHOR={Khanal, Bishesh and Ayache, Nicholas and Pennec, Xavier},
+  TITLE={Simulating Longitudinal Brain MRIs with Known Volume Changes and Realistic Variations in Image Intensity},
+  JOURNAL={Frontiers in Neuroscience},
+  VOLUME={11},
+  PAGES={132},
+  YEAR={2017},
+  URL={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132},
+  DOI={10.3389/fnins.2017.00132},
+  ISSN={1662-453X},
+  fulltext={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132/full},
+  ABSTRACT={This paper presents a simulator tool that can simulate large databases of visually realistic longitudinal MRIs with known volume changes. The simulator is based on a previously proposed biophysical model of brain deformation due to atrophy in AD. In this work, we propose a novel way of reproducing realistic intensity variation in longitudinal brain MRIs, which is inspired by an approach used for the generation of synthetic cardiac sequence images. This approach combines a deformation field obtained from the biophysical model with a deformation field obtained by a non-rigid registration of two images.  The combined deformation field is then used to simulate a new image with specified atrophy from the first image, but with the intensity characteristics of the second image. This allows to generate the realistic variations present in real longitudinal time-series of images, such as the independence of noise between two acquisitions and the potential presence of variable acquisition artifacts. Various options available in the simulator software are briefly explained in this paper. In addition, the software is released as an open-source repository. The availability of the software allows researchers to produce tailored databases of images with ground truth volume changes; we believe this will help developing more robust brain morphometry tools. Additionally, we believe that the scientific community can also use the software to further experiment with the proposed model, and add more complex models of brain deformation and atrophy generation.},
+}
+
+@phdthesis{Khanal_2016_Thesis,
+TITLE = {{Modeling and simulation of realistic longitudinal structural brain MRIs with atrophy in Alzheimer's disease}},
+AUTHOR = {Khanal, Bishesh},
+NUMBER = {2016NICE4046},
+SCHOOL = {{Universit{\'e} Nice Sophia Antipolis}},
+YEAR = {2016},
+MONTH = Jul,
+TYPE = {Theses},
+url-hal= {https://tel.archives-ouvertes.fr/tel-01384678},
+fulltext = {https://tel.archives-ouvertes.fr/tel-01384678/document},
+HAL_ID = {tel-01384678},
+HAL_VERSION = {v1},
+ABSTRACT = {Atrophy of the brain due to the death of neurons in Alzheimer’s Disease (AD) is well observed in longitudinal structural magnetic resonance images (MRIs).
+This thesis focuses on developing a biophysical model able to reproduce changes observed in the longitudinal MRIs of AD patients.
+Simulating realistic longitudinal MRIs with atrophy from such a model could be used to evaluate brain morphometry algorithms and data driven disease progression models that use information extracted from structural MRIs.
+The long term perspectives of such a model would be in simulating different scenarios of disease evolution, and trying to disentangle potentially different mechanisms of structural changes and their relationship in time.
+
+In this thesis, we develop a framework to simulate realistic longitudinal brain images with atrophy (and potentially growth).
+The core component of the framework is a brain deformation model: a carefully designed biomechanics-based tissue loss model to simulate the deformations with prescribed atrophy patterns.
+We also develop a method to interpolate or extrapolate longitudinal images of a subject by simulating images with subject-specific atrophy patterns.
+The method was used to simulate interpolated time-point MRIs of 46 AD patients by prescribing atrophy estimated for each patient from the available two time-point MRIs.
+
+Real images have noise and image acquisition artefacts, and real longitudinal images have variation of intensity characteristics among the individual images.
+We present a method that uses the brain deformation model and different available images of a subject to add realistic variations of intensities in the synthetic longitudinal images.
+Finally, the software developed during the thesis, named Simul@trophy, to simulate realistic longitudinal brain images with our brain deformation model is released in an open-source repository.}
+
+}
+
+@article{Khanal_2016,
+title = "A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer's disease ",
+journal = "NeuroImage ",
+volume = "134",
+number = "",
+pages = "35 - 52",
+year = "2016",
+note = "",
+issn = "1053-8119",
+doi = "10.1016/j.neuroimage.2016.03.061",
+url = "http://www.sciencedirect.com/science/article/pii/S1053811916300052",
+fulltext = "https://hal.inria.fr/hal-01305755/document",
+author = "Bishesh Khanal and Marco Lorenzi and Nicholas Ayache and Xavier Pennec",
+keywords = "Biophysical model",
+keywords = "Alzheimer's disease",
+keywords = "Simulation of atrophy",
+keywords = "Longitudinal \{MRIs\} simulation",
+keywords = "Longitudinal modeling",
+abstract = "We propose a framework for developing a comprehensive biophysical model that could predict and simulate realistic longitudinal \{MRIs\} of patients with Alzheimer's disease (AD). The framework includes three major building blocks: i) atrophy generation, ii) brain deformation, and iii) realistic \{MRI\} generation. Within this framework, this paper focuses on a detailed implementation of the brain deformation block with a carefully designed biomechanics-based tissue loss model. For a given baseline brain MRI, the model yields a deformation field imposing the desired atrophy at each voxel of the brain parenchyma while allowing the \{CSF\} to expand as required to globally compensate for the locally prescribed volume loss. Our approach is inspired by biomechanical principles and involves a system of equations similar to Stokes equations in fluid mechanics but with the presence of a non-zero mass source term. We use this model to simulate longitudinal \{MRIs\} by prescribing complex patterns of atrophy. We present experiments that provide an insight into the role of different biomechanical parameters in the model. The model allows simulating images with exactly the same tissue atrophy but with different underlying deformation fields in the image. We explore the influence of different spatial distributions of atrophy on the image appearance and on the measurements of atrophy reported by various global and local atrophy estimation algorithms. We also present a pipeline that allows evaluating atrophy estimation algorithms by simulating longitudinal \{MRIs\} from large number of real subject \{MRIs\} with complex subject-specific atrophy patterns. The proposed framework could help understand the implications of different model assumptions, regularization choices, and spatial priors for the detection and measurement of brain atrophy from longitudinal brain MRIs."
+}
+
+@inproceedings{Khanal_2015,
+  title={Simulating Patient Specific Multiple Time-point MRIs From a Biophysical Model of Brain Deformation in Alzheimer's Disease},
+  author={Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
+  booktitle={A MICCAI Workshop on Computational Biomechanics for Medicine-X, 2015, Munich, Germany},
+  pages={177--186},
+  year={2015},
+  series="Computational Biomechanics for Medicine: Imaging, Modeling and Computing",
+  editor="Joldes, Grand and Doyle, Barry and Wittek, Adam and Nielsen, Poul M. F. and Miller, Karol",
+  publisher="Springer International Publishing AG",
+  isbn = {9783319283272},
+  doi = {10.1007/978-3-319-28329-6},
+  fulltext = {https://hal.inria.fr/hal-01217080/document},
+  abstract = {This paper proposes a framework to simulate patient specific structural Magnetic Resonance Images (MRIs) from the available MRI scans of Alzheimer’s Disease(AD) subjects. We use a biophysical model of brain deformation due to atrophy that can generate biologically plausible deformation for any given desired volume changes at the voxel level of the brain MRI. Large number of brain regions are segmented in 45 AD patients and the atrophy rates per year are estimated in these regions from the available two extremal time-point scans. Assuming linear progression of atrophy, the volume changes in scans closest to the half way time period is computed. These atrophy maps are prescribed to the baseline images to simulate the middle time-point images by using the biophysical model of brain deformation. From the baseline scans, the volume changes in real middle time-point scans are compared to the ones in simulated middle time-point images. This present framework also allows to introduce desired atrophy patterns at different time-points to simulate non-linear progression of atrophy. This opens a way to use a biophysical model of brain deformation to evaluate methods that study the temporal progression and spatial relationships of atrophy of different regions in the brain with AD.}
+}
+
+@inproceedings{Khanal_2014,
+  year = {2014},
+  isbn = {978-3-319-10469-0},
+  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014, Boston, USA},
+  volume = {8674},
+  series = {Lecture Notes in Computer Science},
+  editor = {Golland, Polina and Hata, Nobuhiko and Barillot, Christian and Hornegger, Joachim and Howe, Robert},
+  doi = {10.1007/978-3-319-10470-6_6},
+  title = {{A Biophysical Model of Shape Changes due to Atrophy in the Brain with Alzheimer's Disease}},
+  url = {http://dx.doi.org/10.1007/978-3-319-10470-6_6},
+  fulltext = {https://hal.inria.fr/hal-01006478/document},
+  publisher = {Springer International Publishing},
+  keywords = {Alzheimer's disease; Biophysical model; Atrophy model; Atrophy Simulation; Longitudinal modeling},
+  author = {Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
+  pages = {41-48},
+  abstract = {This paper proposes a model of brain deformation triggered by atrophy in Alzheimer's Disease (AD). We introduce a macroscopic biophysical model assuming that the density of the brain remains constant, hence its volume shrinks when neurons die in AD. The deformation in the brain parenchyma minimizes the elastic strain energy with the prescribed local volume loss. The cerebrospinal fluid (CSF) is modelled differently to allow for fluid readjustments occuring at a much faster time-scale. PDEs describing the model is discretized in staggered grid and solved using Finite Difference Method. We illustrate the power of the model by showing different deformation patterns obtained for the same global atrophy but prescribed in gray matter (GM) or white matter (WM) on a generic atlas MRI, and with a realistic AD simulation on a subject MRI. This well-grounded forward model opens a way to study different hypotheses about the distribution of brain atrophy, and to study its impact on the observed changes in MR images.}
+}
+
+@inproceedings{Khanal_2012,
+author={Khanal, Bishesh and Ali, Sharib and Sidib{\'e}, D{\'e}sir{\'e}},
+title={Robust Road Signs Segmentation in Color Images},
+booktitle={Proceedings of the International Conference on Computer Vision Theory and Applications, 2012, Rome, Italy},
+year={2012},
+pages={307--310},
+doi={10.5220/0003802103070310},
+isbn={978-989-8565-03-7},
+fulltext={https://hal.archives-ouvertes.fr/hal-00658086/document},
+abstract={This paper presents an efficient method for road signs segmentation in color images. Color segmentation
+of road signs is a difficult task due to variations in the image acquisition conditions. Therefore, a color constancy algorithm is usually applied prior to segmentation, which increases the computation time. The proposed
+method is based on a log-chromaticity color space which shows good invariance properties to changing illumination. Thus, the method is simple and fast since it does not require color constancy algorithms. Experiments with a large dataset and comparison with other approaches, show the robustness and accuracy of the method in detecting road signs in various conditions.}
+}
+
+
+@inproceedings{Khanal_2011,
+author="Khanal, Bishesh and Sidib{\'e}, D{\'e}sir{\'e}",
+editor="Jeschke, Sabina and Liu, Honghai and Schilberg, Daniel",
+title="Efficient Skin Detection under Severe Illumination Changes and Shadows",
+booktitle="Intelligent Robotics and Applications: 4th International Conference, ICIRA 2011, Aachen, Germany, December 6-8, 2011, Proceedings, Part II",
+year="2011",
+publisher="Springer Berlin Heidelberg",
+address="Berlin, Heidelberg",
+pages="609--618",
+isbn="978-3-642-25489-5",
+doi="10.1007/978-3-642-25489-5_59",
+url="http://dx.doi.org/10.1007/978-3-642-25489-5_59",
+fulltext="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-00627903/document/",
+abstract="This paper presents an efficient method for human skin color detection with a mobile platform. The proposed method is based on modeling the skin distribution in a log-chromaticity color space which shows good invariance properties to changing illumination. The method is easy to implement and can cope with the requirements of real-world tasks such as illumination variations, shadows and moving camera. Extensive experiments show the good performance of the proposed method and its robustness against abrupt changes of illumination and shadows."
+}

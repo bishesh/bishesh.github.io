@@ -1,0 +1,39 @@
+#+BEGIN_COMMENT
+.. title: Current work
+.. slug: index
+.. date: 2017-04-17 18:12:55 UTC+01:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+- Working in [[http://www.ifindproject.com/][iFIND]] project at St. Thomas' Hospital, King's College London (with [[https://kclpure.kcl.ac.uk/portal/julia.schnabel.html][Julia Schnabel]])
+- Also working at Department of Computing, Imperial College London, UK (with [[http://wp.doc.ic.ac.uk/bkainz/][Bernhard Kainz]] )
+- Postdoctoral Research Associate at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][Division of Imaging Sciences and Biomedical Engineering]], KCL
+
+* Interests
+
+- Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology.
+- Identifying and working on research problems that are relevant to lower income countries in the field of MIICB.
+
+For more, please see my [[../publications/][publications]] and [[../cv/][CV]].
+
+** Nepal Related
+- Strengthening scientific research capabilities of Nepal.
+- Together with like-minded and determined people, establishing a world class research institute in Nepal which focuses on solving problems of Nepal and the world in the field of healthcare, agriculture, climate change, governance and social science.
+
+I am trying to collect some resources useful for like minded Nepalese interested in doing research in/for Nepal.
+These resources can be found at [[https://bishesh.github.io/Science-innovation-Nepal/][Science Innovation Nepal]].
+
+# I have a special interest in working under the models that increase independent research capabilities of Low Income Countries, taking Nepal as an example where I would like to be based upon.
+# Durable solutions of the problems faced by developing nations cannot be achieved by working under a model where the developing nations are the  "consumers" of the ready-made solutions and technologies "produced" by the developed nations. 
+# Building research capabilities of such countries allows:
+
+# - Creation of novel ideas coming from the first hand experience of the problems.
+# - More uniform development across the globe and the reduction of the global digital divide problem.
+# - Diversifying the scientifc community which adds value to the global human knowledge and advancement.
+
+# ** Research Institute of Informatics and Applied Mathematics in Nepal
+# I, along with some other Nepali friends have been slowly working towards a plan of building, a world class research institute of informatics and applied mathematics in Nepal with an objective of playing a key role in the development of Nepal, and also contribute towards solving global problems of the world in the field of healthcare, agriculture, climate change and social science.
