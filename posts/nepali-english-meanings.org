@@ -1,0 +1,35 @@
+#+BEGIN_COMMENT
+.. title: Nepali-English Nano-Dictionary
+.. hidetitle: True
+.. date: 2017-08-07 09:25:00 UTC+01:00
+.. tags: 
+.. category: 
+.. link: 
+.. description: 
+.. type: text
+#+END_COMMENT
+
+* Science (विज्ञान)
+
+** Common 
+
+1. Hypothesis : अनुकल्पना, अनुधारणा
+2. innovation : अभिनवन, (innovative : अभिनव), ()
+3. 
+4. Research : शोध, अनुसन्धान, अन्वेषण
+5. Researcher : शोधकर्ता, शोधारर्थी, अनुसन्धाता, अन्वेषक, अन्वेषी
+** Physics
+
+1. Echo : प्रतिध्वनि, अनुनाद
+
+** Informatics
+
+1. Sort (a list) : अनुक्रमण (सूचिको), अनुक्रमिक (sorted)
+2. Transliteration : अनुलिपि
+
+
+* Common (सामान्य)
+
+* Adjectives
+
+1. Introvert : अन्तर्मुखी
