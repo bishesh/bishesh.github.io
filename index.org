@@ -25,7 +25,7 @@ For more, please see my [[../publications/][publications]] and [[../cv/][CV]].
 - Together with like-minded and determined people, establishing a world class research institute in Nepal which focuses on solving problems of Nepal and the world in the field of healthcare, agriculture, climate change, governance and social science.
 
 I am trying to collect some resources useful for like minded Nepalese interested in doing research in/for Nepal.
-These resources can be found at [[https://bishesh.github.io/Science-innovation-Nepal/][Science Innovation Nepal]].
+These resources can be found at [[https://abhinavnepal.github.io/Science-innovation-Nepal/][Science Innovation Nepal]].
 
 # I have a special interest in working under the models that increase independent research capabilities of Low Income Countries, taking Nepal as an example where I would like to be based upon.
 # Durable solutions of the problems faced by developing nations cannot be achieved by working under a model where the developing nations are the  "consumers" of the ready-made solutions and technologies "produced" by the developed nations. 
