@@ -12,7 +12,7 @@ Publications
 
 .. publication_list:: bibtex/my_publications.bib
    :style: unsrt
-   :highlight_author: Bishesh Khanal
+   :highlight_author: Bishesh Khanal;Khanal
    :detail_page_dir:
       
 		      
