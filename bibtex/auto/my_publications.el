@@ -2,6 +2,9 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "li2018fast"
+    "li2018standard"
+    "hou2018computing"
     "Hou_2018"
     "Khanal_2017"
     "Khanal_2016_Thesis"
