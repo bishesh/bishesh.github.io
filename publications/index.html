@@ -14,8 +14,8 @@
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="https://bishesh.github.io/publications/">
 <meta property="og:description" content="2018
-B. Hou, B. Khanal, A. Alansary, S. McDonagh, A. Davidson, M. Rutherford, J. V. Hajnal, D. Rueckert, B. Glocker, and B. Kainz.
-3d reconstruction in canonical co-ordinate space from arbitrarily ori">
+Yuanwei Li, Amir Alansary, Juan Cerrolaza, Bishesh Khanal, Matthew Sinclair, Jacqueline Matthew, Chandni Gupta, Caroline Knight, Bernhard Kainz, and Daniel Rueckert.
+Fast multiple landmark locali">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-04-17T19:19:02+01:00">
 </head>
@@ -74,7 +74,137 @@ B. Hou, B. Khanal, A. Alansary, S. McDonagh, A. Davidson, M. Rutherford, J
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div class="publication-list">
 <h4>2018</h4>
-<ul><li class="publication" style="padding-bottom: 1em;">B. Hou, B. <strong>Khanal</strong>, A. Alansary, S. McDonagh, A. Davidson, M. Rutherford, J. V. Hajnal, D. Rueckert, B. Glocker, and B. Kainz.
+<ul>
+<li class="publication" style="padding-bottom: 1em;">Yuanwei Li, Amir Alansary, Juan Cerrolaza, <strong>Bishesh <strong>Khanal</strong></strong>, Matthew Sinclair, Jacqueline Matthew, Chandni Gupta, Caroline Knight, Bernhard Kainz, and Daniel Rueckert.
+<strong>Fast multiple landmark localisation using a patch-based iterative network.</strong>
+In <em>MICCAI</em>. 2018.
+To appear, early accept.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract▼')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract▲')
+                }
+                })(this, 'abstract-li2018fast');">abstract▼</a>] [<a href=".">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-li2018fast');">BibTeX▼</a>]
+            
+                <div id="abstract-li2018fast" class="publication-abstract" style="display:none">
+                <blockquote>We propose a new Patch-based Iterative Network (PIN) for fast and accurate landmark localisation in 3D medical volumes. PIN utilises a Convolutional Neural Network (CNN) to learn the spatial relationship between an image patch and anatomical landmark positions. During inference, patches are repeatedly passed to the CNN until the estimated landmark position converges to the true landmark location. PIN is computationally efficient since the inference stage only selectively samples a small number of patches in an iterative fashion rather than a dense sampling at every location in the volume. Our approach adopts a multi-task learning framework that combines regression and classification to improve localisation accuracy. We extend PIN to localise multiple landmarks by using principal component analysis, which models the global anatomical relationships between landmarks. We have evaluated PIN using 72 3D ultrasound images from fetal screening examinations. PIN achieves quantitatively an average landmark localisation error of 5.59mm and a runtime of 0.44s to predict 10 landmarks per volume. Qualitatively, anatomical 2D standard scan planes derived from the predicted landmark locations are visually similar to the clinical ground truth.</blockquote>
+</div>
+                <div id="bibtex-li2018fast" style="display:none"><pre>@inproceedings{li2018fast,
+    author = "Li, Yuanwei and Alansary, Amir and Cerrolaza, Juan and Khanal, Bishesh and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel",
+    title = "Fast Multiple Landmark Localisation Using a Patch-based Iterative Network",
+    booktitle = "MICCAI",
+    year = "2018",
+    note = "To appear, early accept"
+}
+</pre></div>
+</li>
+<li class="publication" style="padding-bottom: 1em;">Yuanwei Li, <strong>Bishesh <strong>Khanal</strong></strong>, Benjamin Hou, Amir Alansary, Juan Cerrolaza, Matthew Sinclair, Jacqueline Matthew, Chandni Gupta, Caroline Knight, Bernhard Kainz, and Daniel Rueckert.
+<strong>Standard plane detection in 3d fetal ultrasound using an iterative transformation network.</strong>
+In <em>MICCAI</em>. 2018.
+To appear, early accept.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract▼')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract▲')
+                }
+                })(this, 'abstract-li2018standard');">abstract▼</a>] [<a href=".">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-li2018standard');">BibTeX▼</a>]
+            
+                <div id="abstract-li2018standard" class="publication-abstract" style="display:none">
+                <blockquote>Standard scan plane detection in fetal brain ultrasound (US) forms a crucial step in the assessment of fetal development. In clinical settings, this is done by manually manoeuvring a 2D probe to the desired scan plane. With the advent of 3D US, the entire fetal brain volume containing these standard planes can be easily acquired. However, manual standard plane identification in 3D volume is labour-intensive and requires expert knowledge of fetal anatomy. We propose a new Iterative Transformation Network (ITN) for the automatic detection of standard planes in 3D volumes. ITN uses a convolutional neural network to learn the relationship between a 2D plane image and the transformation parameters required to move that plane towards the location/orientation of the standard plane in the 3D volume. During inference, the current plane image is passed iteratively to the network until it converges to the standard plane location. We explore the effect of using different transformation representations as regression outputs of ITN. Under a multi-task learning framework, we introduce additional classification probability outputs to the network to act as confidence measures for the regressed transformation parameters in order to further improve the localisation accuracy. When evaluated on 72 US volumes of fetal brain, our method achieves an error of 3.83mm/12.7 degrees and 3.80mm/12.6 degrees for the transventricular and transcerebellar planes respectively and takes 0.46s per plane.</blockquote>
+</div>
+                <div id="bibtex-li2018standard" style="display:none"><pre>@inproceedings{li2018standard,
+    author = "Li, Yuanwei and Khanal, Bishesh and Hou, Benjamin and Alansary, Amir and Cerrolaza, Juan and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel",
+    title = "Standard Plane Detection in 3D Fetal Ultrasound Using an Iterative Transformation Network",
+    booktitle = "MICCAI",
+    year = "2018",
+    note = "To appear, early accept"
+}
+</pre></div>
+</li>
+<li class="publication" style="padding-bottom: 1em;">Benjamin Hou, Nina Miolane, <strong>Bishesh <strong>Khanal</strong></strong>, Matthew CH Lee, Amir Alansary, Steven McDonagh, Jo V Hajnal, Daniel Rueckert, Ben Glocker, and Bernhard Kainz.
+<strong>Computing cnn loss and gradients for pose estimation with riemannian geometry.</strong>
+In <em>MICCAI</em>. 2018.
+To appear, early accept.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract▼')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract▲')
+                }
+                })(this, 'abstract-hou2018computing');">abstract▼</a>] [<a href="https://arxiv.org/pdf/1805.01026.pdf">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-hou2018computing');">BibTeX▼</a>]
+            
+                <div id="abstract-hou2018computing" class="publication-abstract" style="display:none">
+                <blockquote>Pose estimation, i.e. predicting a 3D rigid transformation with respect to a fixed co-ordinate frame in, SE(3), is an omnipresent problem in medical image analysis with applications such as: image rigid registration, anatomical standard plane detection, tracking and device/camera pose estimation. Deep learning methods often parameterise a pose with a representation that separates rotation and translation. As commonly available frameworks do not provide means to calculate loss on a manifold, regression is usually performed using the L2-norm independently on the rotation's and the translation's parameterisations, which is a metric for linear spaces that does not take into account the Lie group structure of SE(3). In this paper, we propose a general Riemannian formulation of the pose estimation problem. We propose to train the CNN directly on SE(3) equipped with a left-invariant Riemannian metric, coupling the prediction of the translation and rotation defining the pose. At each training step, the ground truth and predicted pose are elements of the manifold, where the loss is calculated as the Riemannian geodesic distance. We then compute the optimisation direction by back-propagating the gradient with respect to the predicted pose on the tangent space of the manifold SE(3) and update the network weights. We thoroughly evaluate the effectiveness of our loss function by comparing its performance with popular and most commonly used existing methods, on tasks such as image-based localisation and intensity-based 2D/3D registration. We also show that hyper-parameters, used in our loss function to weight the contribution between rotations and translations, can be intrinsically calculated from the dataset to achieve greater performance margins.</blockquote>
+</div>
+                <div id="bibtex-hou2018computing" style="display:none"><pre>@inproceedings{hou2018computing,
+    author = "Hou, Benjamin and Miolane, Nina and Khanal, Bishesh and Lee, Matthew CH and Alansary, Amir and McDonagh, Steven and Hajnal, Jo V and Rueckert, Daniel and Glocker, Ben and Kainz, Bernhard",
+    title = "Computing CNN Loss and Gradients for Pose Estimation with Riemannian Geometry",
+    booktitle = "MICCAI",
+    year = "2018",
+    note = "To appear, early accept"
+}
+</pre></div>
+</li>
+<li class="publication" style="padding-bottom: 1em;">B. Hou, B. <strong>Khanal</strong>, A. Alansary, S. McDonagh, A. Davidson, M. Rutherford, J. V. Hajnal, D. Rueckert, B. Glocker, and B. Kainz.
 <strong>3d reconstruction in canonical co-ordinate space from arbitrarily oriented 2d images.</strong>
 <em>IEEE Transactions on Medical Imaging</em>, PP(99):1–1, 2018.
 URL: <a href="http://ieeexplore.ieee.org/document/8295121/">http://ieeexplore.ieee.org/document/8295121/</a>, <a href="https://doi.org/10.1109/TMI.2018.2798801">doi:10.1109/TMI.2018.2798801</a>.<br>
@@ -123,7 +253,8 @@ URL: <a href="http://ieeexplore.ieee.org/document/8295121/">http://ieeexplore.ie
     month = ""
 }
 </pre></div>
-</li></ul>
+</li>
+</ul>
 <h4>2017</h4>
 <ul><li class="publication" style="padding-bottom: 1em;">
 <strong>Bishesh <strong>Khanal</strong></strong>, Nicholas Ayache, and Xavier Pennec.
