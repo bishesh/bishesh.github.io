@@ -11,7 +11,7 @@
 
 - Working in [[http://www.ifindproject.com/][iFIND]] project at St. Thomas' Hospital, King's College London (with [[https://kclpure.kcl.ac.uk/portal/julia.schnabel.html][Julia Schnabel]])
 - Also working at Department of Computing, Imperial College London, UK (with [[http://wp.doc.ic.ac.uk/bkainz/][Bernhard Kainz]] )
-- Postdoctoral Research Associate at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Imaging Sciences and Biomedical Engineering]], KCL
+- Postdoctoral Research Associate at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], KCL
 
 * Interests
 
