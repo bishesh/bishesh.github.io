@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Current work
+.. title: Introduction
 .. slug: index
 .. date: 2017-04-17 18:12:55 UTC+01:00
 .. tags: 
@@ -9,20 +9,21 @@
 .. type: text
 #+END_COMMENT
 
-- Working in [[http://www.ifindproject.com/][iFIND]] project at St. Thomas' Hospital, King's College London (with [[https://kclpure.kcl.ac.uk/portal/julia.schnabel.html][Julia Schnabel]])
-- Also working at Department of Computing, Imperial College London, UK (with [[http://wp.doc.ic.ac.uk/bkainz/][Bernhard Kainz]] )
-- Postdoctoral Research Associate at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], KCL
+- Postdoctoral Research Associate at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], King's College London, working in [[http://www.ifindproject.com/][iFIND]] project (with [[https://kclpure.kcl.ac.uk/portal/julia.schnabel.html][Julia Schnabel]])
+- Also visiting Researcher [[https://biomedia.doc.ic.ac.uk/][BioMedIA]], Department of Computing, Imperial College London, UK (with [[http://wp.doc.ic.ac.uk/bkainz/][Bernhard Kainz]] )
+- PhD from [[https://team.inria.fr/epione/en/][Asclepios (now Epione)]], INRIA under the supervision of [[https://www-sop.inria.fr/members/Xavier.Pennec/][Xavier Pennec]] and [[https://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html][Nicolas Ayache]]
 
 * Interests
 
-- Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology.
-- Identifying and working on research problems that are relevant to lower income countries in the field of MIICB.
+- Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology
+- Identifying and working on research problems that are relevant to lower income countries in the field of MIICB
+- Strengthening research capacity and engagement of LICs in Artificial Intelligence
 
-For more, please see my [[../publications/][publications]] and [[../cv/][CV]].
+More: [[../publications/][publications]] and [[../cv/][CV]]
 
 ** Nepal Related
 - Strengthening scientific research capabilities of Nepal.
-- Together with like-minded and determined people, establishing a world class research institute in Nepal which focuses on solving problems of Nepal and the world in the field of healthcare, agriculture, climate change, governance and social science.
+- Co-founder of a (very new, details coming soon) research institute in Nepal with the core expertise in computational sciences and AI, and focusing on solving global problems in the field of healthcare, agriculture, climate change, governance and social science.
 
 I am trying to collect some resources useful for like minded Nepalese interested in doing research in/for Nepal.
 These resources can be found at [[https://abhinavnepal.github.io/Science-innovation-Nepal/][Science Innovation Nepal]].
