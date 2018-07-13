@@ -2,6 +2,7 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "toussaint2018weakly"
     "li2018fast"
     "li2018standard"
     "hou2018computing"
