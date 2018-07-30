@@ -139,6 +139,7 @@ NAVIGATION_LINKS = {
         ("/cv/", "CV"),
         ("/publications/", "Publications"),
         ("/blog/", "Blog"),
+        ("https://www.abhinavnepal.com/", "Abhinav Nepal"),
         ("https://abhinavnepal.github.io/Science-innovation-Nepal/", "Science Innovation Nepal")
         # ("/archive.html", "Archive"),
         # ("/categories/", "Tags"),
