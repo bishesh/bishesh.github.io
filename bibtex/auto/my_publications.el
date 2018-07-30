@@ -2,6 +2,9 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "khanal2018echofusion"
+    "wright2018lstm"
+    "zimmer2018multi"
     "toussaint2018weakly"
     "li2018fast"
     "li2018standard"
