@@ -10,6 +10,7 @@
     "li2018standard"
     "hou2018computing"
     "Hou_2018"
+    "gomez2018oversegmenting"
     "Khanal_2017"
     "Khanal_2016_Thesis"
     "Khanal_2016"
