@@ -1,223 +1,228 @@
-@inproceedings{khanal2018echofusion,
-  title={
-EchoFusion: Tracking and Reconstruction of Objects in 4D Freehand Ultrasound Imaging without External Trackers},
-  author={Bishesh Khanal and Alberto Gomez and Nicolas Toussaint and Steven McDonagh and Veronika Zimmer and Emily Skelton and Jacqueline Matthew and Daniel Grzech and Robert Wright and Chandni Gupta and Benjamin Hou and Daniel Rueckert and Julia A. Schnabel and Bernhard Kainz},
-  booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
-  year={2018},
-  note={To appear},
-  fulltext={https://arxiv.org/pdf/1807.10583.pdf},
-  abstract={Ultrasound (US) is the most widely used fetal imaging technique. However, US images have limited capture range, and suffer from view dependent artefacts such as acoustic shadows. Compounding of overlapping 3D US acquisitions into a high-resolution volume can extend the field of view and remove image artefacts, which is useful for retrospective analysis including population based studies. However, such volume reconstructions require information about relative transformations between probe positions from which the individual volumes were acquired. In prenatal US scans, the fetus can move independently from the mother, making external trackers such as electromagnetic or optical tracking unable to track the motion between probe position and the moving fetus. We provide a novel methodology for image-based tracking and volume reconstruction by combining recent advances in deep learning and simultaneous localisation and mapping (SLAM). Tracking semantics are established through the use of a Residual 3D U-Net and the output is fed to the SLAM algorithm. As a proof of concept, experiments are conducted on US volumes taken from a whole body fetal phantom, and from the heads of real fetuses. For the fetal head segmentation, we also introduce a novel weak annotation approach to minimise the required manual effort for ground truth annotation. We evaluate our method qualitatively, and quantitatively with respect to tissue discrimination accuracy and tracking robustness.}
-  }
+                  @inproceedings{khanal2018echofusion,
+                    title={
+                  EchoFusion: Tracking and Reconstruction of Objects in 4D Freehand Ultrasound Imaging without External Trackers},
+                    author={Bishesh Khanal and Alberto Gomez and Nicolas Toussaint and Steven McDonagh and Veronika Zimmer and Emily Skelton and Jacqueline Matthew and Daniel Grzech and Robert Wright and Chandni Gupta and Benjamin Hou and Daniel Rueckert and Julia A. Schnabel and Bernhard Kainz},
+                    booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
+                    year={2018},                    
+                    fulltext={https://arxiv.org/pdf/1807.10583.pdf},
+                    abstract={Ultrasound (US) is the most widely used fetal imaging technique. However, US images have limited capture range, and suffer from view dependent artefacts such as acoustic shadows. Compounding of overlapping 3D US acquisitions into a high-resolution volume can extend the field of view and remove image artefacts, which is useful for retrospective analysis including population based studies. However, such volume reconstructions require information about relative transformations between probe positions from which the individual volumes were acquired. In prenatal US scans, the fetus can move independently from the mother, making external trackers such as electromagnetic or optical tracking unable to track the motion between probe position and the moving fetus. We provide a novel methodology for image-based tracking and volume reconstruction by combining recent advances in deep learning and simultaneous localisation and mapping (SLAM). Tracking semantics are established through the use of a Residual 3D U-Net and the output is fed to the SLAM algorithm. As a proof of concept, experiments are conducted on US volumes taken from a whole body fetal phantom, and from the heads of real fetuses. For the fetal head segmentation, we also introduce a novel weak annotation approach to minimise the required manual effort for ground truth annotation. We evaluate our method qualitatively, and quantitatively with respect to tissue discrimination accuracy and tracking robustness.}
+                  }
 
-@inproceedings{wright2018lstm,
-  title={
-LSTM Spatial Co-transformer Networks for Registration of 3D Fetal US and MR Brain Images},
-  author={Wright, Robert and Khanal, Bishesh and Gomez, Alberto and Skelton, Emily and Matthew, Jacqueline and Hajnal, Joseph and Rueckert, Daniel and Schnabel, Julia},
-  booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
-  year={2018},
-  note={To appear},  
-  abstract={}
-  }
+                  @inproceedings{wright2018lstm,
+                    title={
+                  LSTM Spatial Co-transformer Networks for Registration of 3D Fetal US and MR Brain Images},
+                    author={Wright, Robert and Khanal, Bishesh and Gomez, Alberto and Skelton, Emily and Matthew, Jacqueline and Hajnal, Joseph and Rueckert, Daniel and Schnabel, Julia},
+                    booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
+                    year={2018},                    
+                    abstract={}
+                    }
 
-@inproceedings{zimmer2018multi,
-  title={
-Multi-view Image Reconstruction: Application to Fetal Ultrasound Compounding},
-  author={Zimmer, Veronika and Gomez, Alberto and Toussaint, Nicolas and Khanal, Bishesh and Wright, Robert and Peralta-Pereira, Laura and Van-Poppel, Milou and Skelton, Emily and Matthew, Jacqueline and Schnabel, Julia},
-  booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
-  year={2018},
-  note={To appear},  
-  abstract={}
-  }
+                  @inproceedings{zimmer2018multi,
+                    title={
+                  Multi-view Image Reconstruction: Application to Fetal Ultrasound Compounding},
+                    author={Zimmer, Veronika and Gomez, Alberto and Toussaint, Nicolas and Khanal, Bishesh and Wright, Robert and Peralta-Pereira, Laura and Van-Poppel, Milou and Skelton, Emily and Matthew, Jacqueline and Schnabel, Julia},
+                    booktitle={MICCAI 2018 Workshop on Perinatal, Preterm and Paediatric Image analysis, Granada, Spain},
+                    year={2018},                    
+                    abstract={}
+                    }
 
-@inproceedings{toussaint2018weakly,
-  title={Weakly Supervised Localisation for Fetal Ultrasound Images},
-  author={Toussaint, Nicolas and Khanal, Bishesh and Skelton, Emily and Matthew, Jacqueline and Gomez, Alberto and Sinclair, Matthew and Kainz, Bernhard and Schnabel, Julia},
-  booktitle={MICCAI 2018 Workshop on Deep Learning in Medical Image Analysis, Granada, Spain},
-  year={2018},
-  note={To appear},  
-  abstract={This paper addresses the task of detecting and localising fetal anatomical regions in 2D ultrasound images, where only image-level labels are present at training, i.e. without any localisation or segmentation information. We examine the use of convolutional neural network architectures coupled with soft proposal layers. The resulting network simultaneously performs anatomical region detection (classification) and localisation tasks. We generate a proposal map describing the attention of the network for a particular class. The network is trained on 85,500 2D fetal ultrasound images and their associated labels. Labels correspond to six anatomical regions: head, spine, thorax, abdomen, limbs, and placenta. Detection achieves an average accuracy of 90\% on individual regions, and show that the proposal maps correlate well with relevant anatomical structures. This work presents itself as a powerful and essential step towards subsequent tasks such as fetal position and pose estimation, organ-specific segmentation, or image-guided navigation.}
-  }
+                  @inproceedings{toussaint2018weakly,
+                    title={Weakly Supervised Localisation for Fetal Ultrasound Images},
+                    author={Toussaint, Nicolas and Khanal, Bishesh and Skelton, Emily and Matthew, Jacqueline and Gomez, Alberto and Sinclair, Matthew and Kainz, Bernhard and Schnabel, Julia},
+                    booktitle={MICCAI 2018 Workshop on Deep Learning in Medical Image Analysis, Granada, Spain},
+                    year={2018},                    
+                    fulltext={https://arxiv.org/pdf/1808.00793.pdf},
+                    abstract={This paper addresses the task of detecting and localising fetal anatomical regions in 2D ultrasound images, where only image-level labels are present at training, i.e. without any localisation or segmentation information. We examine the use of convolutional neural network architectures coupled with soft proposal layers. The resulting network simultaneously performs anatomical region detection (classification) and localisation tasks. We generate a proposal map describing the attention of the network for a particular class. The network is trained on 85,500 2D fetal ultrasound images and their associated labels. Labels correspond to six anatomical regions: head, spine, thorax, abdomen, limbs, and placenta. Detection achieves an average accuracy of 90\% on individual regions, and show that the proposal maps correlate well with relevant anatomical structures. This work presents itself as a powerful and essential step towards subsequent tasks such as fetal position and pose estimation, organ-specific segmentation, or image-guided navigation.}
+                    }
 
-@inproceedings{li2018fast,
-  title={Fast Multiple Landmark Localisation Using a Patch-based Iterative Network
-},
-  author={Li, Yuanwei and Alansary, Amir and Cerrolaza, Juan and Khanal, Bishesh and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel},
-  booktitle={MICCAI},
-  year={2018},
-  note={To appear, early accept},
-  fulltext={https://arxiv.org/pdf/1806.06987.pdf},
-  abstract={We propose a new Patch-based Iterative Network (PIN) for fast and accurate landmark localisation in 3D medical volumes. PIN utilises a Convolutional Neural Network (CNN) to learn the spatial relationship between an image patch and anatomical landmark positions. During inference, patches are repeatedly passed to the CNN until the estimated landmark position converges to the true landmark location. PIN is computationally efficient since the inference stage only selectively samples a small number of patches in an iterative fashion rather than a dense sampling at every location in the volume. Our approach adopts a multi-task learning framework that combines regression and classification to improve localisation accuracy. We extend PIN to localise multiple landmarks by using principal component analysis, which models the global anatomical relationships between landmarks. We have evaluated PIN using 72 3D ultrasound images from fetal screening examinations. PIN achieves quantitatively an average landmark localisation error of 5.59mm and a runtime of 0.44s to predict 10 landmarks per volume. Qualitatively, anatomical 2D standard scan planes derived from the predicted landmark locations are visually similar to the clinical ground truth.}
-}
+                  @inproceedings{li2018fast,
+                    title={Fast Multiple Landmark Localisation Using a Patch-based Iterative Network
+                  },
+                    author={Li, Yuanwei and Alansary, Amir and Cerrolaza, Juan and Khanal, Bishesh and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel},
+                    booktitle={MICCAI},
+                    year={2018},                    
+                    fulltext={https://arxiv.org/pdf/1806.06987.pdf},
+                    abstract={We propose a new Patch-based Iterative Network (PIN) for fast and accurate landmark localisation in 3D medical volumes. PIN utilises a Convolutional Neural Network (CNN) to learn the spatial relationship between an image patch and anatomical landmark positions. During inference, patches are repeatedly passed to the CNN until the estimated landmark position converges to the true landmark location. PIN is computationally efficient since the inference stage only selectively samples a small number of patches in an iterative fashion rather than a dense sampling at every location in the volume. Our approach adopts a multi-task learning framework that combines regression and classification to improve localisation accuracy. We extend PIN to localise multiple landmarks by using principal component analysis, which models the global anatomical relationships between landmarks. We have evaluated PIN using 72 3D ultrasound images from fetal screening examinations. PIN achieves quantitatively an average landmark localisation error of 5.59mm and a runtime of 0.44s to predict 10 landmarks per volume. Qualitatively, anatomical 2D standard scan planes derived from the predicted landmark locations are visually similar to the clinical ground truth.}
+                  }
 
 
-@inproceedings{li2018standard,
-  title={Standard Plane Detection in 3D Fetal Ultrasound Using an Iterative Transformation Network},
-  author={Li, Yuanwei and Khanal, Bishesh and Hou, Benjamin and Alansary, Amir and Cerrolaza, Juan and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel},
-  booktitle={MICCAI},
-  year={2018},
-  note={To appear, early accept},
-  fulltext={https://arxiv.org/pdf/1806.07486.pdf},
-  abstract={Standard scan plane detection in fetal brain ultrasound (US) forms a crucial step in the assessment of fetal development. In clinical settings, this is done by manually manoeuvring a 2D probe to the desired scan plane. With the advent of 3D US, the entire fetal brain volume containing these standard planes can be easily acquired. However, manual standard plane identification in 3D volume is labour-intensive and requires expert knowledge of fetal anatomy. We propose a new Iterative Transformation Network (ITN) for the automatic detection of standard planes in 3D volumes. ITN uses a convolutional neural network to learn the relationship between a 2D plane image and the transformation parameters required to move that plane towards the location/orientation of the standard plane in the 3D volume. During inference, the current plane image is passed iteratively to the network until it converges to the standard plane location. We explore the effect of using different transformation representations as regression outputs of ITN. Under a multi-task learning framework, we introduce additional classification probability outputs to the network to act as confidence measures for the regressed transformation parameters in order to further improve the localisation accuracy. When evaluated on 72 US volumes of fetal brain, our method achieves an error of 3.83mm/12.7 degrees and 3.80mm/12.6 degrees for the transventricular and transcerebellar planes respectively and takes 0.46s per plane.}
-}
+                  @inproceedings{li2018standard,
+                    title={Standard Plane Detection in 3D Fetal Ultrasound Using an Iterative Transformation Network},
+                    author={Li, Yuanwei and Khanal, Bishesh and Hou, Benjamin and Alansary, Amir and Cerrolaza, Juan and Sinclair, Matthew and Matthew, Jacqueline and Gupta, Chandni and Knight, Caroline and Kainz, Bernhard and Rueckert, Daniel},
+                    booktitle={MICCAI},
+                    year={2018},                    
+                    fulltext={https://arxiv.org/pdf/1806.07486.pdf},
+                    abstract={Standard scan plane detection in fetal brain ultrasound (US) forms a crucial step in the assessment of fetal development. In clinical settings, this is done by manually manoeuvring a 2D probe to the desired scan plane. With the advent of 3D US, the entire fetal brain volume containing these standard planes can be easily acquired. However, manual standard plane identification in 3D volume is labour-intensive and requires expert knowledge of fetal anatomy. We propose a new Iterative Transformation Network (ITN) for the automatic detection of standard planes in 3D volumes. ITN uses a convolutional neural network to learn the relationship between a 2D plane image and the transformation parameters required to move that plane towards the location/orientation of the standard plane in the 3D volume. During inference, the current plane image is passed iteratively to the network until it converges to the standard plane location. We explore the effect of using different transformation representations as regression outputs of ITN. Under a multi-task learning framework, we introduce additional classification probability outputs to the network to act as confidence measures for the regressed transformation parameters in order to further improve the localisation accuracy. When evaluated on 72 US volumes of fetal brain, our method achieves an error of 3.83mm/12.7 degrees and 3.80mm/12.6 degrees for the transventricular and transcerebellar planes respectively and takes 0.46s per plane.}
+                  }
 
-@inproceedings{hou2018computing,
-  title={Computing CNN Loss and Gradients for Pose Estimation with Riemannian Geometry},
-  author={Hou, Benjamin and Miolane, Nina and Khanal, Bishesh and Lee, Matthew CH and Alansary, Amir and McDonagh, Steven and Hajnal, Jo V and Rueckert, Daniel and Glocker, Ben and Kainz, Bernhard},
-  booktitle={MICCAI},
-  year={2018},
-  note={To appear, early accept},
-  fulltext={https://arxiv.org/pdf/1805.01026.pdf},
-  abstract={Pose  estimation, i.e. predicting  a 3D rigid transformation with respect to a fixed co-ordinate frame in, SE(3), is an omnipresent problem in medical image analysis with applications such as: image rigid registration, anatomical standard plane detection, tracking and device/camera pose estimation. Deep learning methods often parameterise a pose with a representation that separates rotation and translation. As commonly available frameworks do not provide means to calculate loss on a manifold, regression is usually performed using the L2-norm independently on the rotation's and the translation's parameterisations, which is a metric for linear spaces that does not take into account the Lie group structure of SE(3). In this paper, we propose a general Riemannian formulation of the pose estimation problem. We propose to train the CNN directly on SE(3) equipped with a left-invariant Riemannian metric, coupling the prediction of the translation and rotation defining the pose. At each training step, the ground truth and predicted pose are elements of the manifold, where  the loss is calculated as the Riemannian geodesic distance. We then compute the optimisation direction by back-propagating the gradient with respect to the predicted pose on the tangent space of the manifold SE(3) and update the network weights. We thoroughly evaluate the effectiveness of our loss function by comparing its performance with popular and most commonly used existing methods, on tasks such as image-based localisation and intensity-based 2D/3D registration. We also show that hyper-parameters, used in our loss function to weight the contribution between rotations and translations, can be intrinsically calculated from the dataset to achieve greater performance margins.}
-}
+                  @inproceedings{hou2018computing,
+                    title={Computing CNN Loss and Gradients for Pose Estimation with Riemannian Geometry},
+                    author={Hou, Benjamin and Miolane, Nina and Khanal, Bishesh and Lee, Matthew CH and Alansary, Amir and McDonagh, Steven and Hajnal, Jo V and Rueckert, Daniel and Glocker, Ben and Kainz, Bernhard},
+                    booktitle={MICCAI},
+                    year={2018},                    
+                    fulltext={https://arxiv.org/pdf/1805.01026.pdf},
+                    abstract={Pose  estimation, i.e. predicting  a 3D rigid transformation with respect to a fixed co-ordinate frame in, SE(3), is an omnipresent problem in medical image analysis with applications such as: image rigid registration, anatomical standard plane detection, tracking and device/camera pose estimation. Deep learning methods often parameterise a pose with a representation that separates rotation and translation. As commonly available frameworks do not provide means to calculate loss on a manifold, regression is usually performed using the L2-norm independently on the rotation's and the translation's parameterisations, which is a metric for linear spaces that does not take into account the Lie group structure of SE(3). In this paper, we propose a general Riemannian formulation of the pose estimation problem. We propose to train the CNN directly on SE(3) equipped with a left-invariant Riemannian metric, coupling the prediction of the translation and rotation defining the pose. At each training step, the ground truth and predicted pose are elements of the manifold, where  the loss is calculated as the Riemannian geodesic distance. We then compute the optimisation direction by back-propagating the gradient with respect to the predicted pose on the tangent space of the manifold SE(3) and update the network weights. We thoroughly evaluate the effectiveness of our loss function by comparing its performance with popular and most commonly used existing methods, on tasks such as image-based localisation and intensity-based 2D/3D registration. We also show that hyper-parameters, used in our loss function to weight the contribution between rotations and translations, can be intrinsically calculated from the dataset to achieve greater performance margins.}
+                  }
 
 
-@ARTICLE{Hou_2018,
-author={B. Hou and B. Khanal and A. Alansary and S. McDonagh and A. Davidson and M. Rutherford and J. V. Hajnal and D. Rueckert and B. Glocker and B. Kainz},
-journal={IEEE Transactions on Medical Imaging},
-title={3D Reconstruction in Canonical Co-ordinate Space from Arbitrarily Oriented 2D Images},
-year={2018},
-URL={http://ieeexplore.ieee.org/document/8295121/},
-volume={PP},
-number={99},
-pages={1-1},
-abstract={Limited capture range, and the requirement to provide high quality initialization for optimization-based 2D/3D image registration methods, can significantly degrade the performance of 3D image reconstruction and motion compensation pipelines. Challenging clinical imaging scenarios, which contain significant subject motion such as fetal in-utero imaging, complicate the 3D image and volume reconstruction process. In this paper we present a learning based image registration method capable of predicting 3D rigid transformations of arbitrarily oriented 2D image slices, with respect to a learned canonical atlas co-ordinate system. Only image slice intensity information is used to perform registration and canonical alignment, no spatial transform initialization is required. To find image transformations we utilize a Convolutional Neural Network (CNN) architecture to learn the regression function capable of mapping 2D image slices to a 3D canonical atlas space. We extensively evaluate the effectiveness of our approach quantitatively on simulated Magnetic Resonance Imaging (MRI), fetal brain imagery with synthetic motion and further demonstrate qualitative results on real fetal MRI data where our method is integrated into a full reconstruction and motion compensation pipeline. Our learning based registration achieves an average spatial prediction error of 7 mm on simulated data and produces qualitatively improved reconstructions for heavily moving fetuses with gestational ages of approximately 20 weeks. Our model provides a general and computationally efficient solution to the 2D/3D registration initialization problem and is suitable for real-time scenarios.},
-keywords={Image reconstruction;Magnetic resonance imaging;Manuals;Motion compensation;Robustness;Three-dimensional displays;Two dimensional displays},
-doi={10.1109/TMI.2018.2798801},
-ISSN={0278-0062},
-month={},}
+                  @ARTICLE{Hou_2018,
+                  author={B. Hou and B. Khanal and A. Alansary and S. McDonagh and A. Davidson and M. Rutherford and J. V. Hajnal and D. Rueckert and B. Glocker and B. Kainz},
+                  journal={IEEE Transactions on Medical Imaging},
+                  title={3D Reconstruction in Canonical Co-ordinate Space from Arbitrarily Oriented 2D Images},
+                  year={2018},
+                  URL={http://ieeexplore.ieee.org/document/8295121/},
+                  volume={PP},
+                  number={99},
+                  pages={1-1},
+                  abstract={Limited capture range, and the requirement to provide high quality initialization for optimization-based 2D/3D image registration methods, can significantly degrade the performance of 3D image reconstruction and motion compensation pipelines. Challenging clinical imaging scenarios, which contain significant subject motion such as fetal in-utero imaging, complicate the 3D image and volume reconstruction process. In this paper we present a learning based image registration method capable of predicting 3D rigid transformations of arbitrarily oriented 2D image slices, with respect to a learned canonical atlas co-ordinate system. Only image slice intensity information is used to perform registration and canonical alignment, no spatial transform initialization is required. To find image transformations we utilize a Convolutional Neural Network (CNN) architecture to learn the regression function capable of mapping 2D image slices to a 3D canonical atlas space. We extensively evaluate the effectiveness of our approach quantitatively on simulated Magnetic Resonance Imaging (MRI), fetal brain imagery with synthetic motion and further demonstrate qualitative results on real fetal MRI data where our method is integrated into a full reconstruction and motion compensation pipeline. Our learning based registration achieves an average spatial prediction error of 7 mm on simulated data and produces qualitatively improved reconstructions for heavily moving fetuses with gestational ages of approximately 20 weeks. Our model provides a general and computationally efficient solution to the 2D/3D registration initialization problem and is suitable for real-time scenarios.},
+                  keywords={Image reconstruction;Magnetic resonance imaging;Manuals;Motion compensation;Robustness;Three-dimensional displays;Two dimensional displays},
+                  doi={10.1109/TMI.2018.2798801},
+                  ISSN={0278-0062},
+                  month={}
+                  }
 
-@ARTICLE{Khanal_2017,
-  AUTHOR={Khanal, Bishesh and Ayache, Nicholas and Pennec, Xavier},
-  TITLE={Simulating Longitudinal Brain MRIs with Known Volume Changes and Realistic Variations in Image Intensity},
-  JOURNAL={Frontiers in Neuroscience},
-  VOLUME={11},
-  PAGES={132},
-  YEAR={2017},
-  URL={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132},
-  DOI={10.3389/fnins.2017.00132},
-  ISSN={1662-453X},
-  fulltext={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132/full},
-  ABSTRACT={This paper presents a simulator tool that can simulate large databases of visually realistic longitudinal MRIs with known volume changes. The simulator is based on a previously proposed biophysical model of brain deformation due to atrophy in AD. In this work, we propose a novel way of reproducing realistic intensity variation in longitudinal brain MRIs, which is inspired by an approach used for the generation of synthetic cardiac sequence images. This approach combines a deformation field obtained from the biophysical model with a deformation field obtained by a non-rigid registration of two images.  The combined deformation field is then used to simulate a new image with specified atrophy from the first image, but with the intensity characteristics of the second image. This allows to generate the realistic variations present in real longitudinal time-series of images, such as the independence of noise between two acquisitions and the potential presence of variable acquisition artifacts. Various options available in the simulator software are briefly explained in this paper. In addition, the software is released as an open-source repository. The availability of the software allows researchers to produce tailored databases of images with ground truth volume changes; we believe this will help developing more robust brain morphometry tools. Additionally, we believe that the scientific community can also use the software to further experiment with the proposed model, and add more complex models of brain deformation and atrophy generation.},
-}
+                  @article{gomez2018oversegmenting,
+                    title={Oversegmenting Graphs},
+                    author={Gomez, Alberto and Zimmer, Veronika A and Khanal, Bishesh and Toussaint, Nicolas and Schnabel, Julia A},
+                    journal={arXiv preprint arXiv:1806.00411},
+                    year={2018},
+                    note={preprint, in preparation},
+                    fulltext={https://arxiv.org/pdf/1806.00411.pdf},
+                    abstract={We propose a novel method to adapt a graph to image data. The method drives the nodes of the graph towards image features. The adaptation process naturally lends itself to a measure of feature saliency which can then be used to retain meaningful nodes and edges in the graph. From the adapted graph, we propose the computation of a dual graph, which inherits the saliency measure from the adapted graph, and whose edges run along image features hence producing an oversegmenting graph. This dual graph captures the structure of the underlying image, and therefore constitutes a sparse representation of the image features and their topology. The proposed method is computationally efficient and fully parallelisable. We propose two distance measures find image saliency along graph edges, and evaluate its performance on synthetic images and on natural images from publicly available databases. In both cases, the salient-most nodes of the graph achieve average boundary recall over 90\%. We also provide a qualitative comparison with two related techniques: superpixel clustering, and variational image meshing, showing potential for a large number of applications. }
+                  }
 
-@phdthesis{Khanal_2016_Thesis,
-TITLE = {{Modeling and simulation of realistic longitudinal structural brain MRIs with atrophy in Alzheimer's disease}},
-AUTHOR = {Khanal, Bishesh},
-NUMBER = {2016NICE4046},
-SCHOOL = {{Universit{\'e} Nice Sophia Antipolis}},
-YEAR = {2016},
-MONTH = Jul,
-TYPE = {Theses},
-url-hal= {https://tel.archives-ouvertes.fr/tel-01384678},
-fulltext = {https://tel.archives-ouvertes.fr/tel-01384678/document},
-HAL_ID = {tel-01384678},
-HAL_VERSION = {v1},
-ABSTRACT = {Atrophy of the brain due to the death of neurons in Alzheimer’s Disease (AD) is well observed in longitudinal structural magnetic resonance images (MRIs).
-This thesis focuses on developing a biophysical model able to reproduce changes observed in the longitudinal MRIs of AD patients.
-Simulating realistic longitudinal MRIs with atrophy from such a model could be used to evaluate brain morphometry algorithms and data driven disease progression models that use information extracted from structural MRIs.
-The long term perspectives of such a model would be in simulating different scenarios of disease evolution, and trying to disentangle potentially different mechanisms of structural changes and their relationship in time.
+                  @ARTICLE{Khanal_2017,
+                    AUTHOR={Khanal, Bishesh and Ayache, Nicholas and Pennec, Xavier},
+                    TITLE={Simulating Longitudinal Brain MRIs with Known Volume Changes and Realistic Variations in Image Intensity},
+                    JOURNAL={Frontiers in Neuroscience},
+                    VOLUME={11},
+                    PAGES={132},
+                    YEAR={2017},
+                    URL={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132},
+                    DOI={10.3389/fnins.2017.00132},
+                    ISSN={1662-453X},
+                    fulltext={http://journal.frontiersin.org/article/10.3389/fnins.2017.00132/full},
+                    ABSTRACT={This paper presents a simulator tool that can simulate large databases of visually realistic longitudinal MRIs with known volume changes. The simulator is based on a previously proposed biophysical model of brain deformation due to atrophy in AD. In this work, we propose a novel way of reproducing realistic intensity variation in longitudinal brain MRIs, which is inspired by an approach used for the generation of synthetic cardiac sequence images. This approach combines a deformation field obtained from the biophysical model with a deformation field obtained by a non-rigid registration of two images.  The combined deformation field is then used to simulate a new image with specified atrophy from the first image, but with the intensity characteristics of the second image. This allows to generate the realistic variations present in real longitudinal time-series of images, such as the independence of noise between two acquisitions and the potential presence of variable acquisition artifacts. Various options available in the simulator software are briefly explained in this paper. In addition, the software is released as an open-source repository. The availability of the software allows researchers to produce tailored databases of images with ground truth volume changes; we believe this will help developing more robust brain morphometry tools. Additionally, we believe that the scientific community can also use the software to further experiment with the proposed model, and add more complex models of brain deformation and atrophy generation.},
+                  }
 
-In this thesis, we develop a framework to simulate realistic longitudinal brain images with atrophy (and potentially growth).
-The core component of the framework is a brain deformation model: a carefully designed biomechanics-based tissue loss model to simulate the deformations with prescribed atrophy patterns.
-We also develop a method to interpolate or extrapolate longitudinal images of a subject by simulating images with subject-specific atrophy patterns.
-The method was used to simulate interpolated time-point MRIs of 46 AD patients by prescribing atrophy estimated for each patient from the available two time-point MRIs.
+                  @phdthesis{Khanal_2016_Thesis,
+                  TITLE = {{Modeling and simulation of realistic longitudinal structural brain MRIs with atrophy in Alzheimer's disease}},
+                  AUTHOR = {Khanal, Bishesh},
+                  NUMBER = {2016NICE4046},
+                  SCHOOL = {{Universit{\'e} Nice Sophia Antipolis}},
+                  YEAR = {2016},
+                  MONTH = Jul,
+                  TYPE = {Theses},
+                  url-hal= {https://tel.archives-ouvertes.fr/tel-01384678},
+                  fulltext = {https://tel.archives-ouvertes.fr/tel-01384678/document},
+                  HAL_ID = {tel-01384678},
+                  HAL_VERSION = {v1},
+                  ABSTRACT = {Atrophy of the brain due to the death of neurons in Alzheimer’s Disease (AD) is well observed in longitudinal structural magnetic resonance images (MRIs).
+                  This thesis focuses on developing a biophysical model able to reproduce changes observed in the longitudinal MRIs of AD patients.
+                  Simulating realistic longitudinal MRIs with atrophy from such a model could be used to evaluate brain morphometry algorithms and data driven disease progression models that use information extracted from structural MRIs.
+                  The long term perspectives of such a model would be in simulating different scenarios of disease evolution, and trying to disentangle potentially different mechanisms of structural changes and their relationship in time.
 
-Real images have noise and image acquisition artefacts, and real longitudinal images have variation of intensity characteristics among the individual images.
-We present a method that uses the brain deformation model and different available images of a subject to add realistic variations of intensities in the synthetic longitudinal images.
-Finally, the software developed during the thesis, named Simul@trophy, to simulate realistic longitudinal brain images with our brain deformation model is released in an open-source repository.}
+                  In this thesis, we develop a framework to simulate realistic longitudinal brain images with atrophy (and potentially growth).
+                  The core component of the framework is a brain deformation model: a carefully designed biomechanics-based tissue loss model to simulate the deformations with prescribed atrophy patterns.
+                  We also develop a method to interpolate or extrapolate longitudinal images of a subject by simulating images with subject-specific atrophy patterns.
+                  The method was used to simulate interpolated time-point MRIs of 46 AD patients by prescribing atrophy estimated for each patient from the available two time-point MRIs.
 
-}
+                  Real images have noise and image acquisition artefacts, and real longitudinal images have variation of intensity characteristics among the individual images.
+                  We present a method that uses the brain deformation model and different available images of a subject to add realistic variations of intensities in the synthetic longitudinal images.
+                  Finally, the software developed during the thesis, named Simul@trophy, to simulate realistic longitudinal brain images with our brain deformation model is released in an open-source repository.}
 
-@article{Khanal_2016,
-title = "A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer's disease ",
-journal = "NeuroImage ",
-volume = "134",
-number = "",
-pages = "35 - 52",
-year = "2016",
-note = "",
-issn = "1053-8119",
-doi = "10.1016/j.neuroimage.2016.03.061",
-url = "http://www.sciencedirect.com/science/article/pii/S1053811916300052",
-fulltext = "https://hal.inria.fr/hal-01305755/document",
-author = "Bishesh Khanal and Marco Lorenzi and Nicholas Ayache and Xavier Pennec",
-keywords = "Biophysical model",
-keywords = "Alzheimer's disease",
-keywords = "Simulation of atrophy",
-keywords = "Longitudinal \{MRIs\} simulation",
-keywords = "Longitudinal modeling",
-abstract = "We propose a framework for developing a comprehensive biophysical model that could predict and simulate realistic longitudinal \{MRIs\} of patients with Alzheimer's disease (AD). The framework includes three major building blocks: i) atrophy generation, ii) brain deformation, and iii) realistic \{MRI\} generation. Within this framework, this paper focuses on a detailed implementation of the brain deformation block with a carefully designed biomechanics-based tissue loss model. For a given baseline brain MRI, the model yields a deformation field imposing the desired atrophy at each voxel of the brain parenchyma while allowing the \{CSF\} to expand as required to globally compensate for the locally prescribed volume loss. Our approach is inspired by biomechanical principles and involves a system of equations similar to Stokes equations in fluid mechanics but with the presence of a non-zero mass source term. We use this model to simulate longitudinal \{MRIs\} by prescribing complex patterns of atrophy. We present experiments that provide an insight into the role of different biomechanical parameters in the model. The model allows simulating images with exactly the same tissue atrophy but with different underlying deformation fields in the image. We explore the influence of different spatial distributions of atrophy on the image appearance and on the measurements of atrophy reported by various global and local atrophy estimation algorithms. We also present a pipeline that allows evaluating atrophy estimation algorithms by simulating longitudinal \{MRIs\} from large number of real subject \{MRIs\} with complex subject-specific atrophy patterns. The proposed framework could help understand the implications of different model assumptions, regularization choices, and spatial priors for the detection and measurement of brain atrophy from longitudinal brain MRIs."
-}
+                  }
 
-@inproceedings{Khanal_2015,
-  title={Simulating Patient Specific Multiple Time-point MRIs From a Biophysical Model of Brain Deformation in Alzheimer's Disease},
-  author={Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
-  booktitle={A MICCAI Workshop on Computational Biomechanics for Medicine-X, 2015, Munich, Germany},
-  pages={177--186},
-  year={2015},
-  series="Computational Biomechanics for Medicine: Imaging, Modeling and Computing",
-  editor="Joldes, Grand and Doyle, Barry and Wittek, Adam and Nielsen, Poul M. F. and Miller, Karol",
-  publisher="Springer International Publishing AG",
-  isbn = {9783319283272},
-  doi = {10.1007/978-3-319-28329-6},
-  fulltext = {https://hal.inria.fr/hal-01217080/document},
-  abstract = {This paper proposes a framework to simulate patient specific structural Magnetic Resonance Images (MRIs) from the available MRI scans of Alzheimer’s Disease(AD) subjects. We use a biophysical model of brain deformation due to atrophy that can generate biologically plausible deformation for any given desired volume changes at the voxel level of the brain MRI. Large number of brain regions are segmented in 45 AD patients and the atrophy rates per year are estimated in these regions from the available two extremal time-point scans. Assuming linear progression of atrophy, the volume changes in scans closest to the half way time period is computed. These atrophy maps are prescribed to the baseline images to simulate the middle time-point images by using the biophysical model of brain deformation. From the baseline scans, the volume changes in real middle time-point scans are compared to the ones in simulated middle time-point images. This present framework also allows to introduce desired atrophy patterns at different time-points to simulate non-linear progression of atrophy. This opens a way to use a biophysical model of brain deformation to evaluate methods that study the temporal progression and spatial relationships of atrophy of different regions in the brain with AD.}
-}
+                  @article{Khanal_2016,
+                  title = "A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer's disease ",
+                  journal = "NeuroImage ",
+                  volume = "134",
+                  number = "",
+                  pages = "35 - 52",
+                  year = "2016",
+                  note = "",
+                  issn = "1053-8119",
+                  doi = "10.1016/j.neuroimage.2016.03.061",
+                  url = "http://www.sciencedirect.com/science/article/pii/S1053811916300052",
+                  fulltext = "https://hal.inria.fr/hal-01305755/document",
+                  author = "Bishesh Khanal and Marco Lorenzi and Nicholas Ayache and Xavier Pennec",
+                  keywords = "Biophysical model",
+                  keywords = "Alzheimer's disease",
+                  keywords = "Simulation of atrophy",
+                  keywords = "Longitudinal \{MRIs\} simulation",
+                  keywords = "Longitudinal modeling",
+                  abstract = "We propose a framework for developing a comprehensive biophysical model that could predict and simulate realistic longitudinal \{MRIs\} of patients with Alzheimer's disease (AD). The framework includes three major building blocks: i) atrophy generation, ii) brain deformation, and iii) realistic \{MRI\} generation. Within this framework, this paper focuses on a detailed implementation of the brain deformation block with a carefully designed biomechanics-based tissue loss model. For a given baseline brain MRI, the model yields a deformation field imposing the desired atrophy at each voxel of the brain parenchyma while allowing the \{CSF\} to expand as required to globally compensate for the locally prescribed volume loss. Our approach is inspired by biomechanical principles and involves a system of equations similar to Stokes equations in fluid mechanics but with the presence of a non-zero mass source term. We use this model to simulate longitudinal \{MRIs\} by prescribing complex patterns of atrophy. We present experiments that provide an insight into the role of different biomechanical parameters in the model. The model allows simulating images with exactly the same tissue atrophy but with different underlying deformation fields in the image. We explore the influence of different spatial distributions of atrophy on the image appearance and on the measurements of atrophy reported by various global and local atrophy estimation algorithms. We also present a pipeline that allows evaluating atrophy estimation algorithms by simulating longitudinal \{MRIs\} from large number of real subject \{MRIs\} with complex subject-specific atrophy patterns. The proposed framework could help understand the implications of different model assumptions, regularization choices, and spatial priors for the detection and measurement of brain atrophy from longitudinal brain MRIs."
+                  }
 
-@inproceedings{Khanal_2014video,
-  year = {2014},  
-  booktitle = {Educational Video Challenge of Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014, Boston, USA},  
-  title = {Statistics on Lie groups for Computational Anatomy},
-  url = {http://www.miccai.org/edu/videos.html#mec2014winners},   
-  author = {Miolane, Nina and Khanal, Bishesh},
-  note = {video, 1st WON POPULAR PRIZE},
-}
+                  @inproceedings{Khanal_2015,
+                    title={Simulating Patient Specific Multiple Time-point MRIs From a Biophysical Model of Brain Deformation in Alzheimer's Disease},
+                    author={Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
+                    booktitle={A MICCAI Workshop on Computational Biomechanics for Medicine-X, 2015, Munich, Germany},
+                    pages={177--186},
+                    year={2015},
+                    series="Computational Biomechanics for Medicine: Imaging, Modeling and Computing",
+                    editor="Joldes, Grand and Doyle, Barry and Wittek, Adam and Nielsen, Poul M. F. and Miller, Karol",
+                    publisher="Springer International Publishing AG",
+                    isbn = {9783319283272},
+                    doi = {10.1007/978-3-319-28329-6},
+                    fulltext = {https://hal.inria.fr/hal-01217080/document},
+                    abstract = {This paper proposes a framework to simulate patient specific structural Magnetic Resonance Images (MRIs) from the available MRI scans of Alzheimer’s Disease(AD) subjects. We use a biophysical model of brain deformation due to atrophy that can generate biologically plausible deformation for any given desired volume changes at the voxel level of the brain MRI. Large number of brain regions are segmented in 45 AD patients and the atrophy rates per year are estimated in these regions from the available two extremal time-point scans. Assuming linear progression of atrophy, the volume changes in scans closest to the half way time period is computed. These atrophy maps are prescribed to the baseline images to simulate the middle time-point images by using the biophysical model of brain deformation. From the baseline scans, the volume changes in real middle time-point scans are compared to the ones in simulated middle time-point images. This present framework also allows to introduce desired atrophy patterns at different time-points to simulate non-linear progression of atrophy. This opens a way to use a biophysical model of brain deformation to evaluate methods that study the temporal progression and spatial relationships of atrophy of different regions in the brain with AD.}
+                  }
 
-@inproceedings{Khanal_2014,
-  year = {2014},
-  isbn = {978-3-319-10469-0},
-  booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014, Boston, USA},
-  volume = {8674},
-  series = {Lecture Notes in Computer Science},
-  editor = {Golland, Polina and Hata, Nobuhiko and Barillot, Christian and Hornegger, Joachim and Howe, Robert},
-  doi = {10.1007/978-3-319-10470-6_6},
-  title = {{A Biophysical Model of Shape Changes due to Atrophy in the Brain with Alzheimer's Disease}},
-  url = {http://dx.doi.org/10.1007/978-3-319-10470-6_6},
-  fulltext = {https://hal.inria.fr/hal-01006478/document},
-  publisher = {Springer International Publishing},
-  keywords = {Alzheimer's disease; Biophysical model; Atrophy model; Atrophy Simulation; Longitudinal modeling},
-  author = {Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
-  pages = {41-48},
-  abstract = {This paper proposes a model of brain deformation triggered by atrophy in Alzheimer's Disease (AD). We introduce a macroscopic biophysical model assuming that the density of the brain remains constant, hence its volume shrinks when neurons die in AD. The deformation in the brain parenchyma minimizes the elastic strain energy with the prescribed local volume loss. The cerebrospinal fluid (CSF) is modelled differently to allow for fluid readjustments occuring at a much faster time-scale. PDEs describing the model is discretized in staggered grid and solved using Finite Difference Method. We illustrate the power of the model by showing different deformation patterns obtained for the same global atrophy but prescribed in gray matter (GM) or white matter (WM) on a generic atlas MRI, and with a realistic AD simulation on a subject MRI. This well-grounded forward model opens a way to study different hypotheses about the distribution of brain atrophy, and to study its impact on the observed changes in MR images.}
-}
+                  @inproceedings{Khanal_2014video,
+                    year = {2014},  
+                    booktitle = {Educational Video Challenge of Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014, Boston, USA},  
+                    title = {Statistics on Lie groups for Computational Anatomy},
+                    url = {http://www.miccai.org/edu/videos.html#mec2014winners},   
+                    author = {Miolane, Nina and Khanal, Bishesh},
+                    note = {video, 1st WON POPULAR PRIZE},
+                  }
 
-@inproceedings{Khanal_2012,
-author={Khanal, Bishesh and Ali, Sharib and Sidib{\'e}, D{\'e}sir{\'e}},
-title={Robust Road Signs Segmentation in Color Images},
-booktitle={Proceedings of the International Conference on Computer Vision Theory and Applications, 2012, Rome, Italy},
-year={2012},
-pages={307--310},
-doi={10.5220/0003802103070310},
-isbn={978-989-8565-03-7},
-fulltext={https://hal.archives-ouvertes.fr/hal-00658086/document},
-abstract={This paper presents an efficient method for road signs segmentation in color images. Color segmentation
-of road signs is a difficult task due to variations in the image acquisition conditions. Therefore, a color constancy algorithm is usually applied prior to segmentation, which increases the computation time. The proposed
-method is based on a log-chromaticity color space which shows good invariance properties to changing illumination. Thus, the method is simple and fast since it does not require color constancy algorithms. Experiments with a large dataset and comparison with other approaches, show the robustness and accuracy of the method in detecting road signs in various conditions.}
-}
+                  @inproceedings{Khanal_2014,
+                    year = {2014},
+                    isbn = {978-3-319-10469-0},
+                    booktitle = {Medical Image Computing and Computer-Assisted Intervention -- MICCAI 2014, Boston, USA},
+                    volume = {8674},
+                    series = {Lecture Notes in Computer Science},
+                    editor = {Golland, Polina and Hata, Nobuhiko and Barillot, Christian and Hornegger, Joachim and Howe, Robert},
+                    doi = {10.1007/978-3-319-10470-6_6},
+                    title = {{A Biophysical Model of Shape Changes due to Atrophy in the Brain with Alzheimer's Disease}},
+                    url = {http://dx.doi.org/10.1007/978-3-319-10470-6_6},
+                    fulltext = {https://hal.inria.fr/hal-01006478/document},
+                    publisher = {Springer International Publishing},
+                    keywords = {Alzheimer's disease; Biophysical model; Atrophy model; Atrophy Simulation; Longitudinal modeling},
+                    author = {Khanal, Bishesh and Lorenzi, Marco and Ayache, Nicholas and Pennec, Xavier},
+                    pages = {41-48},
+                    abstract = {This paper proposes a model of brain deformation triggered by atrophy in Alzheimer's Disease (AD). We introduce a macroscopic biophysical model assuming that the density of the brain remains constant, hence its volume shrinks when neurons die in AD. The deformation in the brain parenchyma minimizes the elastic strain energy with the prescribed local volume loss. The cerebrospinal fluid (CSF) is modelled differently to allow for fluid readjustments occuring at a much faster time-scale. PDEs describing the model is discretized in staggered grid and solved using Finite Difference Method. We illustrate the power of the model by showing different deformation patterns obtained for the same global atrophy but prescribed in gray matter (GM) or white matter (WM) on a generic atlas MRI, and with a realistic AD simulation on a subject MRI. This well-grounded forward model opens a way to study different hypotheses about the distribution of brain atrophy, and to study its impact on the observed changes in MR images.}
+                  }
+
+                  @inproceedings{Khanal_2012,
+                  author={Khanal, Bishesh and Ali, Sharib and Sidib{\'e}, D{\'e}sir{\'e}},
+                  title={Robust Road Signs Segmentation in Color Images},
+                  booktitle={Proceedings of the International Conference on Computer Vision Theory and Applications, 2012, Rome, Italy},
+                  year={2012},
+                  pages={307--310},
+                  doi={10.5220/0003802103070310},
+                  isbn={978-989-8565-03-7},
+                  fulltext={https://hal.archives-ouvertes.fr/hal-00658086/document},
+                  abstract={This paper presents an efficient method for road signs segmentation in color images. Color segmentation
+                  of road signs is a difficult task due to variations in the image acquisition conditions. Therefore, a color constancy algorithm is usually applied prior to segmentation, which increases the computation time. The proposed
+                  method is based on a log-chromaticity color space which shows good invariance properties to changing illumination. Thus, the method is simple and fast since it does not require color constancy algorithms. Experiments with a large dataset and comparison with other approaches, show the robustness and accuracy of the method in detecting road signs in various conditions.}
+                  }
 
 
-@inproceedings{Khanal_2011,
-author="Khanal, Bishesh and Sidib{\'e}, D{\'e}sir{\'e}",
-editor="Jeschke, Sabina and Liu, Honghai and Schilberg, Daniel",
-title="Efficient Skin Detection under Severe Illumination Changes and Shadows",
-booktitle="Intelligent Robotics and Applications: 4th International Conference, ICIRA 2011, Aachen, Germany, December 6-8, 2011, Proceedings, Part II",
-year="2011",
-publisher="Springer Berlin Heidelberg",
-address="Berlin, Heidelberg",
-pages="609--618",
-isbn="978-3-642-25489-5",
-doi="10.1007/978-3-642-25489-5_59",
-url="http://dx.doi.org/10.1007/978-3-642-25489-5_59",
-fulltext="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-00627903/document/",
-abstract="This paper presents an efficient method for human skin color detection with a mobile platform. The proposed method is based on modeling the skin distribution in a log-chromaticity color space which shows good invariance properties to changing illumination. The method is easy to implement and can cope with the requirements of real-world tasks such as illumination variations, shadows and moving camera. Extensive experiments show the good performance of the proposed method and its robustness against abrupt changes of illumination and shadows."
-}
+                  @inproceedings{Khanal_2011,
+                  author="Khanal, Bishesh and Sidib{\'e}, D{\'e}sir{\'e}",
+                  editor="Jeschke, Sabina and Liu, Honghai and Schilberg, Daniel",
+                  title="Efficient Skin Detection under Severe Illumination Changes and Shadows",
+                  booktitle="Intelligent Robotics and Applications: 4th International Conference, ICIRA 2011, Aachen, Germany, December 6-8, 2011, Proceedings, Part II",
+                  year="2011",
+                  publisher="Springer Berlin Heidelberg",
+                  address="Berlin, Heidelberg",
+                  pages="609--618",
+                  isbn="978-3-642-25489-5",
+                  doi="10.1007/978-3-642-25489-5_59",
+                  url="http://dx.doi.org/10.1007/978-3-642-25489-5_59",
+                  fulltext="https://hal-univ-bourgogne.archives-ouvertes.fr/hal-00627903/document/",
+                  abstract="This paper presents an efficient method for human skin color detection with a mobile platform. The proposed method is based on modeling the skin distribution in a log-chromaticity color space which shows good invariance properties to changing illumination. The method is easy to implement and can cope with the requirements of real-world tasks such as illumination variations, shadows and moving camera. Extensive experiments show the good performance of the proposed method and its robustness against abrupt changes of illumination and shadows."
+                  }
