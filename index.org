@@ -15,6 +15,7 @@
 
 * Interests
 
+- Machine learning, Artificial Intelligence, visual perception, information processing and their applications
 - Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology
 - Identifying and working on research problems that are relevant to lower income countries in the field of MIICB
 - Strengthening research capacity and engagement of LICs in Artificial Intelligence
