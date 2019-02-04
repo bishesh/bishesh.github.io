@@ -6,15 +6,19 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>https://bishesh.github.io/categories/cat_blog.xml</loc>
+  <lastmod>2019-02-04T08:51:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>https://bishesh.github.io/galleries/rss.xml</loc>
-  <lastmod>2018-07-30T07:13:00Z</lastmod>
+  <lastmod>2019-02-04T08:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://bishesh.github.io/rss.xml</loc>
-  <lastmod>2018-06-07T15:05:00Z</lastmod>
+  <lastmod>2019-02-04T08:51:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>https://bishesh.github.io/sitemap.xml</loc>
-  <lastmod>2018-07-30T07:13:00Z</lastmod>
+  <lastmod>2019-02-04T08:51:00Z</lastmod>
  </sitemap>
 </sitemapindex>
