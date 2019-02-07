@@ -1,5 +1,5 @@
 #+BEGIN_COMMENT
-.. title: Introduction
+.. hidetitle: True
 .. slug: index
 .. date: 2017-04-17 18:12:55 UTC+01:00
 .. tags: 
@@ -14,7 +14,7 @@
 - Co-founder, President and Managing director at NAAMII.
 - PhD from [[https://team.inria.fr/epione/en/][Asclepios (now Epione)]], INRIA under the supervision of [[https://www-sop.inria.fr/members/Xavier.Pennec/][Xavier Pennec]] and [[https://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html][Nicolas Ayache]]
 
-* Interests
+** Interests
 
 - Machine learning, Artificial Intelligence, visual perception, information processing and their applications
 - Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology
@@ -23,7 +23,7 @@
 
 More: [[../publications/][publications]] and [[../cv/][CV]]
 
-** Nepal Related
+*** Nepal Related
 - Strengthening scientific research capabilities of Nepal.
 - Co-founder of [[https://naamii.com.np][NAAMII]], a research institute with core expertise in computational sciences and AI, and focusing on solving global problems in the field of healthcare, agriculture, climate change, governance and social science.
 - Founder of [[https://abhinavnepal.github.io/Science-innovation-Nepal/][Science Innovation Nepal]] that collects resources useful for like minded Nepalese interested in doing research in/for Nepal, including a large database of Nepali scholars around the world.
