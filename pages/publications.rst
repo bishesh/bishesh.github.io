@@ -7,8 +7,6 @@
 .. description: 
 .. type: text
 
-Publications
-------------
 
 .. publication_list:: bibtex/my_publications.bib
    :style: unsrt
