@@ -25,7 +25,7 @@ SITE_URL = "https://bishesh.github.io/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "https://bishesh.github.io/"
-BLOG_EMAIL = "bisheshkh@gmail.com"
+BLOG_EMAIL = "bishesh.khanal@naamii.org.np"
 BLOG_DESCRIPTION = "Walking slowly in a long, difficult path ..."  # (translatable)
 
 # Nikola is multilingual!
