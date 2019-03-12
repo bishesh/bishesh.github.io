@@ -14,8 +14,9 @@
 <meta property="og:site_name" content="Bishesh Khanal">
 <meta property="og:title" content="Publications">
 <meta property="og:url" content="https://bishesh.github.io/publications/">
-<meta property="og:description" content="2018
-Bishesh Khanal, Alberto Gomez, Nicolas Toussaint, Steven McDonagh, Veronika Zimmer, Emily Skelton, Jacqueline Matthew, Daniel Grzech, Robert Wright, Chandni Gupta, Benjamin Hou, Daniel Rueckert, ">
+<meta property="og:description" content="2019
+Daniel Grzech, Loïc le Folgoc, Mattias P. Heinrich, Bishesh Khanal, Jakub Moll, Julia A. Schnabel, Ben Glocker, and Bernhard Kainz.
+Fastreg: fast non-rigid registration via accelerated optimisati">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2017-04-17T19:19:02+01:00">
 </head>
@@ -79,6 +80,95 @@ Bishesh Khanal, Alberto Gomez, Nicolas Toussaint, Steven McDonagh, Veronika Zimm
 
     </header><div class="e-content entry-content" itemprop="articleBody text">
     <div class="publication-list">
+<h4>2019</h4>
+<ul>
+<li class="publication" style="padding-bottom: 1em;">Daniel Grzech, Loïc le Folgoc, Mattias P. Heinrich, <strong>Bishesh <strong>Khanal</strong></strong>, Jakub Moll, Julia A. Schnabel, Ben Glocker, and Bernhard Kainz.
+<strong>Fastreg: fast non-rigid registration via accelerated optimisation on the manifold of diffeomorphisms.</strong>
+In <em>The 26th international conference on Information Processing in Medical Imaging (IPMI) June 2-7</em>. 2019.
+Accepted.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract▼')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract▲')
+                }
+                })(this, 'abstract-grzech2019fastreg');">abstract▼</a>] [<a href="https://arxiv.org/pdf/1903.01905">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-grzech2019fastreg');">BibTeX▼</a>]
+            
+                <div id="abstract-grzech2019fastreg" class="publication-abstract" style="display:none">
+                <blockquote>We present a new approach to diffeomorphic non-rigid registration of medical images. The method is based on optical flow and warps images via gradient flow with the standard inner product. To compute the transformation, we rely on accelerated optimisation on the manifold of diffeomorphisms. We achieve regularity properties of Sobolev gradient flows, which are expensive to compute, owing to a novel method of averaging the gradients in time rather than space. We successfully register brain MRI and challenging abdominal CT scans at speeds orders of magnitude faster than previous approaches. We make our code available in a public repository: this https URL</blockquote>
+</div>
+                <div id="bibtex-grzech2019fastreg" style="display:none"><pre>@inproceedings{grzech2019fastreg,
+    author = "Grzech, Daniel and le Folgoc, Loïc and Heinrich, Mattias P. and Khanal, Bishesh and Moll, Jakub and Schnabel, Julia A. and Glocker, Ben and Kainz, Bernhard",
+    title = "FastReg: Fast Non-Rigid Registration via Accelerated Optimisation on the Manifold of Diffeomorphisms",
+    booktitle = "The 26th international conference on Information Processing in Medical Imaging (IPMI) June 2-7",
+    year = "2019",
+    note = "Accepted"
+}
+</pre></div>
+</li>
+<li class="publication" style="padding-bottom: 1em;">Loic Le Folgoc, Daniel C. Castro, Jeremy Tan, <strong>Bishesh <strong>Khanal</strong></strong>, Konstantinos Kamnitsas, Ian Walker, Amir Alansary, and Ben Glocker.
+<strong>Controlling meshes via curvature: spin transformations for pose-invariant shape processing.</strong>
+In <em>The 26th international conference on Information Processing in Medical Imaging (IPMI) June 2-7</em>. 2019.
+Accepted.<br>
+                [<a href="javascript:void(0)" onclick="
+                (function(target, id) {
+                  if ($('#' + id).css('display') == 'block')
+                {
+                  $('#' + id).hide('fast');
+                  $(target).text('abstract▼')
+                }
+                else
+                {
+                  $('#' + id).show('fast');
+                  $(target).text('abstract▲')
+                }
+                })(this, 'abstract-folgoc2019controlling');">abstract▼</a>] [<a href="https://arxiv.org/pdf/1903.02429">full text</a>] 
+            [<a href="javascript:void(0)" onclick="
+            (function(target, id) {
+              if ($('#' + id).css('display') == 'block')
+              {
+                $('#' + id).hide('fast');
+                $(target).text('BibTeX▼')
+              }
+              else
+              {
+                $('#' + id).show('fast');
+                $(target).text('BibTeX▲')
+              }
+            })(this, 'bibtex-folgoc2019controlling');">BibTeX▼</a>]
+            
+                <div id="abstract-folgoc2019controlling" class="publication-abstract" style="display:none">
+                <blockquote>We investigate discrete spin transformations, a geometric framework to manipulate surface meshes by controlling mean curvature. Applications include surface fairing--flowing a mesh onto say, a reference sphere--and mesh extrusion--eg, rebuilding a complex shape from a reference sphere and curvature specification. Because they operate in curvature space, these operations can be conducted very stably across large deformations with no need for remeshing. Spin transformations add to the algorithmic toolbox for pose-invariant shape analysis. Mathematically speaking, mean curvature is a shape invariant and in general fully characterizes closed shapes (together with the metric). Computationally speaking, spin transformations make that relationship explicit. Our work expands on a discrete formulation of spin transformations. Like their smooth counterpart, discrete spin transformations are naturally close to conformal (angle-preserving). This quasi-conformality can nevertheless be relaxed to satisfy the desired trade-off between area distortion and angle preservation. We derive such constraints and propose a formulation in which they can be efficiently incorporated. The approach is showcased on subcortical structures</blockquote>
+</div>
+                <div id="bibtex-folgoc2019controlling" style="display:none"><pre>@inproceedings{folgoc2019controlling,
+    author = "Folgoc, Loic Le and Castro, Daniel C. and Tan, Jeremy and Khanal, Bishesh and Kamnitsas, Konstantinos and Walker, Ian and Alansary, Amir and Glocker, Ben",
+    title = "Controlling Meshes via Curvature: Spin Transformations for Pose-Invariant Shape Processing",
+    booktitle = "The 26th international conference on Information Processing in Medical Imaging (IPMI) June 2-7",
+    year = "2019",
+    note = "Accepted"
+}
+</pre></div>
+</li>
+</ul>
 <h4>2018</h4>
 <ul>
 <li class="publication" style="padding-bottom: 1em;">
