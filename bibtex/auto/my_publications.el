@@ -2,6 +2,8 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "grzech2019fastreg"
+    "folgoc2019controlling"
     "khanal2018echofusion"
     "wright2018lstm"
     "zimmer2018multi"
