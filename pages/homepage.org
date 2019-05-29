@@ -9,11 +9,11 @@
 .. type: text
 #+END_COMMENT
 
-- Research Scientist at NepAl Applied Mathematics and Informatics Institute for Research ([[https://naamii.com.np][NAAMII]], नामी).
-- Senior AI Scientist at [[https://www.fusemachines.com/][Fusemachines]].
-- Visiting Researcher at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], King's College London and at [[https://biomedia.doc.ic.ac.uk/][BioMedIA]], Department of Computing, Imperial College London, UK.
-- President and Managing director at NAAMII.
-- PhD from [[https://team.inria.fr/epione/en/][Asclepios (now Epione)]], INRIA under the supervision of [[https://www-sop.inria.fr/members/Xavier.Pennec/][Xavier Pennec]] and [[https://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html][Nicolas Ayache]]
++ Research Scientist at NepAl Applied Mathematics and Informatics Institute for Research ([[https://naamii.com.np][NAAMII]], नामी).
++ Senior AI Scientist at [[https://www.fusemachines.com/][Fusemachines]].
++ Visiting Researcher at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], King's College London and at [[https://biomedia.doc.ic.ac.uk/][BioMedIA]], Department of Computing, Imperial College London, UK.
++ President at Board of Directors, NAAMII. 
++ PhD from [[https://team.inria.fr/epione/en/][Asclepios (now Epione)]], INRIA under the supervision of [[https://www-sop.inria.fr/members/Xavier.Pennec/][Xavier Pennec]] and [[https://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html][Nicolas Ayache]]
 
 ** Interests
 
