@@ -138,7 +138,8 @@ NAVIGATION_LINKS = {
         # ("/pages/", "Home"),
         ("/cv/", "CV"),
         ("/publications/", "Publications"),
-        ("/blog/", "Blog"),
+        ("/talks/", "Talks"),
+        #("/blog/", "Blog"),
         ("https://www.abhinavnepal.com/", "Abhinav Nepal"),
         ("https://abhinavnepal.github.io/Science-innovation-Nepal/", "Science Innovation Nepal")
         # ("/archive.html", "Archive"),
