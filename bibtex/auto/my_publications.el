@@ -2,6 +2,9 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "wright2019complete"
+    "zimmer2019towards"
+    "budd2019confident"
     "folgoc2019controlling"
     "khanal2018echofusion"
     "wright2018lstm"
