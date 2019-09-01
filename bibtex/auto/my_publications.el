@@ -2,6 +2,7 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "gomez2019image"
     "wright2019complete"
     "zimmer2019towards"
     "budd2019confident"
