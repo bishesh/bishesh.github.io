@@ -7,19 +7,23 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>https://bishesh.github.io/</loc>
-  <lastmod>2019-05-29T02:59:00Z</lastmod>
+  <lastmod>2019-09-19T02:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://bishesh.github.io/2017/</loc>
   <lastmod>2019-03-12T05:08:00Z</lastmod>
  </url>
  <url>
+  <loc>https://bishesh.github.io/2019/</loc>
+  <lastmod>2019-09-19T02:45:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://bishesh.github.io/archive.html</loc>
-  <lastmod>2019-05-29T02:59:00Z</lastmod>
+  <lastmod>2019-09-19T02:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://bishesh.github.io/blog/</loc>
-  <lastmod>2019-03-12T05:08:00Z</lastmod>
+  <lastmod>2019-09-19T02:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://bishesh.github.io/blog/nepali-english-meanings/</loc>
@@ -28,6 +32,10 @@
  <url>
   <loc>https://bishesh.github.io/blog/placeholder-for-blogs/</loc>
   <lastmod>2019-03-12T05:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://bishesh.github.io/blog/seventh-national-science-day/</loc>
+  <lastmod>2019-09-19T02:45:00Z</lastmod>
  </url>
  <url>
   <loc>https://bishesh.github.io/categories/</loc>
