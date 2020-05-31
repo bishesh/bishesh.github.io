@@ -2,6 +2,7 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "dahal2020uncertainty"
     "khanal2019automatic"
     "gomez2019image"
     "wright2019complete"
