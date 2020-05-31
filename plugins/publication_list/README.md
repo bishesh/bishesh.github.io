@@ -83,7 +83,15 @@ where `my-publications.bib` contains:
         year = 2015
     }
 
-A live example is available [here](http://www.shudan.me/).
+If you have multiple bibtex files, you can specify them in one line, separated
+by spaces. For example:
+
+    ... publication_list:: my-novels.bib my-research-papers.bib my-collections.bib
+
+Live examples:
+
+- http://www.shudan.me/
+- https://bishesh.github.io/publications/
 
 ## Customize Details Pages
 

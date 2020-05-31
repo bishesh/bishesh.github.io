@@ -25,17 +25,22 @@
 # SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
 import os
+import sys
 
 from docutils import nodes
 from docutils.parsers.rst import Directive, directives
 
 from nikola.plugin_categories import RestExtension
+from nikola.utils import get_logger, STDERR_HANDLER
 
 from pybtex.database import BibliographyData, Entry
 from pybtex.database.input.bibtex import Parser
 from pybtex.markup import LaTeXParser
 from pybtex.style.formatting.unsrt import Style as UnsrtStyle
 from pybtex.style.template import href, tag
+
+
+LOGGER = get_logger('scan_posts', STDERR_HANDLER)
 
 
 class Style(UnsrtStyle):
@@ -76,6 +81,7 @@ class PublicationList(Directive):
     """
     has_content = False
     required_arguments = 1
+    optional_arguments = sys.maxsize
     option_spec = {
         'bibtex_dir': directives.unchanged,
         'detail_page_dir': directives.unchanged,
@@ -93,11 +99,20 @@ class PublicationList(Directive):
         style = Style(self.site.config['BASE_URL'] + detail_page_dir if detail_page_dir else None)
         self.state.document.settings.record_dependencies.add(self.arguments[0])
 
-        parser = Parser()
-
+        all_entries = []
+        labels = set()
+        for a in self.arguments:
+            parser = Parser()
+            for item in parser.parse_file(a).entries.items():
+                if item[0] in labels:  # duplicated entries
+                    LOGGER.warning(
+                        ("publication_list: BibTeX entries with duplicated labels are found. "
+                         "Only the first occurrence will be used."))
+                    continue
+                labels.add(item[0])
+                all_entries.append(item)
         # Sort the publication entries by year reversed
-        data = sorted(parser.parse_file(self.arguments[0]).entries.items(),
-                      key=lambda e: e[1].fields['year'], reverse=True)
+        data = sorted(all_entries, key=lambda e: e[1].fields['year'], reverse=True)
 
         html = '<div class="publication-list">\n'
         cur_year = None
@@ -126,8 +141,12 @@ class PublicationList(Directive):
             pub_html = list(style.format_entries((entry,)))[0].text.render_as('html')
             if highlight_authors:  # highlight one of several authors (usually oneself)
                 for highlight_author in highlight_authors:
+                    # We need to replace all occurrence of space except for the last one with
+                    # &nbsp;, since pybtex does it for all authors
+                    count = highlight_author.count(' ') - 1
                     pub_html = pub_html.replace(
-                        highlight_author.strip(), '<strong>{}</strong>'.format(highlight_author), 1)
+                        highlight_author.strip().replace(' ', '&nbsp;', count),
+                        '<strong>{}</strong>'.format(highlight_author), 1)
             html += '<li class="publication" style="padding-bottom: 1em;">' + pub_html
 
             extra_links = ""
@@ -216,7 +235,7 @@ class PublicationList(Directive):
                     'extra_links': extra_links + bibtex_display
                 }
 
-                if 'fulltext' in entry.fields and entry.fields['fulltext'].endswith('.pdf'):
+                if 'fulltext' in entry.fields:
                     context['pdf'] = entry.fields['fulltext']
 
                 self.site.render_template(
