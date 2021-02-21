@@ -1,7 +1,7 @@
 #+BEGIN_COMMENT
 .. hidetitle: True
 .. slug: index
-.. date: 2017-04-17 18:12:55 UTC+01:00
+.. date: 2021-02-13 18:12:55 UTC+01:00
 .. tags: 
 .. category: 
 .. link: 
@@ -9,24 +9,29 @@
 .. type: text
 #+END_COMMENT
 
-+ Research Scientist and Chairperson at ([[https://naamii.com.np][NAAMII]], नामी).
-+ Senior AI Scientist at [[https://www.fusemachines.com/][Fusemachines]].
-+ Visiting Researcher at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], King's College London and at [[https://biomedia.doc.ic.ac.uk/][BioMedIA]], Department of Computing, Imperial College London, UK.
++ Director/Research Scientist/Co-founder at ([[https://naamii.com.np][NAAMII]], नामी).
++ Scientist/co-founder at [[https://diyo.ai][Diyo.AI]].
++ Founder  of [[https://abhinavnepal.com][abhinavnepal]]
+
+*** Previously
+
++ Postdoctoral Researcher at [[http://www.kcl.ac.uk/lsm/research/divisions/imaging/index.aspx][School of Biomedical Engineering and Imaging Sciences]], King's College London and at [[https://biomedia.doc.ic.ac.uk/][BioMedIA]], Department of Computing, Imperial College London, UK.
 + PhD from [[https://team.inria.fr/epione/en/][Asclepios (now Epione)]], INRIA under the supervision of [[https://www-sop.inria.fr/members/Xavier.Pennec/][Xavier Pennec]] and [[https://www-sop.inria.fr/members/Nicholas.Ayache/ayache.html][Nicolas Ayache]]
 
-** Interests
+** Research Interests
 
-- Machine learning, Artificial Intelligence, visual perception, information processing and their applications
-- Medical Imaging Informatics and Computational Biomedicine (MIICB) to improve healthcare, medicine and the understanding of biology
-- Identifying and working on research problems that are relevant to lower income countries in the field of MIICB
-- Strengthening research capacity and engagement of LICs in Artificial Intelligence
+- Machine learning and Artificial Intelligence, particularly learning from Visual and Audio signals and information
+- Computer Vision and Medical Imaging Informatics 
+- Natural Language and Speech Processing for Low Resource languages, particularly for languages of Nepal 
+- Applications of the above three in problems relevant to Low Income Countries (LICs) 
 
-More: [[../publications/][publications]] and [[../cv/][CV]]
+** Other Interests
+- Strengthening scientific research capacity and engagement of LICs, particularly in Artificial Intelligence, computing and mathematical sciences
+- Contributing to the building of eco-system of Science, Innovation and Entrepreneurship in Nepal
 
-*** Nepal Related
-- Strengthening scientific research capabilities of Nepal.
-- Co-founder of [[https://naamii.com.np][NAAMII]], a research institute with core expertise in computational sciences and AI, and focusing on solving global problems in the field of healthcare, agriculture, climate change, governance and social science.
-- Founder of [[https://abhinavnepal.github.io/Science-innovation-Nepal/][Science Innovation Nepal]] that collects resources useful for like minded Nepalese interested in doing research in/for Nepal, including a large database of Nepali scholars around the world.
+** Other links
+[[https://scholar.google.com/citations?hl=en&user=ZfaUCG5h3xsC&view_op=list_works][Google Scholar]], [[https://twitter.com/bisheshkhanal7][Twitter]]
+# and [[../cv/][CV]]
 
 
 # I have a special interest in working under the models that increase independent research capabilities of Low Income Countries, taking Nepal as an example where I would like to be based upon.
