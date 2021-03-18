@@ -9,8 +9,7 @@
 .. type: text
 #+END_COMMENT
 
-+ Director/Research Scientist/Co-founder at ([[https://naamii.com.np][NAAMII]], नामी).
-+ Scientist/co-founder at [[https://diyo.ai][Diyo.AI]].
++ Director/Research Scientist at ([[https://naamii.com.np][NAAMII]], नामी).
 + Founder  of [[https://abhinavnepal.com][abhinavnepal]]
 
 *** Previously
@@ -20,8 +19,8 @@
 
 ** Research Interests
 
-- Machine learning and Artificial Intelligence, particularly learning from Visual and Audio signals and information
-- Computer Vision and Medical Imaging Informatics 
+- Machine learning and Artificial Intelligence
+- Computer Vision, Medical Imaging Informatics, Biomedical Informatics
 - Natural Language and Speech Processing for Low Resource languages, particularly for languages of Nepal 
 - Applications of the above three in problems relevant to Low Income Countries (LICs) 
 
