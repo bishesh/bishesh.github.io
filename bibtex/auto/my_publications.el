@@ -2,6 +2,8 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "hasan2020challenges"
+    "skelton2020towards"
     "dahal2020uncertainty"
     "khanal2019automatic"
     "gomez2019image"
