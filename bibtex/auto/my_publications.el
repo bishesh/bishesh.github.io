@@ -2,8 +2,12 @@
  "my_publications"
  (lambda ()
    (LaTeX-add-bibitems
+    "khanal2021machine"
+    "pandey2021covid"
+    "wang2021evaluation"
+    "skelton2021towards"
     "hasan2020challenges"
-    "skelton2020towards"
+    "sapkota2021label"
     "dahal2020uncertainty"
     "khanal2019automatic"
     "gomez2019image"
