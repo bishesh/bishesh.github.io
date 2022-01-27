@@ -7,6 +7,9 @@
 .. description: 
 .. type: text
 
+An up to date list can be found at my GoogleScholar_ page.
+
+.. _GoogleScholar: https://scholar.google.com/citations?hl=en&user=ZfaUCG5h3xsC&view_op=list_works
 
 .. publication_list:: bibtex/my_publications.bib
    :style: unsrt
