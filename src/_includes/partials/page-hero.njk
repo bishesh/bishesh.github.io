@@ -1,0 +1,6 @@
+<section class="page-hero container">
+  <div class="eyebrow">{% set g = persona %}{% include "partials/glyph.njk" %}{{ d.eyebrow }}</div>
+  <h1>{{ d.headline }}</h1>
+  <div class="lead">{{ d.lead | md | safe }}</div>
+  {%- if d.stats %}<div class="stats">{% for s in d.stats %}<div class="stat"><b>{{ s.value }}</b><span>{{ s.label }}</span></div>{% endfor %}</div>{% endif %}
+</section>

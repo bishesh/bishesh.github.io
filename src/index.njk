@@ -1,0 +1,61 @@
+---
+title: Bishesh Khanal
+is_home: true
+---
+<section class="container hero">
+  <div>
+    <h1>Bishesh Khanal</h1>
+    <p class="roles"><b class="d">Dreamer</b>, <b class="s">scientist</b> and <b class="e">entrepreneur</b> — building AI for the real world, from Nepal.</p>
+    <div class="prose">{{ home.intro | md | safe }}</div>
+    <div class="actions">
+      <a class="btn solid" href="/scientist/">Research</a>
+      <a class="btn" href="/talks/">Talks</a>
+      <a class="btn" href="{{ home.cv_url }}">CV</a>
+    </div>
+  </div>
+  <div class="portrait">{% if home.portrait %}<img src="{{ home.portrait }}" alt="Portrait of Bishesh Khanal">{% else %}portrait — add src/assets/img/portrait.jpg{% endif %}</div>
+</section>
+
+<section class="container section" style="padding-top:0">
+  <div class="grid grid-3">
+    {%- for p in home.personas %}
+    <a class="card persona-card" data-persona="{{ p.key }}" href="/{{ p.key }}/">
+      {% set g = p.key %}{% include "partials/glyph.njk" %}
+      <h3>{{ p.name }}</h3>
+      <div class="tagline">{{ p.tagline }}</div>
+      <p>{{ p.summary }}</p>
+      <span class="more">{{ p.cta }} →</span>
+    </a>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container section">
+  <div class="stats" style="max-width:none;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+    {%- for s in home.stats %}<div class="stat"><b>{{ s.value }}</b><span>{{ s.label }}</span></div>{% endfor %}
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head">
+    <div class="eyebrow">Now</div>
+    <h2>What I'm working on</h2>
+  </div>
+  <div class="grid grid-3">
+    {%- for n in home.now %}
+    <div class="card" data-persona="{{ n.persona }}" style="border-top:3px solid var(--accent)">
+      <div class="eyebrow" style="margin-bottom:.6rem">{% set g = n.persona %}{% include "partials/glyph.njk" %}{{ n.persona }}</div>
+      <h3>{{ n.title }}</h3>
+      <p>{{ n.text }}</p>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">Latest talks</div><h2>Recently on stage</h2></div>
+  <div class="talk-grid">
+    {%- for t in talks | where("scope", "international") | featuredFirst | batch(3) | first %}{% include "partials/talk-card.njk" %}{% endfor %}
+  </div>
+  <div class="actions"><a class="btn" href="/talks/">All talks →</a></div>
+</section>

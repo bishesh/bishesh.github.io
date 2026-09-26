@@ -1,0 +1,27 @@
+---
+title: Dreamer
+persona: dreamer
+description: Building NAAMII — Nepal's AI centre of excellence — from scratch, and the ecosystem around it.
+---
+{%- set d = dreamer -%}
+{% include "partials/page-hero.njk" %}
+<section class="container section" style="padding-top:1rem">
+  <div class="grid grid-2" style="align-items:start">
+    <div class="prose">{{ d.story | md | safe }}</div>
+    <div class="callout"><p class="quote">{{ d.quote }}</p></div>
+  </div>
+</section>
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">NAAMII</div><h2>{{ d.pillars_title }}</h2><p class="lead">{{ d.pillars_lead }}</p></div>
+  <div class="grid grid-3">{% for p in d.pillars %}<div class="card"><h3>{{ p.name }}</h3><p>{{ p.text }}</p></div>{% endfor %}</div>
+</section>
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">Milestones</div><h2>From an idea in France to 52 people in Kathmandu</h2></div>
+  <ol class="timeline">{% for m in d.milestones %}<li><span class="when">{{ m.when }}</span><h4>{{ m.title }}</h4>{% if m.text %}<p>{{ m.text }}</p>{% endif %}</li>{% endfor %}</ol>
+</section>
+<section class="container section">
+  <div class="grid grid-2">
+    {%- for b in d.next %}<div class="card"><div class="eyebrow" style="margin-bottom:.6rem">{{ b.kicker }}</div><h3>{{ b.title }}</h3><div class="prose small">{{ b.text | md | safe }}</div></div>{% endfor %}
+  </div>
+  <div class="actions"><a class="btn" href="/government/">Government &amp; policy engagement →</a><a class="btn" href="/talks/?personaF=dreamer">Talks on this →</a></div>
+</section>

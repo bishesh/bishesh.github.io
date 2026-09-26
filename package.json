@@ -1,0 +1,28 @@
+{
+  "name": "bishesh-site",
+  "version": "1.0.0",
+  "description": "Personal website of Bishesh Khanal — Dreamer · Scientist · Entrepreneur",
+  "scripts": {
+    "dev": "eleventy --serve --port 8080",
+    "build": "eleventy",
+    "import": "node scripts/import-dossier.mjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bishesh/bishesh.github.io.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/bishesh/bishesh.github.io/issues"
+  },
+  "homepage": "https://github.com/bishesh/bishesh.github.io#readme",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.6",
+    "js-yaml": "^5.4.2",
+    "markdown-it": "^15.0.2"
+  },
+  "private": true
+}

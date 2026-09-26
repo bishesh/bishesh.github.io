@@ -1,0 +1,20 @@
+---
+title: Entrepreneur
+persona: entrepreneur
+description: Tangible, Diyo.ai, Terahs — and NAAMII, built from scratch as a profit-not-distributing venture.
+---
+{%- set d = entrepreneur -%}
+{% include "partials/page-hero.njk" %}
+<section class="container section" style="padding-top:1rem">
+  <div class="grid grid-3">
+    {%- for v in d.ventures %}
+    <div class="card venture{% if v.primary %} primary{% endif %}">
+      <div><div class="kicker">{{ v.role }}</div><h3>{% if v.url %}<a href="{{ v.url }}">{{ v.name }}</a>{% else %}{{ v.name }}{% endif %}</h3><div class="prose small">{{ v.text | md | safe }}</div></div>
+      {%- if v.points %}<div><ul>{% for p in v.points %}<li>{{ p | mdInline | safe }}</li>{% endfor %}</ul></div>{% endif %}
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+<section class="container section">
+  <div class="callout prose" style="max-width:none">{{ d.closing | md | safe }}</div>
+</section>

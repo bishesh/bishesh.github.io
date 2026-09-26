@@ -1,0 +1,40 @@
+# Publication themes. `key` is what publications.yaml `themes:` lists. Order = display order.
+- key: reorganizing-work
+  label: Reorganizing work
+  blurb: Workforce capability, skilling and the reorganization of work when a step can be held by a person or an AI agent.
+- key: ultrasound
+  label: Fetal & obstetric ultrasound
+  blurb: From 3D fetal imaging in London to AI-guided blind-sweep ultrasound that non-specialists can perform.
+- key: frugal-diagnostics
+  label: Frugal diagnostics
+  blurb: Point-of-care diagnostics on commodity hardware — smartphones, paper assays, ECG and telehealth screening.
+- key: xray-3d
+  label: X-ray & 2D→3D
+  blurb: X-ray analysis and biplanar X-ray to 3D bone reconstruction where CT is unavailable.
+- key: foundation-models
+  label: Foundation models, efficiently
+  blurb: Adapting vision-language and foundation models with prompts, adapters and parameter-efficient tuning.
+- key: robust-learning
+  label: Learning from imperfect data
+  blurb: Label noise, weak and semi-supervision, active learning and uncertainty.
+- key: trustworthy-ai-policy
+  label: Trustworthy AI & policy
+  blurb: Trustworthy, equitable and deployable AI — FUTURE-AI, South Asia, generative AI in LMICs.
+- key: low-resource-language
+  label: Nepali & low-resource language
+  blurb: NLP and LLM evaluation for Nepali and Devanagari-script languages, especially for health.
+- key: modelling-simulation
+  label: Modelling & geometry
+  blurb: Biophysical models of brain atrophy, epidemiological models, shape and pose geometry.
+- key: imaging-methods
+  label: Medical image analysis
+  blurb: Segmentation and reconstruction methods across imaging modalities.
+- key: community
+  label: Proceedings
+  blurb: Co-edited MICCAI workshop proceedings — ASMUS, FAIR, DART, DeCaF.
+- key: early-vision
+  label: Early computer vision
+  blurb: Where it started — vision-based robots, skin and road-sign detection.
+- key: other
+  label: Other
+  blurb: Not yet themed.

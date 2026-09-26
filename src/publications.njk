@@ -1,0 +1,51 @@
+---
+title: Publications
+persona: scientist
+description: Peer-reviewed papers, preprints and proceedings by Bishesh Khanal, by year and theme.
+---
+{%- set pubs = publications | visible -%}
+<section class="page-hero container">
+  <div class="eyebrow">{% set g = "scientist" %}{% include "partials/glyph.njk" %}Scientist · Publications</div>
+  <h1>Publications</h1>
+  <p class="lead">{{ pubs | count }} papers, preprints and proceedings, from biophysical brain models to AI for maternal health and the reorganization of work. The most current list is on <a href="https://scholar.google.com/citations?user=ZfaUCG5h3xsC">Google Scholar</a>.</p>
+</section>
+<section class="container" data-filters="pubs">
+  <p class="filter-label">Theme</p>
+  <div class="chips">
+    <button class="chip" data-key="themes" data-value="*" aria-pressed="true">All</button>
+    {%- for t in themes %}{% set n = pubs | whereIn("themes", t.key) | count %}{% if n %}
+    <button class="chip" data-key="themes" data-value="{{ t.key }}" aria-pressed="false" title="{{ t.blurb }}">{{ t.label }} <span class="n">{{ n }}</span></button>
+    {%- endif %}{% endfor %}
+  </div>
+  <p class="filter-label">Type</p>
+  <div class="chips">
+    <button class="chip" data-key="type" data-value="*" aria-pressed="true">All</button>
+    {%- for ty in ["journal", "conference", "workshop", "preprint", "proceedings", "thesis"] %}
+    <button class="chip" data-key="type" data-value="{{ ty }}" aria-pressed="false">{{ ty | capitalize }} <span class="n">{{ pubs | where("type", ty) | count }}</span></button>
+    {%- endfor %}
+  </div>
+  <p class="meta">Showing <span data-filter-count="pubs">{{ pubs | count }}</span> · <strong>bold</strong> = Bishesh Khanal</p>
+</section>
+<section class="container section" style="padding-top:1.5rem">
+  {%- for grp in pubs | groupBy("year") %}
+  <div class="pub-year" data-filter-group="pubs">
+    <h2>{{ grp.key }}</h2>
+    <ol class="pub-list">
+      {%- for p in grp.items %}
+      <li class="pub" data-filterable="pubs" data-themes="{{ p.themes | join(' ') }}" data-type="{{ p.type }}">
+        {%- set href = p | pubLink %}
+        <div class="title">{% if href %}<a href="{{ href }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div>
+        <div class="authors">{{ p.authors | mdInline | safe }}</div>
+        <div class="venue">{{ p.venue }}</div>
+        <div class="plinks"><span class="badge type">{{ p.type }}</span>
+          {%- if p.doi %}<a href="https://doi.org/{{ p.doi }}">DOI</a>{% endif %}
+          {%- if p.arxiv %}<a href="https://arxiv.org/abs/{{ p.arxiv }}">arXiv</a>{% endif %}
+          {%- if p.pdf %}<a href="{{ p.pdf }}">PDF</a>{% endif %}
+          {%- if p.code %}<a href="{{ p.code }}">Code</a>{% endif %}
+        </div>
+      </li>
+      {%- endfor %}
+    </ol>
+  </div>
+  {%- endfor %}
+</section>

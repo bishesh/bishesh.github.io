@@ -1,0 +1,11 @@
+{%- set yid = t.video | youtubeId -%}
+{%- set href = ("https://www.youtube.com/watch?v=" + yid) if yid else (t.url or t.video or "") -%}
+<{{ "a" if href else "div" }} class="talk-card" {% if href %}href="{{ href }}" rel="noopener"{% endif %} data-filterable="talks" data-persona-f="{{ t.persona }}" data-kind="{{ t.kind }}">
+  <div class="thumb" data-persona="{{ t.persona }}">
+    {%- if yid %}<img loading="lazy" src="https://i.ytimg.com/vi/{{ yid }}/hqdefault.jpg" alt="">
+    <span class="play"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor"/></svg>Watch</span>
+    {%- else %}<span class="ph">{{ t.venue | truncate(70) }}</span>{% endif %}
+  </div>
+  <div class="t">{{ t.title }}</div>
+  <div class="v"><i class="dot {{ t.persona }}" title="{{ t.persona }}"></i><span>{{ t.venue | truncate(90) }}{% if t.date %} · {{ t.date | fuzzyDate }}{% endif %}</span></div>
+</{{ "a" if href else "div" }}>

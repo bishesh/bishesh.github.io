@@ -1,0 +1,49 @@
+eyebrow: Entrepreneur · Ventures
+headline: Research that has to work outside the lab
+lead: |
+  For me, building a company is where research has to face the real world. I have co-founded three
+  ventures, and before any of them I built NAAMII from scratch as a profit-not-distributing institute,
+  which now has 52 full-time staff.
+ventures:
+  - name: Tangible
+    primary: true
+    role: Co-founder & Chief Scientific Officer · 2024–
+    url: ""   # tangible.careers is the domain seen in email; confirm before linking
+    text: |
+      Tangible is building **the infrastructure for reorganizing work in the post-AI world**. An organization
+      is the set of processes it runs, and a step in a process can now be taken by a person or by an AI
+      agent. Tangible models what each actor can do, and uses that model for personalized, problem-based
+      learning and for helping organizations redesign how their work gets done.
+
+      My part is the science: I lead the research, supervise the AI researchers, and help our engineers
+      work in an AI-native way. Tangible was incubated within NAAMII.
+    points:
+      - Personalized, problem-based learning
+      - Competency-based skills assessment
+      - Processes rehearsed alongside AI agents before they go live
+      - Research published openly, starting with *The AI Pyramid* (2026)
+  - name: NAAMII
+    role: Founder · built from scratch · 2018–
+    url: https://naamii.org
+    text: |
+      A research institute is a startup too. We structured NAAMII as a **profit-not-distributing company**
+      so that it could earn, reinvest and outlive any single grant. Research becomes IP and talent, which
+      then become either a spin-out or an R&D service for industry. It has grown to 52 full-time staff,
+      with three deep-tech startups incubated to date.
+  - name: Diyo.ai
+    role: Co-founder · 2020–
+    url: ""
+    text: |
+      Conversational AI and speech technology for Nepali and other under-served languages, built on NAAMII's
+      language research. My role is an enabler in the ecosystem.
+  - name: Terahs
+    role: Co-founder & advisor · 2023–
+    url: ""
+    text: |
+      The engineering and infrastructure side of health imaging AI. It works alongside my research on AI
+      for ultrasound and medical imaging.
+closing: |
+  **The thread across all of them:** talent in Nepal is not the constraint; structure is. I talked about
+  this at the National Young Academy of Nepal in 2022, under the title *"Incubating start-ups in
+  (non-profit) research institutes in Nepal"*. The NAAMII Innovation Factory is the next step: an attempt
+  to make that structure repeatable. [Read about it →](/dreamer/)

@@ -1,0 +1,20 @@
+name: Bishesh Khanal
+native_name: विशेष खनाल
+year: 2026
+description: Scientist, entrepreneur and dreamer — building AI for the real world from Nepal. Founding Chairperson of NAAMII; co-founder & CSO of Tangible.
+email_hint: "firstname.lastname@naamii.org.np"
+# persona: dreamer | scientist | entrepreneur | "" (neutral). Drives the nav dot and the page accent.
+nav:
+  - { label: Dreamer, url: /dreamer/, persona: dreamer }
+  - { label: Scientist, url: /scientist/, persona: scientist }
+  - { label: Entrepreneur, url: /entrepreneur/, persona: entrepreneur }
+  - { label: Publications, url: /publications/, persona: "" }
+  - { label: Talks, url: /talks/, persona: "" }
+  - { label: Media, url: /media/, persona: "" }
+  - { label: Government, url: /government/, persona: "" }
+links:
+  - { label: Google Scholar, url: "https://scholar.google.com/citations?user=ZfaUCG5h3xsC" }
+  - { label: ORCID, url: "https://orcid.org/0000-0002-2775-4748" }
+  - { label: X / Twitter, url: "https://twitter.com/bisheshkhanal7" }
+  - { label: NAAMII, url: "https://naamii.org.np" }
+  - { label: GitHub, url: "https://github.com/bishesh" }

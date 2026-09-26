@@ -1,0 +1,456 @@
+# Talks — the site renders this file directly. Edit here (GitHub web editor is fine).
+# Imported from cortex/dossier by scripts/import-dossier.mjs on 2026-09-26.
+# `review:` marks a keyword guess or a dossier "verify" note — delete it once checked.
+# scope: international | regional | national | local  ·  persona: dreamer | scientist | entrepreneur
+# kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  featured: true pins to the top of its tier
+
+- title: Low Resource and Trustworthy AI in Healthcare
+  venue: ANAIS 2024 (Jan 5) & HAICon 2025 (Jan 8), Kathmandu, Nepal
+  date: '2025'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI Centers of Excellence Ecosystem for Transformation in LMICs: Eg of Nepal'
+  venue: Executive MBA class, The British College, Kathmandu
+  date: '2024-12-21'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI Landscape in Nepal: Centers of Excellence Ecosystem for Transformation'
+  venue: AI Conference by Govt of Nepal
+  date: '2024-10-27'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: AI For Global South Needs an Ecosystem of Research & Innovation
+  venue: MSc IT in AI orientation, Pokhara University (13 Sep) & FCDO Asia-Pacific online (27 Sep)
+  date: '2024'
+  scope: international
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Resource-Constrained Settings with AI
+  venue: AI in Medicine (BCN-AIM), University of Barcelona, Spain
+  date: '2024-08-27'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Resource-Constrained Settings with AI
+  venue: AI in Medicine, Technical University of Munich, Germany
+  date: '2024-08-22'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Resource-Constrained Settings with AI
+  venue: INSAIT, Sofia, Bulgaria
+  date: '2024-08-06'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Resource-Constrained Settings with AI
+  venue: Biomedical Image Computing (BMIC), ETH Zurich, Switzerland
+  date: '2024-07-19'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: What's Possible in and from Nepal in AI? An Example of NAAMII
+  venue: Golchha Group, Lalitpur, Nepal
+  date: '2024-06-02'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Role of Technology for health promotion in vulnerable populations in resource-limited settings
+  venue: Health Systems Module, MSc, University of Cambridge, UK
+  date: '2024-03-15'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Research and Innovation Theme; Connecting the Dots Between Climate Change and Health
+  venue: Radisson Hotel, Kathmandu
+  date: '2024-03-14'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: What's Possible in/for Global South with AI? An Example with NAAMII
+  venue: Conf. on AI for Prosperous Nepal, Hyatt Regency, Kathmandu
+  date: '2024-03-03'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Opportunity to Transform Maternal Health with AI in Nepal
+  venue: Paropakar Maternity and Women's Hospital, Kathmandu
+  date: '2024-02-21'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: What's Possible in Nepal in AI? An Example of NAAMII
+  venue: FNCCI, Kathmandu
+  date: '2024-02-02'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: AI-powered task shifting in fetal ultrasound and in SRMH care
+  venue: Family Welfare Division, Ministry of Health and Population, Teku, Kathmandu
+  date: '2024-01-05'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Science & Innovation for Global Good and the AI transformation
+  venue: OKRP Conference, Kathmandu Engineering College
+  date: '2023-12-23'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: AI, Medicine and Global Surgery
+  venue: XV Int. Conf. of Society of Surgeons of Nepal (SSN), Global Surgery — Hotel Himalaya, Lalitpur
+  date: '2023-12-02'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Science & Innovation for Global Good and the AI transformation
+  venue: Nepal Innovation and Leadership, UNFPA
+  date: '2023-12-01'
+  scope: national
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
+- title: Transforming Global SRMH with AI
+  venue: UNFPA, UN House, Lalitpur
+  date: '2023-09-01'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Machine Learning Based Cervical Cancer Screening Tool Development
+  venue: Kathmandu University, Dhulikhel
+  date: '2023-08-10'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: NAAMII, AI, and Gender Equality and Social Inclusion
+  venue: UN House, Lalitpur
+  date: '2023-07-21'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: NAAMII, and AI in International Development
+  venue: AI and Development for FCDO's Indo-Pacific Development and Science and Innovation Networks (online)
+  date: '2023-07-20'
+  scope: international
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Emerging Avenue of Artificial Intelligence and Ethical Considerations
+  venue: Symposium on Responsible Conduct of Research in Nepal, Hotel Himalaya, Lalitpur
+  date: '2023-07-18'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: AI for Children
+  venue: Save The Children, Kathmandu
+  date: '2023-06-19'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Research at NAAMII
+  venue: Lumbini Technical University Symposium, Kathmandu
+  date: '2023-06-08'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'Introduction: Annual Nepal AI School (ANAIS)'
+  venue: 4th ANAIS, Paathsala School, Kathmandu
+  date: '2023-05-22'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Pushing the Frontiers of AI in Health from an LMIC
+  venue: Hotel Marriott, Kathmandu
+  date: '2023-05-21'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: AI for Children
+  venue: UNICEF-Nepal, Kathmandu
+  date: '2023-05-16'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI in Biomedicine and Biotechnology for LMICs: Opportunity & Challenges'
+  venue: National Biotechnology Conference, Kathmandu University
+  date: '2023-05-12'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Localized AI for Scalable and Efficient Public Service Delivery (chatbots for local govt)
+  venue: Entrance Cafe, Lalitpur
+  date: '2023-05-09'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Preparing Children for the Digital World with AI
+  venue: Ullens School, Kathmandu
+  date: '2023-04-23'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI for Transforming Healthcare in LMICs: Challenges & Opportunities'
+  venue: National Health Research Council (NHRC), Kathmandu
+  date: '2023-04-12'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: AI Powered Ultrasound Imaging & its Potential in Regional Anaesthesia
+  venue: 22nd Annual Conf. of Society of Anaesthesiologists of Nepal (SANCON 2023)
+  date: '2023-03-25'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Women's Health with AI in LMICs
+  venue: PHC Global, Canada (online)
+  date: '2023-03-15'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Medical Imaging Informatics and AI
+  venue: Radiology Residency, Institute of Medicine, TUTH, Maharajgunj, Kathmandu
+  date: '2023-03-03'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Global Health with AI from LMICs
+  venue: Digital Dentistry in Nepal Symposium, Digital Innovation Center Nepal
+  date: '2023-02-25'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Incubating start-ups in (non-profit) research institutes in Nepal
+  venue: Annual Conf., National Young Academy of Nepal (NAYAN), Godavari Village Resort, Lalitpur
+  date: '2022-12-23'
+  scope: national
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
+- title: Democratizing Innovation in Medicine with AI
+  venue: Digital Health Conference Nepal (eHealth & Telemedicine), BPKIHS, Hotel Crown Imperial, Kathmandu
+  date: '2022-11-29'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Democratizing Innovation in Medicine with AI
+  venue: Aanadaban Hospital, Lalitpur
+  date: '2022-12-08'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Machine Learning and the Third Nepal Winter School in AI
+  venue: 3rd ANAIS, Khwopa Engineering College, Bhaktapur
+  date: '2021-12-20'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'Artificial Intelligence: An Opportunity to Democratize Innovation in Healthcare'
+  venue: 2nd NRN Global Knowledge Convention (online)
+  date: '2020-10-11'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Machine Learning in Ultrasound for Assisted Navigation
+  venue: Centre for Doctoral Training, Imperial College London, UK
+  date: '2019-12-04'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: >-
+    Research Outside Universities in Nepal: Need, Opportunities and Challenges of Multidisciplinary Collaborative
+    Research and Innovation
+  venue: Martin Chautari, Kathmandu
+  date: '2019-12-01'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'Our Dream: A Centre of Excellence in Nepal Applied Maths, Informatics and AI'
+  venue: IoE Alumni Day, Pulchowk Campus
+  date: '2019-11-09'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'Frugal Innovation, AI and Math: Examples in Medical Imaging Informatics'
+  venue: RAFAS-2019, Lovely Professional University, Punjab, India
+  date: '2019-11-05'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Emerging Technology: An Opportunity to Democratize Innovation'
+  venue: Int. Youth Conf. on Science, Technology and Innovation, NAST, Lalitpur
+  date: '2019-10-21'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Computer Vision and Deep Learning: Python Ecosystem'
+  venue: Python Users Group, Kathmandu
+  date: '2019-09-14'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI and Healthcare: Nepali Population & Patient-Specific Medicine, and Moving from mere Consumers to Innovators'
+  venue: Hospital for Advanced Surgery, Kathmandu
+  date: '2019-08-14'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI: Introduction, Applications, Opportunities and Challenges'
+  venue: Gandaki Boarding School and College of Engineering, Pokhara
+  date: '2019-08-04'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: AI for Engineers
+  venue: Civil Engineering Dept, IoE, Pulchowk Campus
+  date: '2019-07-25'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Modeling and Simulation of Realistic Longitudinal Brain MRIs with Atrophy in Alzheimer's Disease
+  venue: Summer School in NeuroImaging, Symbiosis International University, Pune, India
+  date: '2019-07-24'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Computer Vision and Deep Learning
+  venue: 2nd ML and Data Science Workshop, KIST College, Kathmandu
+  date: '2019-07-14'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Modeling and Simulating Brain Deformation and Atrophy in Alzheimer's Disease
+  venue: 2nd Summer School in Neuroimaging, Symbiosis International University, Pune, India
+  date: '2019-06-24'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Deep Learning and Computer Vision: Part II'
+  venue: Fuse.ai Open Session, Fusemachines, Kathmandu
+  date: '2019-05-11'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Medical Imaging Informatics
+  venue: Gandaki Engineering College, Pokhara
+  date: '2019-05-05'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Deep Learning and Computer Vision: Part I'
+  venue: Fuse.ai Open Session, Fusemachines, Kathmandu
+  date: '2019-04-27'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI: Potential for Students from Bio-medicine and Physics'
+  venue: St. Xavier's College, Maitighar, Kathmandu
+  date: '2019-04-04'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI and Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
+  venue: Spiralogics AI Conference, Kathmandu
+  date: '2019-02-02'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
+  venue: India Science Festival
+  date: 2019-01
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
+  venue: Dept. of Computer Science, University of York, UK
+  date: '2018-11-07'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
+  venue: Parallel Forum (AI/ML/Statistical Modeling in Big Data Analytics), CERN, Switzerland (online)
+  date: '2018-05-19'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Machine Learning in Ultrasound for Assisted Navigation
+  venue: Centre for Doctoral Training, Imperial College London, UK
+  date: '2018-12-04'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Computational Medicine and Medical Imaging Informatics
+  venue: Grande International Hospital, Kathmandu
+  date: 2017-01
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Modeling & simulation of longitudinal structural brain MRIs with atrophy in AD
+  venue: Image Processing for Analysis and Modeling in Life Sciences, GdR ISIS, Paris, France
+  date: 2016-05
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true

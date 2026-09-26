@@ -1,0 +1,53 @@
+eyebrow: Dreamer · Building NAAMII
+headline: Building the institution I wished had existed
+lead: |
+  NAAMII, the Nepal Applied Mathematics and Informatics Institute for Research, began as a conversation
+  among Nepali students in France. Today it is Nepal's leading AI centre of excellence.
+stats:
+  - { value: "2018", label: NAAMII registered }
+  - { value: "52", label: full-time staff }
+  - { value: "3", label: "pillars: research, education, industry" }
+story: |
+  As an engineering student in Nepal I topped a competitive entrance exam, got into the country's best
+  engineering school, and found an education built around passing exams rather than solving problems.
+  Leading our robotics club against teams from Japan and China showed me the talent was there. What was
+  missing was the structure and mentorship to turn it into lasting knowledge.
+
+  In France, working at INRIA and seeing how CNRS and the Max Planck institutes run, I saw what autonomous
+  research groups with flexible university partnerships can do. With Nepali peers I met there, that became
+  a plan for an independent research institute in Nepal. We structured it as a **profit-not-distributing
+  company** so that it could sustain itself and reinvest, rather than depend only on foreign aid.
+
+  I proposed the name in October 2016: *naamii* means "famous" in Nepali. I then chaired the founding
+  working group of eight co-founders until NAAMII was registered in March 2018. The first Annual Nepal AI
+  School that winter was the turning point. With it, and with early seed support from Fusemachines, I
+  resigned my post in London and moved home in 2019 to build NAAMII full-time.
+quote: "World-class research can be done in, and from, a low-income country, if we build the institutions for it."
+pillars_title: Three pillars
+pillars_lead: Modelled on INRIA, NAAMII is an agile research structure that sits outside traditional academia and works alongside it.
+pillars:
+  - { name: Research, text: "Research groups working on AI for health, language, climate and more, publishing at MICCAI, NeurIPS, MIDL and in journals such as the BMJ." }
+  - { name: Education & outreach, text: "The Annual Nepal AI School, workshops and mentoring that are building Nepal's AI talent pipeline." }
+  - { name: Industry & innovation, text: "Partnerships with industry and an incubation model for startups. Tangible was incubated within NAAMII." }
+milestones:
+  - { when: "2007", title: "Led Nepal's team at ABU Robocon, Hanoi", text: "Robotics taught me that talent is not the constraint; institutions are." }
+  - { when: "2010", title: "Left for France, committed to coming back", text: "MSc in computer vision, then a PhD at INRIA. The idea of NAAMII took shape among Nepali peers in Europe." }
+  - { when: "Oct 2016", title: "Proposed the name NAAMII", text: "Chaired the founding working group for 17 months. The three pillars were set out in this period." }
+  - { when: "Mar 2018", title: "NAAMII registered", text: "Eight co-founders, including an orthopaedic surgeon working in remote Nepal who helped carry the registration on the ground." }
+  - { when: "Dec 2018", title: "First Annual Nepal AI School", text: "More than 100 participants from many countries. ANAIS has since run for six editions." }
+  - { when: "2019", title: "Moved back to Kathmandu full-time", text: "Founding Director, then Executive Director from 2020, while leading the TOGAI research group." }
+  - { when: "2024", title: "Professional Excellence Award, ICT Awards Nepal" }
+  - { when: "Feb 2025", title: "Handed executive leadership to Sandhya Sitoula", text: "Always the plan. I now chair the board and focus on vision, philanthropy and the Innovation Factory." }
+next:
+  - kicker: Being set up
+    title: NAAMII Innovation Factory
+    text: |
+      NAAMII has spun out deep-tech startups informally since 2019. The Innovation Factory is meant to make
+      that deliberate: process, networks, funds, and the right people (incubator staff, mentors, angels and
+      investors), aiming at 50 startups in five years. It uses the same playbook that built NAAMII's
+      research division.
+  - kicker: Advocacy
+    title: AI centres of excellence for the Global South
+    text: |
+      Lasting solutions don't come from being consumers of technology built elsewhere. I argue for
+      multidisciplinary AI centres of excellence in the Global South, with NAAMII as one blueprint.

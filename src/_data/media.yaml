@@ -1,0 +1,9 @@
+# Media coverage. kind: feature | interview | news | op-ed | podcast | tv · language: en | ne
+# persona colours the card's top rule. Seeded from cortex/dossier/talks-media.md; add url: when known.
+- { title: "Interview with Bishesh Khanal on AI", outlet: TechPana, date: "2024-01", language: ne, kind: interview, persona: scientist, url: "https://techpana.com/2024/145736/interview-with-bishesh-khanal-on-ai-" }
+- { title: "Nothing personal about his intelligence", outlet: "Feature (print & online)", date: "2023-09-28", language: en, kind: feature, persona: dreamer, review: "outlet + url missing" }
+- { title: "About NAAMII", outlet: Himalkhabar, date: "2023-09-14", language: ne, kind: podcast, persona: dreamer, review: "url missing" }
+- { title: "AI, ChatGPT and machine learning", outlet: "Nepali podcast", date: "2023-01-03", language: ne, kind: podcast, persona: scientist, review: "outlet + url missing" }
+- { title: "What, why & how of NAAMII — and why I moved back to Nepal", outlet: "The Doers Nepal", date: "2022-03-28", language: ne, kind: podcast, persona: dreamer, review: "url missing" }
+- { title: "About NAAMII and the first Nepal Winter School in AI", outlet: "News 24 (national TV)", date: "2018-12-20", language: ne, kind: tv, persona: dreamer, review: "url missing" }
+- { title: "Democratizing innovation in medicine with computational biomedicine", outlet: Interview, date: "2018-06-27", language: en, kind: interview, persona: scientist, review: "outlet + url missing" }

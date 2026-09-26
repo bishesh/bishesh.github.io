@@ -1,0 +1,48 @@
+---
+title: Scientist
+persona: scientist
+description: Research from medical imaging to health AI in low-resource settings, and the reorganization of work.
+---
+{%- set d = scientist -%}
+{% include "partials/page-hero.njk" %}
+<section class="container section" style="padding-top:1rem">
+  <div class="section-head"><div class="eyebrow">The arc</div><h2>{{ d.arc_title }}</h2></div>
+  <div class="eras">
+    {%- for e in d.eras %}
+    <div class="era{% if e.now %} now{% endif %}">
+      <div><div class="when">{{ e.when }}</div><div class="where">{{ e.where }}</div></div>
+      <div><h3>{{ e.title }}</h3><div class="prose">{{ e.text | md | safe }}</div>
+        {%- if e.chain %}<ol class="chain">{% for c in e.chain %}<li>{{ c }}</li>{% endfor %}</ol>{% endif %}
+      </div>
+    </div>
+    {%- endfor %}
+  </div>
+</section>
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">Publications by theme</div><h2>{{ publications | visible | count }} papers, {{ publications | visible | themeCount }} threads</h2></div>
+  <div class="grid grid-3">
+    {%- for t in themes %}{% set n = publications | visible | whereIn("themes", t.key) | count %}{% if n and t.key != "other" %}
+    <a class="card theme-card" href="/publications/?themes={{ t.key }}"><span class="n">{{ n }} paper{% if n != 1 %}s{% endif %}</span><h3>{{ t.label }}</h3><p>{{ t.blurb }}</p></a>
+    {%- endif %}{% endfor %}
+  </div>
+</section>
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">Selected work</div><h2>A few papers to start with</h2></div>
+  <ol class="pub-list" style="max-width:820px">
+    {%- for p in publications | where("featured", true) %}{% set href = p | pubLink %}
+    <li class="pub"><div class="title">{% if href %}<a href="{{ href }}">{{ p.title }}</a>{% else %}{{ p.title }}{% endif %}</div><div class="authors">{{ p.authors | mdInline | safe }}</div><div class="venue">{{ p.venue }}</div></li>
+    {%- endfor %}
+  </ol>
+  <div class="actions"><a class="btn solid" href="/publications/">All publications →</a></div>
+</section>
+{%- if d.projects %}
+<section class="container section">
+  <div class="section-head"><div class="eyebrow">Projects</div><h2>What the lab is building</h2></div>
+  <div class="grid grid-3">{% for p in d.projects %}<div class="card"><h3>{{ p.name }}</h3><p>{{ p.text }}</p></div>{% endfor %}</div>
+</section>
+{%- endif %}
+<section class="container section">
+  <div class="grid grid-2">
+    {%- for b in d.service %}<div class="card"><h3>{{ b.title }}</h3><div class="prose small">{{ b.text | md | safe }}</div></div>{% endfor %}
+  </div>
+</section>

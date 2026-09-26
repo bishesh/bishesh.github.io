@@ -1,0 +1,45 @@
+---
+title: Talks
+description: Keynotes, invited talks, panels and podcasts by Bishesh Khanal — international first.
+---
+{%- set tiers = [
+  { key: "international", label: "International", note: "Keynotes and invited talks abroad and at global venues", style: "grid" },
+  { key: "regional", label: "Regional · South Asia", note: "India and the region", style: "grid" },
+  { key: "national", label: "National", note: "Government, national conferences and institutions across Nepal", style: "compact" },
+  { key: "local", label: "Local", note: "Colleges, schools, hospitals and meetups", style: "list" }
+] -%}
+<section class="page-hero container">
+  <div class="eyebrow">Talks</div>
+  <h1>Talks &amp; conversations</h1>
+  <p class="lead">{{ talks | count }} talks since 2016, on AI in health, AI centres of excellence for the Global South, and how work is being reorganized. The dot shows which persona a talk speaks to.</p>
+</section>
+<section class="container" data-filters="talks">
+  <div class="chips">
+    <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All</button>
+    {%- for p in ["dreamer", "scientist", "entrepreneur"] %}
+    <button class="chip" data-key="personaF" data-value="{{ p }}" aria-pressed="false"><i class="dot {{ p }}"></i>{{ p | capitalize }} <span class="n">{{ talks | where("persona", p) | count }}</span></button>
+    {%- endfor %}
+    <span style="width:1rem"></span>
+    {%- for k in ["keynote", "invited-talk", "panel", "podcast", "interview", "tv"] %}{% set n = talks | where("kind", k) | count %}{% if n %}
+    <button class="chip" data-key="kind" data-value="{{ k }}" aria-pressed="false">{{ k | replace("-", " ") | capitalize }} <span class="n">{{ n }}</span></button>
+    {%- endif %}{% endfor %}
+  </div>
+</section>
+<div class="container">
+{%- for tier in tiers %}{% set items = talks | where("scope", tier.key) | featuredFirst %}{% if items | count %}
+  <section class="tier" data-filter-group="talks">
+    <div class="tier-head"><h2>{{ tier.label }}</h2><span class="meta">{{ tier.note }} · {{ items | count }}</span></div>
+    {%- if tier.style == "list" %}
+    <ul class="rows">
+      {%- for t in items %}
+      <li class="row" data-filterable="talks" data-persona-f="{{ t.persona }}" data-kind="{{ t.kind }}"><span class="d">{{ t.date | fuzzyDate }}</span><span><i class="dot {{ t.persona }}"></i><span class="t">{% if t.url or t.video %}<a href="{{ t.url or t.video }}">{{ t.title }}</a>{% else %}{{ t.title }}{% endif %}</span> <span class="v">— {{ t.venue }}</span></span></li>
+      {%- endfor %}
+    </ul>
+    {%- else %}
+    <div class="talk-grid{% if tier.style == 'compact' %} compact{% endif %}">
+      {%- for t in items %}{% include "partials/talk-card.njk" %}{% endfor %}
+    </div>
+    {%- endif %}
+  </section>
+{%- endif %}{% endfor %}
+</div>

@@ -1,0 +1,16 @@
+---
+title: CV
+description: Positions, education and honours of Bishesh Khanal.
+---
+<section class="page-hero container">
+  <div class="eyebrow">Curriculum vitae</div>
+  <h1>CV</h1>
+  <p class="lead">A short version. Full publication and talk lists are on their own pages.{% if cv.pdf %} <a href="{{ cv.pdf }}">Download the PDF</a>.{% endif %}</p>
+</section>
+{%- for sec in [["Positions", cv.positions], ["Education", cv.education], ["Honours", cv.honours]] %}
+<section class="container" style="margin-bottom:2.5rem">
+  <div class="pub-year"><h2>{{ sec[0] }}</h2>
+    <ul class="rows">{% for r in sec[1] %}<li class="row"><span class="d">{{ r.when }}</span><span><span class="t">{{ r.what }}</span>{% if r.where %} <span class="v">— {{ r.where }}</span>{% endif %}{% if r.note %}<br><span class="meta">{{ r.note }}</span>{% endif %}</span></li>{% endfor %}</ul>
+  </div>
+</section>
+{%- endfor %}

@@ -1,0 +1,21 @@
+pdf: ""   # e.g. /assets/cv.pdf — drop a PDF in src/assets/ and set this
+positions:
+  - { when: "2019–", what: "(Founding) Chairperson & Research Scientist", where: "NAAMII, Kathmandu", note: "Founding Director 2019; Executive Director Oct 2020 – Feb 2025" }
+  - { when: "2024–", what: "Co-founder & Chief Scientific Officer", where: "Tangible" }
+  - { when: "2023–", what: "Co-founder & Advisor", where: "Terahs" }
+  - { when: "2020–", what: "Co-founder", where: "Diyo.ai" }
+  - { when: "2025–", what: "Adjunct Faculty; Consultant Advisor, CDiTH", where: "IIIT Hyderabad" }
+  - { when: "2024", what: "ETH4D Visiting Scientist", where: "ETH Zurich" }
+  - { when: "2017–2019", what: "Postdoctoral Research Associate, iFIND", where: "King's College London; visiting researcher, BioMedIA, Imperial College London" }
+education:
+  - { when: "2012–2016", what: "PhD (très honorable)", where: "INRIA Sophia Antipolis · Université Côte d'Azur", note: "with Xavier Pennec and Nicholas Ayache" }
+  - { when: "2011–2012", what: "MSc Computational Biology & Biomedicine", where: "Polytech Nice-Sophia" }
+  - { when: "2010–2011", what: "MSc (M1) Computer Vision", where: "Université de Bourgogne" }
+  - { when: "2009", what: "Visiting student (Erasmus Mundus)", where: "University of York" }
+  - { when: "2004–2009", what: "BE Electronics & Communication", where: "Pulchowk Campus, IOE, Tribhuvan University" }
+honours:
+  - { when: "2024", what: "Professional Excellence Award, ICT Awards Nepal" }
+  - { when: "2021", what: "Outstanding Reviewer, CVPR" }
+  - { when: "2014", what: "1st prize (popular vote), MICCAI Educational Challenge, MIT" }
+  - { when: "2007–2008", what: "Team leader for Nepal, ABU Robocon Hanoi; mentor, Best Autonomous Robot, ABU Robocon Pune" }
+  - { when: "2004", what: "1st position, nationwide IOE entrance examination" }

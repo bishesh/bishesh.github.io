@@ -1,0 +1,39 @@
+portrait: ""            # e.g. /assets/img/portrait.jpg (4:5)
+cv_url: /cv/
+intro: |
+  I am the founding Chairperson of [NAAMII](https://naamii.org.np), Nepal's AI centre of excellence,
+  which I helped build from an idea into an institute of 52 full-time staff. I am also co-founder and
+  Chief Scientific Officer of **Tangible**. I trained at INRIA, King's College London and Imperial
+  College London. My research has moved from medical imaging, to AI for health in low-resource
+  settings, and now to how learning, skills and work are being reorganized by AI.
+personas:
+  - key: dreamer
+    name: Dreamer
+    tagline: An institution that didn't exist
+    summary: Building NAAMII from scratch, and the ecosystem of research, talent and startups around it, so that world-class AI work can happen in and from Nepal.
+    cta: The NAAMII story
+  - key: scientist
+    name: Scientist
+    tagline: From medical images to how work gets done
+    summary: 70+ papers across medical imaging, AI for maternal and global health in low-resource settings, trustworthy AI, and now the reorganization of work.
+    cta: Research & publications
+  - key: entrepreneur
+    name: Entrepreneur
+    tagline: Science that ships
+    summary: Tangible, a learning-to-work platform where I am co-founder and CSO, along with Diyo.ai and Terahs. NAAMII itself was built as a profit-not-distributing venture.
+    cta: Ventures
+stats:
+  - { value: "52", label: full-time staff at NAAMII }
+  - { value: "70+", label: peer-reviewed papers & preprints }
+  - { value: "100+", label: invited talks worldwide }
+  - { value: "3", label: ventures co-founded }
+now:
+  - persona: scientist
+    title: Reorganizing work
+    text: A research program on how people and AI agents together reorganize an organization's processes, and how to teach toward that.
+  - persona: entrepreneur
+    title: Tangible
+    text: Personalized, problem-based learning and competency-based assessment, built on a knowledge graph of skills.
+  - persona: dreamer
+    title: NAAMII Innovation Factory
+    text: Setting up the process, networks, funds and people to grow globally competitive startups out of Nepal.

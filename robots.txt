@@ -1,4 +1,0 @@
-Sitemap: https://bishesh.github.io/sitemapindex.xml
-
-User-Agent: *
-Host: bishesh.github.io
