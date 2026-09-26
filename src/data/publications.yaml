@@ -79,6 +79,90 @@
   themes:
     - frugal-diagnostics
   authors_source: openalex:W4414698874
+- title: Mapping the potential and limitations of using generative AI technologies to address socio-economic challenges in LMICs
+  authors:
+    - Adams R
+    - Adeleke F
+    - Junck L
+    - Alayande A
+    - Gupta A
+    - Aneja U
+    - Segun S
+    - Parkes-Ratanshi R
+    - Abdella S
+    - Gaffley M
+    - Mahoney S
+    - Makamu R
+    - Eghele Adade N
+    - Bian L
+    - Kintu T
+    - Mugume A
+    - Germani A
+    - El Kawak M
+    - Patel B
+    - Lawa O
+    - Khalid S
+    - Adekanmbi O
+    - Sikiru R
+    - Ogunremi T
+    - Yusuf F
+    - Minaye H
+    - Etuk I
+    - Nsenga J
+    - Urs U
+    - Zaman M
+    - Mamun KA
+    - Resende V
+    - Faria Silva Trocoli-Couto PH
+    - Zaimova R
+    - Alpha Diallo M
+    - Kofi Quakyi N
+    - Liu XF
+    - Jjingo D
+    - Elhajj I
+    - Nakatumba-Nabende J
+    - Roman TE
+    - Mustafa M
+    - Hendry B
+    - Hooda Y
+    - Anebelundu C
+    - '**Khanal B**'
+    - Sultan F
+    - Ravi N
+    - Akogo D
+    - Brey Z
+    - Cohen D
+    - Proctor J
+    - Mohamedali E
+    - Mobisson N
+    - Taylor A
+    - Archegas J
+    - Mahale A
+    - Lesh N
+    - Duncan E
+    - Maginga TJ
+    - Morales HMP
+    - Pereira dos Santos HD
+    - Vo T
+    - TH Nguyen T
+    - Korom R
+    - Leventhal M
+    - Jain S
+    - Maria de Oliveira Ciabati L
+    - Devarsetty P
+    - Hirst J
+    - Sharma A
+    - Chowdhury M
+    - Araujo Lima H
+    - Govathson C
+    - Morris S
+  venue: Nature Computational Science, 2026;6(5):441-449
+  year: 2026
+  type: journal
+  themes:
+    - trustworthy-ai-policy
+  doi: 10.1038/s43588-026-00960-8
+  authors_source: crossref:10.1038/s43588-026-00960-8
 - title: 'FUTURE-AI: international consensus guideline for trustworthy and deployable artificial intelligence in healthcare'
   authors:
     - Lekadir K
@@ -218,28 +302,6 @@
   themes:
     - trustworthy-ai-policy
   doi: 10.3390/brainsci15050481
-- title: Multimodal lead-specific modeling of ECG for low-cost pulmonary hypertension assessment
-  authors:
-    - Suvon MNI
-    - Zhou S
-    - Tripathi PC
-    - Fan W
-    - Alabed S
-    - '**Khanal B**'
-    - Osmani V
-    - Swift AJ
-    - Lu H
-    - et al
-  venue: arXiv preprint
-  year: 2025
-  type: preprint
-  themes:
-    - frugal-diagnostics
-  arxiv: '2503.13470'
-  hidden: true
-  review: >-
-    same paper as "Multimodal latent fusion of ECG leads…" (arXiv 2503.13470 now carries that title) — hidden as a duplicate; delete this
-    entry if you agree
 - title: Multimodal latent fusion of ECG leads for early assessment of pulmonary hypertension
   authors:
     - Suvon MNI
@@ -273,89 +335,6 @@
   themes:
     - trustworthy-ai-policy
   review: 'dossier says: verify authors/link'
-- title: Mapping the potentials and limitations of using generative AI technologies to address socio-economic challenges in LMICs
-  authors:
-    - Adams R
-    - Adeleke F
-    - Junck L
-    - Alayande A
-    - Segun S
-    - Gupta A
-    - Aneja U
-    - Parkes-Ratanshi R
-    - Abdella S
-    - Gaffley M
-    - Mahoney S
-    - Archegas J
-    - Adade NE
-    - Adekanmbi O
-    - Akogo D
-    - Anebelundu C
-    - Bian L
-    - Brey Z
-    - Chowdhury M
-    - Cohen D
-    - Devarsetty P
-    - Diallo MA
-    - Duncan E
-    - Kawak ME
-    - Elhajj I
-    - Etuk I
-    - Germani A
-    - Govathson C
-    - Hendry B
-    - Hirst J
-    - Hooda Y
-    - Jain S
-    - Jjingo D
-    - Khalid S
-    - '**Khanal B**'
-    - Kintu T
-    - Korom R
-    - Lawa O
-    - Lesh N
-    - Leventhal M
-    - Lima HA
-    - Liu XF
-    - Maginga TJ
-    - Mahale A
-    - Makamu R
-    - Mamun KA
-    - Minaye H
-    - Mobisson N
-    - Mohamedali E
-    - Morales HMP
-    - Morris S
-    - Mugume A
-    - Mustafa M
-    - Nakatumba-Nabende J
-    - Nguyen TT
-    - Nsenga J
-    - Ogunremi T
-    - Patel B
-    - Ciabati LMDO
-    - Proctor JL
-    - Quakyi NK
-    - Ravi N
-    - Resende V
-    - Roman TE
-    - Sharma A
-    - Santos HDPD
-    - Sikiru R
-    - Sultan F
-    - Taylor A
-    - Trocoli-Couto PHFS
-    - Urs U
-    - Vo T
-    - Yusuf F
-    - Zaimova R
-    - Zaman M
-  venue: VeriXiv
-  year: 2025
-  type: preprint
-  themes:
-    - trustworthy-ai-policy
-  authors_source: openalex:W4409159718
 - title: 'Correction to: Transforming healthcare through just, equitable and quality driven AI solutions in South Asia'
   authors:
     - Adhikari S
