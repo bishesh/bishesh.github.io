@@ -53,9 +53,9 @@ is_home: true
 </section>
 
 <section class="container section">
-  <div class="section-head"><div class="eyebrow">Latest talks</div><h2>Recently on stage</h2></div>
+  <div class="section-head"><div class="eyebrow">Latest talks</div><h2>On stage</h2></div>
   <div class="talk-grid">
-    {%- for t in talks | where("scope", "international") | featuredFirst | batch(3) | first %}{% include "partials/talk-card.njk" %}{% endfor %}
+    {%- for t in talks | selectattr("video") | featuredFirst | batch(3) | first %}{% include "partials/talk-card.njk" %}{% endfor %}
   </div>
   <div class="actions"><a class="btn" href="/talks/">All talks →</a></div>
 </section>

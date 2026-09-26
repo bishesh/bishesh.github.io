@@ -4,6 +4,52 @@
 # scope: international | regional | national | local  ·  persona: dreamer | scientist | entrepreneur
 # kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  featured: true pins to the top of its tier
 
+- title: 'From curiosity to discovery: the journey of Dr. Bishesh Khanal — ICT Samachar'
+  venue: ICT Samachar, Kathmandu
+  date: '2026-09-11'
+  scope: national
+  persona: dreamer
+  kind: interview
+  video: drpNQsBZe3g
+  language: ne
+  review: research pass could not confirm; check it is you
+- title: Dialogues in Health AI, Ep. 1 — How AI will reshape healthcare, health systems & the workforce
+  venue: Dialogues in Health AI podcast (NAAMII × WHO SEARO), NAAMII AI Research channel, Kathmandu
+  date: '2026-08-15'
+  scope: national
+  persona: scientist
+  kind: podcast
+  video: 6DQ6KRylKr0
+- title: AI in Radiology — RADCON 2026
+  venue: RADCON 2026, Nepal Radiologists' Association
+  date: '2026-06-11'
+  scope: national
+  persona: scientist
+  kind: keynote
+  video: FHtRwAheq20
+- title: UN Open Science and Open Scholarship Conference 2025 — panel
+  venue: UN Open Science and Open Scholarship Conference (OS25), Dag Hammarskjöld Library
+  date: '2025-11-17'
+  scope: international
+  persona: dreamer
+  kind: panel
+  video: mhoyfb4SMVo
+  featured: true
+- title: 'AI-driven innovation: from Nepal to the global startup ecosystem'
+  venue: NAAMII AI Research channel
+  date: '2025-10-30'
+  scope: national
+  persona: entrepreneur
+  kind: panel
+  video: brOBWWbOuB0
+- title: Professional Excellence, ICT Award 2024
+  venue: ICT Award 2024, Kathmandu
+  date: '2025-01-20'
+  scope: national
+  persona: dreamer
+  kind: interview
+  video: mrmcbpNgWPI
+  language: ne
 - title: Low Resource and Trustworthy AI in Healthcare
   venue: ANAIS 2024 (Jan 5) & HAICon 2025 (Jan 8), Kathmandu, Nepal
   date: '2025'
@@ -11,6 +57,8 @@
   persona: dreamer
   kind: invited-talk
   review: true
+  video: uBFT5rrVR8I
+  featured: true
 - title: 'AI Centers of Excellence Ecosystem for Transformation in LMICs: Eg of Nepal'
   venue: Executive MBA class, The British College, Kathmandu
   date: '2024-12-21'
@@ -18,17 +66,18 @@
   persona: dreamer
   kind: invited-talk
   review: true
+- title: Prime Sambad — conversation with AI scientist Dr. Bishesh Khanal
+  venue: Prime Sambadh, Prime Times Television (presenter Krishna Malla), Kathmandu
+  date: '2024-11-09'
+  scope: national
+  persona: dreamer
+  kind: tv
+  video: k53ZafbWYPo
+  language: ne
 - title: 'AI Landscape in Nepal: Centers of Excellence Ecosystem for Transformation'
   venue: AI Conference by Govt of Nepal
   date: '2024-10-27'
   scope: national
-  persona: dreamer
-  kind: invited-talk
-  review: true
-- title: AI For Global South Needs an Ecosystem of Research & Innovation
-  venue: MSc IT in AI orientation, Pokhara University (13 Sep) & FCDO Asia-Pacific online (27 Sep)
-  date: '2024'
-  scope: international
   persona: dreamer
   kind: invited-talk
   review: true
@@ -109,6 +158,13 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: AI For Global South Needs an Ecosystem of Research & Innovation
+  venue: MSc IT in AI orientation, Pokhara University (13 Sep) & FCDO Asia-Pacific online (27 Sep)
+  date: '2024'
+  scope: international
+  persona: dreamer
+  kind: invited-talk
+  review: true
 - title: Science & Innovation for Global Good and the AI transformation
   venue: OKRP Conference, Kathmandu Engineering College
   date: '2023-12-23'
@@ -130,6 +186,14 @@
   persona: entrepreneur
   kind: invited-talk
   review: true
+- title: “They come from the US and UK to study AI in Nepal” — Himal Khabar
+  venue: Himal Khabar (interviewer Maheshwor Acharya), Kathmandu
+  date: '2023-09-14'
+  scope: national
+  persona: dreamer
+  kind: interview
+  video: I2b453jqDbg
+  language: ne
 - title: Transforming Global SRMH with AI
   venue: UNFPA, UN House, Lalitpur
   date: '2023-09-01'
@@ -256,18 +320,19 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: AI, ChatGPT & machine learning — Sushant Pradhan Podcast, Ep. 115
+  venue: Sushant Pradhan Podcast, Kathmandu
+  date: '2023-01-03'
+  scope: national
+  persona: scientist
+  kind: podcast
+  video: 4AKSsXTNKs4
+  language: ne
 - title: Incubating start-ups in (non-profit) research institutes in Nepal
   venue: Annual Conf., National Young Academy of Nepal (NAYAN), Godavari Village Resort, Lalitpur
   date: '2022-12-23'
   scope: national
   persona: entrepreneur
-  kind: invited-talk
-  review: true
-- title: Democratizing Innovation in Medicine with AI
-  venue: Digital Health Conference Nepal (eHealth & Telemedicine), BPKIHS, Hotel Crown Imperial, Kathmandu
-  date: '2022-11-29'
-  scope: national
-  persona: scientist
   kind: invited-talk
   review: true
 - title: Democratizing Innovation in Medicine with AI
@@ -277,6 +342,36 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: Democratizing Innovation in Medicine with AI
+  venue: Digital Health Conference Nepal (eHealth & Telemedicine), BPKIHS, Hotel Crown Imperial, Kathmandu
+  date: '2022-11-29'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Diyo.ai — Bishesh Khanal
+  venue: Diyo AI (Diyo.ai) channel, Kathmandu
+  date: '2022-10-01'
+  scope: local
+  persona: entrepreneur
+  kind: interview
+  video: IrVEic_Kv8Y
+- title: Panel discussion on AI — Tech and Trendy
+  venue: Tech and Trendy panel, Kathmandu
+  date: '2022-09-05'
+  scope: local
+  persona: scientist
+  kind: panel
+  video: W17N5ofHk5k
+  language: ne
+- title: Let's Get Real with Bishesh Khanal — The Doers Podcast, EP110
+  venue: The Doers Podcast (host Anup Ghimire), Kathmandu
+  date: '2022-03-28'
+  scope: national
+  persona: dreamer
+  kind: podcast
+  video: 2_IbrP863lA
+  language: ne
 - title: Machine Learning and the Third Nepal Winter School in AI
   venue: 3rd ANAIS, Khwopa Engineering College, Bhaktapur
   date: '2021-12-20'
@@ -284,6 +379,15 @@
   persona: dreamer
   kind: invited-talk
   review: true
+  video: UUKaaC2w2dE
+  featured: true
+- title: Applications of AI and research at NAAMII — SACS CDCSIT
+  venue: Talks at SACS CDCSIT (session with MS Computer Science students), Kathmandu
+  date: '2021-08-12'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  video: jqaWEtnUrC4
 - title: 'Artificial Intelligence: An Opportunity to Democratize Innovation in Healthcare'
   venue: 2nd NRN Global Knowledge Convention (online)
   date: '2020-10-11'
@@ -291,6 +395,31 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: Artificial intelligence as an emerging technology — Provincial Youth Scientist Conference
+  venue: Provincial Youth Scientist Conference 2020 (National Youth Council), EPTV 2050 channel
+  date: '2020-03-01'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  video: e8GAdk5IxzI
+  language: ne
+- title: Can AI redefine art? — Nepal Literature Festival
+  venue: Nepal Literature Festival 2019
+  date: '2020-01-18'
+  scope: national
+  persona: scientist
+  kind: panel
+  video: 4n0BRbyBjBg
+  language: ne
+- title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
+  venue: India Science Festival
+  date: 2020-01
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: dossier had Jan 2019; old site + video say Jan 2020
+  video: R0_fRAOK4rc
+  featured: true
 - title: Machine Learning in Ultrasound for Assisted Navigation
   venue: Centre for Doctoral Training, Imperial College London, UK
   date: '2019-12-04'
@@ -307,6 +436,8 @@
   persona: dreamer
   kind: invited-talk
   review: true
+  video: 74veiKa_Ph0
+  featured: true
 - title: 'Our Dream: A Centre of Excellence in Nepal Applied Maths, Informatics and AI'
   venue: IoE Alumni Day, Pulchowk Campus
   date: '2019-11-09'
@@ -335,6 +466,16 @@
   persona: dreamer
   kind: invited-talk
   review: true
+  video: sYPJZYr38wI
+  featured: true
+- title: 'Integrated AI: demand, challenges and solutions — AI Expo Nepal 2019, plenary'
+  venue: AI Expo Nepal 2019, Soaltee Crowne Plaza, Kathmandu
+  date: '2019-08-24'
+  scope: national
+  persona: scientist
+  kind: panel
+  video: LL12vtkSdzA
+  language: ne
 - title: 'AI and Healthcare: Nepali Population & Patient-Specific Medicine, and Moving from mere Consumers to Innovators'
   venue: Hospital for Advanced Surgery, Kathmandu
   date: '2019-08-14'
@@ -412,13 +553,42 @@
   persona: scientist
   kind: invited-talk
   review: true
-- title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
-  venue: India Science Festival
-  date: 2019-01
-  scope: regional
+- title: Machine Learning in Ultrasound for Assisted Navigation
+  venue: Centre for Doctoral Training, Imperial College London, UK
+  date: '2018-12-04'
+  scope: international
   persona: scientist
   kind: invited-talk
   review: true
+- title: Introduction to AI; linear algebra for computer vision — First Nepal Winter School in AI
+  venue: First Nepal Winter School in AI (NAAMII), Kathmandu
+  date: 2018-12
+  scope: national
+  persona: scientist
+  kind: lecture
+  video: 5hwjExAZGRs
+- title: Image representation, processing and feature extraction — First Nepal Winter School in AI
+  venue: First Nepal Winter School in AI (NAAMII), Kathmandu
+  date: 2018-12
+  scope: national
+  persona: scientist
+  kind: lecture
+  video: nDsqFgwJuG8
+- title: Medical imaging informatics (with Taman Upadhaya) — First Nepal Winter School in AI
+  venue: First Nepal Winter School in AI (NAAMII), Kathmandu
+  date: 2018-12
+  scope: national
+  persona: scientist
+  kind: lecture
+  video: D8I15_KsOII
+- title: With Binod Bhattarai on NAAMII and the first AI winter school — The Connection, Palika TV
+  venue: THE CONNECTION with Kishor Niraula, Kathmandu
+  date: 2018-12
+  scope: national
+  persona: dreamer
+  kind: tv
+  video: Os9mYQ3kguU
+  language: ne
 - title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
   venue: Dept. of Computer Science, University of York, UK
   date: '2018-11-07'
@@ -429,13 +599,6 @@
 - title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
   venue: Parallel Forum (AI/ML/Statistical Modeling in Big Data Analytics), CERN, Switzerland (online)
   date: '2018-05-19'
-  scope: international
-  persona: scientist
-  kind: invited-talk
-  review: true
-- title: Machine Learning in Ultrasound for Assisted Navigation
-  venue: Centre for Doctoral Training, Imperial College London, UK
-  date: '2018-12-04'
   scope: international
   persona: scientist
   kind: invited-talk

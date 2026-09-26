@@ -37,9 +37,10 @@ export default function (eleventyConfig) {
   eleventyConfig.addFilter("where", (xs, k, v) => (xs || []).filter((x) => x[k] === v));
   eleventyConfig.addFilter("whereIn", (xs, k, v) => (xs || []).filter((x) => (x[k] || []).includes(v)));
   eleventyConfig.addFilter("sortDesc", (xs, k) => [...(xs || [])].sort((a, b) => String(b[k]).localeCompare(String(a[k]))));
-  // featured first, then newest
+  // featured, then items with a video, then newest
+  const rank = (x) => (x.featured ? 2 : 0) + (x.video ? 1 : 0);
   eleventyConfig.addFilter("featuredFirst", (xs, k = "date") =>
-    [...(xs || [])].sort((a, b) => (b.featured ? 1 : 0) - (a.featured ? 1 : 0) || String(b[k]).localeCompare(String(a[k]))));
+    [...(xs || [])].sort((a, b) => rank(b) - rank(a) || String(b[k]).localeCompare(String(a[k]))));
   eleventyConfig.addFilter("pubLink", (p) =>
     p.url || (p.doi ? `https://doi.org/${p.doi}` : p.arxiv ? `https://arxiv.org/abs/${p.arxiv}` : ""));
   eleventyConfig.addFilter("themeCount", (pubs) => new Set((pubs || []).flatMap((p) => p.themes || []).filter((t) => t !== "other")).size);

@@ -9,7 +9,7 @@ description: Press coverage, interviews and podcasts featuring Bishesh Khanal.
 </section>
 <section class="container">
   <div class="grid grid-3">
-    {%- for m in media | sortDesc("date") %}
+    {%- for m in media | visible | sortDesc("date") %}
     <{{ "a" if m.url else "div" }} class="card hoverable" {% if m.url %}href="{{ m.url }}" rel="noopener"{% endif %} data-persona="{{ m.persona }}" style="border-top:3px solid var(--accent)">
       <div class="meta" style="margin-bottom:.5rem">{{ m.outlet }} · {{ m.date | fuzzyDate }}{% if m.language == "ne" %} · नेपाली{% endif %}</div>
       <h3>{{ m.title }}</h3>

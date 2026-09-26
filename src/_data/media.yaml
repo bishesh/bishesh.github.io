@@ -1,9 +1,154 @@
-# Media coverage. kind: feature | interview | news | op-ed | podcast | tv · language: en | ne
-# persona colours the card's top rule. Seeded from cortex/dossier/talks-media.md; add url: when known.
-- { title: "Interview with Bishesh Khanal on AI", outlet: TechPana, date: "2024-01", language: ne, kind: interview, persona: scientist, url: "https://techpana.com/2024/145736/interview-with-bishesh-khanal-on-ai-" }
-- { title: "Nothing personal about his intelligence", outlet: "Feature (print & online)", date: "2023-09-28", language: en, kind: feature, persona: dreamer, review: "outlet + url missing" }
-- { title: "About NAAMII", outlet: Himalkhabar, date: "2023-09-14", language: ne, kind: podcast, persona: dreamer, review: "url missing" }
-- { title: "AI, ChatGPT and machine learning", outlet: "Nepali podcast", date: "2023-01-03", language: ne, kind: podcast, persona: scientist, review: "outlet + url missing" }
-- { title: "What, why & how of NAAMII — and why I moved back to Nepal", outlet: "The Doers Nepal", date: "2022-03-28", language: ne, kind: podcast, persona: dreamer, review: "url missing" }
-- { title: "About NAAMII and the first Nepal Winter School in AI", outlet: "News 24 (national TV)", date: "2018-12-20", language: ne, kind: tv, persona: dreamer, review: "url missing" }
-- { title: "Democratizing innovation in medicine with computational biomedicine", outlet: Interview, date: "2018-06-27", language: en, kind: interview, persona: scientist, review: "outlet + url missing" }
+# Media coverage. kind: feature | interview | news | op-ed | podcast | tv · language: en | ne · persona colours the card.
+# Merged from a web research pass 2026-09-26 (each page fetched, name confirmed). `review:` = unverified; `hidden: true` keeps it off the page.
+
+- title: Nothing artificial about his intelligence
+  outlet: Nepali Times
+  date: '2023-09-28'
+  language: en
+  kind: feature
+  persona: dreamer
+  url: https://nepalitimes.com/here-now/nothing-artificial-about-his-intelligence
+- title: Artificially intelligent medicine
+  outlet: Nepali Times
+  date: '2023-07-09'
+  language: en
+  kind: feature
+  persona: scientist
+  url: https://nepalitimes.com/artificially-intelligent-medicine
+- title: AI educational programme launched in Kathmandu
+  outlet: The Kathmandu Post
+  date: '2023-08-04'
+  language: en
+  kind: news
+  persona: scientist
+  url: https://kathmandupost.com/art-culture/2023/08/04/ai-educational-programme-launched-in-kathmandu
+- title: King's College partners with NAAMII for AI education
+  outlet: The Himalayan Times
+  date: '2023-08-04'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://thehimalayantimes.com/kathmandu/kings-college-partners-with-naamii-for-ai-education
+- title: UNESCO brings key stakeholders together for an inclusive dialogue on AI governance in Nepal
+  outlet: The Himalayan Times
+  date: '2023-11-28'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://thehimalayantimes.com/kathmandu/unesco-brings-key-stakeholders-together-for-an-inclusive-dialogue-on-ai-governance-in-nepal
+- title: 'News Commentary: As AI ecosystem overwhelms world, Nepal needs to augment pace'
+  outlet: The Rising Nepal
+  date: '2024-04-01'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://risingnepaldaily.com/news/40997
+- title: Fifth Annual Nepal AI School to commence tomorrow in Lalitpur
+  outlet: The Rising Nepal
+  date: '2024-12-26'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://risingnepaldaily.com/news/54351
+- title: Fifth edition of 'AI' education-related program to be held in Lalitpur
+  outlet: myRepublica
+  date: '2024-12-26'
+  language: en
+  kind: news
+  persona: scientist
+  url: https://myrepublica.nagariknetwork.com/index.php/news/fifth-edition-of-ai-education-related-program-to-be-held-in-lalitpur-676cac5f90230.html
+- title: स्वास्थ्य एआईको विषयमा छलफल गर्न 'हाइकन' सम्मेलन (HAICon conference to discuss health AI)
+  outlet: Ratopati
+  date: '2025-01-07'
+  language: ne
+  kind: news
+  persona: scientist
+  url: https://www.ratopati.com/story/466549/39hicon39-conference-to-discuss-health-ai
+- title: ICT Award 2024 Successfully Organized as 22 Entities Win Awards
+  outlet: TechLekh
+  date: '2024-12-25'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://techlekh.com/ict-award-nepal/
+- title: Talking Robot Friend 'GOLU' Made by Five Nepali Scientists
+  outlet: ICT Frame
+  date: '2021-07-13'
+  language: en
+  kind: news
+  persona: entrepreneur
+  url: https://ictframe.com/talking-robot-friend-golu-made-by-five-nepali-scientists/
+- title: DOECE Silver Jubilee Celebration Event 2076 Kicks Off
+  outlet: ICT Frame
+  date: '2019-11-13'
+  language: en
+  kind: news
+  persona: dreamer
+  url: https://ictframe.com/doece-silver-jubilee-celebration-event-2076-kicks-off/
+- title: Kathmandu University To Host Artificial Intelligence For Sustainable Development
+  outlet: ICT Frame
+  date: '2019-05-24'
+  language: en
+  kind: news
+  persona: scientist
+  url: https://ictframe.com/kathmandu-university-to-host-artificial-intelligence-for-sustainable-development/
+- title: 'उदाउँदो प्रविधिमा नेपालको भविष्य : युवा वैज्ञानिक विशेष खनाल (Nepal''s future in emerging technology)'
+  outlet: Hamro Patro (HamroLekh)
+  date: '2019-10-21'
+  language: ne
+  kind: op-ed
+  persona: scientist
+  url: https://www.hamropatro.com/posts/articles-HamroLekh/articles-HamroLekh-Udaudo-Prawidhima-Nepalko-Bhawishya
+- title: 'Bishesh Khanal: NAAMII - a model for low-resource excellence'
+  outlet: AI-ready Healthcare (podcast, Spotify)
+  date: '2025-11-11'
+  language: en
+  kind: podcast
+  persona: dreamer
+  url: https://open.spotify.com/episode/6SUSITuZnHdsbwVLfbuDhT
+- title: Interview with Bishesh Khanal on AI
+  outlet: TechPana
+  date: 2024-01
+  language: ne
+  kind: interview
+  persona: scientist
+  url: https://techpana.com/2024/145736/interview-with-bishesh-khanal-on-ai-
+  review: >-
+    URL and month from HIS OWN records (seed), not confirmed: the site returns Cloudflare 403 to curl and WebFetch, and
+    web search did not surface it. Headline is the URL slug, not the real headline.
+  hidden: false
+- title: >-
+    स्मार्टफोनबाट फोटो खिचेरै पखालाको परजीवी चिन्ने प्रविधि विकास गर्दै नेपाली आईटी कम्पनी (Nepali company developing
+    tech to detect parasites from smartphone photos)
+  outlet: TechPana
+  date: '2024'
+  language: ne
+  kind: news
+  persona: scientist
+  url: https://techpana.com/2024/148108/nepali-it-company-develops-tech-to-detect-parasites-through-smartphone-photos
+  review: >-
+    Found by web search, whose summary says it names Dr. Bishesh Khanal as NAAMII co-founder/director; page itself 403
+    (Cloudflare), so not read. Year from URL path only.
+  hidden: false
+- title: 'Innovating for a Better Future: In Conversation with Bishesh Khanal'
+  outlet: The Zerone (Medium magazine, by Yunika Bajracharya)
+  date: ''
+  language: en
+  kind: interview
+  persona: scientist
+  url: https://medium.com/zerone-magazine/innovating-for-a-better-future-in-conversation-with-bishesh-khanal-bd288a2ef15e
+  review: >-
+    Title/author from search result only; Medium returned 403. Date unknown. The Zerone is (I believe) a student
+    magazine — unconfirmed.
+  hidden: false
+- title: Democratizing Innovation in Medicine with Computational Biomedicine
+  outlet: Chautaari
+  date: 2018-06
+  language: en
+  kind: interview
+  persona: scientist
+  url: https://chautaari.com/computational-biomedicine-bishesh-khanal/
+  review: >-
+    URL and date from his own CV page (bishesh.github.io/talks). Site now returns a Cloudflare 'DNS points to prohibited
+    IP' error — the page may be dead. Try the Wayback Machine (was rate-limited during this run).
+  hidden: false
