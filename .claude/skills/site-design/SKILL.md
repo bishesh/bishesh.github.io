@@ -10,41 +10,42 @@ The site presents one person through **three personas**. The design's job is to 
 the page, type, spacing and components are identical everywhere; only a small set of accent
 tokens changes.
 
-## 1. The palette — "Himalayan Light"
+## 1. The palette — "Three Houses"
 
-The three accents are one landscape seen at three heights: the **dawn** over the ridge (Dreamer),
-the **glacier** at altitude (Scientist), the **terraced hills** below (Entrepreneur). Together on
-warm paper they read as Nepal at first light — calm, not a flag, not a brand.
+Each accent is a **quiet echo** of an organisation he built, never a copy of its brand. The echo is a
+shifted hue, a lower saturation, or a darker value, so no page ever reads as NAAMII-, Tangible- or
+Terahs-branded:
 
-| Token family | Role | 700 (text on paper) | 500 (marks, rules, dots) | 100 (tint bg) | Dark-mode accent |
-|---|---|---|---|---|---|
-| `--dawn-*` | **Dreamer** — vision, institution-building, NAAMII | `#9A4B14` | `#D9822B` | `#FBEEDD` | `#EBA868` |
-| `--glacier-*` | **Scientist** — research, publications | `#244A77` | `#3F6FA6` | `#E6EEF8` | `#93B6E2` |
-| `--terrace-*` | **Entrepreneur** — ventures, building products | `#1E6A52` | `#2F9274` | `#E3F3EC` | `#71C9A9` |
+| Token family | Persona | Echo of | 700 (text) | 500 (marks) | 100 (tint) | Dark 700/500 |
+|---|---|---|---|---|---|---|
+| `--crimson-*` | **Dreamer** | NAAMII's Pure Red `#db0505`, softened into rhododendron crimson (Nepal's national flower) | `#A31D33` | `#D63A4E` | `#FCEBEE` | `#F28796` / `#F07A8A` |
+| `--indigo-*` | **Scientist** | Tangible's deep navy + periwinkle, and NAAMII's blue-grey | `#2F3F9E` | `#5268D8` | `#ECEFFC` | `#A3B1F4` / `#8C9DF0` |
+| `--ember-*` | **Entrepreneur** | the orange Tangible (`#ff5a10`) and Terahs share, burnt down | `#B4460F` | `#EC6A2A` | `#FEEFE6` | `#F7A673` / `#F59A62` |
 
-Neutrals (shared by every page):
+Neutrals are **cool, not beige**:
 
-| Token | Light | Dark | Use |
+| Token | Light | Dark | Note |
 |---|---|---|---|
-| `--paper` | `#FAF8F4` | `#12151B` | page background |
-| `--surface` | `#FFFFFF` | `#1A1E26` | cards |
-| `--ink` | `#1D2330` | `#E8E6E1` | body text, headings |
-| `--ink-soft` | `#4A5263` | `#B4B8C1` | secondary text |
-| `--muted` | `#7B8292` | `#868C98` | metadata, captions (never body text) |
-| `--line` | `#E6E1D8` | `#2A2F39` | hairlines, card borders |
+| `--paper` | `#F8F9FC` | `#0E1120` | dark = Terahs' dusk aubergine-navy |
+| `--surface` | `#FFFFFF` | `#161A2C` | cards |
+| `--ink` | `#121829` | `#ECEEF5` | deep navy ink (after Tangible's `#10192b`) |
+| `--ink-soft` | `#454D59` | `#B5BACB` | NAAMII's Dark Blue Grey, used verbatim |
+| `--muted` | `#737A8C` | `#878DA2` | metadata only |
+| `--line` | `#E3E6EE` | `#262B41` | hairlines |
 
 Rules:
-1. **Accents are for marks, not fields.** A persona colour may appear as: the 3px top rule of
-   the page/section, the eyebrow label, link underlines, chips/dots, a card's left edge, icons,
-   and a *100-tint* background on at most one callout per section. Never a full-bleed
-   saturated background, never body text in a 500.
+1. **Accents are for marks, not fields.** A persona colour may appear as: the 3px top rule, the
+   eyebrow, link underlines, chips/dots, a card's edge, icons, and a *100-tint* background on at most
+   one callout per section. Never a full-bleed saturated background, never body text in a 500.
 2. **Text in an accent uses 700** (≥ 4.5:1 on `--paper`). 500 is for non-text marks only.
 3. **Never introduce a hex outside this file.** A new need is a new token here first.
-4. **The tri-band** (`dawn | glacier | terrace`, equal thirds, 3px) is the site's only
-   signature. It appears once: under the header on the home page and in the footer. Don't
-   reuse it decoratively.
-5. Neutral pages (Talks, Media, CV) use `--ink` as their accent and let **each item carry its
-   own persona dot** — cross-cutting content is coloured by what it speaks to, not by where it sits.
+4. **Never use a source brand's exact hex** (`#db0505`, `#ff5a10`, `#10192b`) as an accent. The
+   one deliberate exception is `--ink-soft` = NAAMII's blue-grey, a neutral that nobody reads as branding.
+5. **Signatures, once each:** the **tri-band** (crimson | indigo | ember, 3px) under the home header
+   and in the footer, and the **dusk wash** (`.dusk`, three 10% radial glows) behind the home hero only.
+   It nods to the gradient heroes of Tangible and Terahs. Don't reuse either elsewhere.
+6. Neutral pages (Talks, Media, CV) use `--ink` as accent and let **each item carry its own persona
+   dot**. Cross-cutting content is coloured by what it speaks to, not by where it sits.
 
 ## 2. How persona colour is applied (the mechanism)
 
@@ -52,16 +53,16 @@ One attribute, three tokens. Set `data-persona` on `<body>` (page-level) or on a
 (section-level); CSS maps it to the generic accent tokens that every component reads:
 
 ```css
-[data-persona="dreamer"]      { --accent: var(--dawn-500);    --accent-strong: var(--dawn-700);    --accent-tint: var(--dawn-100); }
-[data-persona="scientist"]    { --accent: var(--glacier-500); --accent-strong: var(--glacier-700); --accent-tint: var(--glacier-100); }
-[data-persona="entrepreneur"] { --accent: var(--terrace-500); --accent-strong: var(--terrace-700); --accent-tint: var(--terrace-100); }
+[data-persona="dreamer"]      { --accent: var(--crimson-500); --accent-strong: var(--crimson-700); --accent-tint: var(--crimson-100); }
+[data-persona="scientist"]    { --accent: var(--indigo-500);  --accent-strong: var(--indigo-700);  --accent-tint: var(--indigo-100); }
+[data-persona="entrepreneur"] { --accent: var(--ember-500);   --accent-strong: var(--ember-700);   --accent-tint: var(--ember-100); }
 ```
 
 **Components only ever read `--accent`, `--accent-strong`, `--accent-tint`** — never a named
 family. That is what lets a section on the home page switch persona by changing one attribute,
 and it is what keeps a new component automatically correct on all three personas.
 
-Page → persona map (keep in `src/_data/site.yaml` `nav`, not in templates):
+Page → persona map (nav dots live in `src/data/site.yaml`; the page persona is the `persona` prop on `<Base>`):
 
 | Page | Persona |
 |---|---|
@@ -73,7 +74,7 @@ Page → persona map (keep in `src/_data/site.yaml` `nav`, not in templates):
 ## 3. Persona glyphs
 
 Each persona has one line glyph (1.5px stroke, `currentColor`, 24px grid), in
-`src/_includes/partials/glyph.njk`:
+`src/components/Glyph.astro`:
 - **Dreamer** — a sun half-risen over a ridge line.
 - **Scientist** — a lens: two concentric circles with a crosshair tick.
 - **Entrepreneur** — three ascending terraces.
@@ -97,7 +98,7 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 - Motion: 150ms ease-out on colour/transform; hover lift ≤ 2px. Respect
   `prefers-reduced-motion`. No parallax, no scroll-jacking, no autoplay video.
 
-## 6. Components (all in `src/assets/css/site.css`)
+## 6. Components (styles in `public/assets/css/site.css`, markup in `src/components/`)
 
 | Component | Anatomy | Persona expression |
 |---|---|---|
@@ -124,9 +125,13 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 
 ## 8. Adding something — checklist
 
-1. Content goes in `src/_data/*.yaml`, never hard-coded into a template.
-2. Pick the persona for the page/section from §2; set `data-persona`, nothing else.
+0. **Stack:** Astro (static output → GitHub Pages). Lists (publications, talks, media) are
+   content collections validated by `src/content.config.ts`. A new field or enum value goes into
+   the schema first, or the build rejects it. Page copy is plain YAML read by `src/lib/site.ts`.
+1. Content goes in `src/data/*.yaml`, never hard-coded into a page.
+2. Pick the persona for the page/section from §2: `<Base persona="…">` or `data-persona` on a section, nothing else.
 3. Compose from §6 components. A new component reads only `--accent*` tokens.
 4. Check both themes (`prefers-color-scheme` and the toggle) and 375px width.
-5. Screenshot it (headless Chrome) and look before calling it done — layout defects are not
-   visible in source.
+5. `npm run build` must pass (it is the validator), then screenshot it (headless Chrome) and look
+   before calling it done. Layout defects are not visible in source. Headless Chrome cannot make a
+   window narrower than ~500px, so test phone width inside a 375px `<iframe>`.

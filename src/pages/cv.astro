@@ -1,0 +1,17 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { copy } from "../lib/site";
+const cv = copy("cv");
+const sections: [string, any[]][] = [["Positions", cv.positions], ["Education", cv.education], ["Honours", cv.honours]];
+---
+<Base title="CV" description="Positions, education and honours of Bishesh Khanal.">
+  <PageHero eyebrow="Curriculum vitae" headline="CV" lead={`A short version. Full publication and talk lists are on their own pages.${cv.pdf ? ` [Download the PDF](${cv.pdf}).` : ""}`} />
+  {sections.map(([name, rows]) => (
+    <section class="container" style="margin-bottom:2.5rem">
+      <div class="pub-year"><h2>{name}</h2>
+        <ul class="rows">{rows.map((r) => <li class="row"><span class="d">{r.when}</span><span><span class="t">{r.what}</span>{r.where && <span class="v"> — {r.where}</span>}{r.note && <><br /><span class="meta">{r.note}</span></>}</span></li>)}</ul>
+      </div>
+    </section>
+  ))}
+</Base>

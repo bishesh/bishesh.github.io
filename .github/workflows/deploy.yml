@@ -1,6 +1,7 @@
-# Builds the Eleventy site and publishes it to GitHub Pages.
+# Builds the Astro site and publishes it to GitHub Pages.
 # Runs only on master — the `redesign` branch never deploys.
 # Go-live: Settings → Pages → Source: "GitHub Actions", then merge redesign → master.
+# The build validates every entry in src/data/*.yaml (src/content.config.ts); a bad edit fails here, not on the live site.
 name: Deploy site
 on:
   push:
@@ -16,12 +17,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
-        with: { node-version: 22, cache: npm }
-      - run: npm ci
-      - run: npm run build
-      - uses: actions/upload-pages-artifact@v3
-        with: { path: _site }
+      - uses: withastro/action@v3
   deploy:
     needs: build
     runs-on: ubuntu-latest

@@ -1,0 +1,19 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { getMedia, fuzzyDate } from "../lib/site";
+const media = (await getMedia()).sort((a, b) => b.date.localeCompare(a.date));
+---
+<Base title="Media" description="Press coverage, interviews and podcasts featuring Bishesh Khanal.">
+  <PageHero eyebrow="Media" headline="In the media" lead="Interviews, features and podcasts — in English and Nepali." />
+  <section class="container">
+    <div class="grid grid-3">
+      {media.map((m) => { const Tag = m.url ? "a" : "div"; return (
+        <Tag class="card hoverable" href={m.url} rel={m.url ? "noopener" : undefined} data-persona={m.persona} style="border-top:3px solid var(--accent)">
+          <div class="meta" style="margin-bottom:.5rem">{m.outlet} · {fuzzyDate(m.date)}{m.language === "ne" && " · नेपाली"}</div>
+          <h3>{m.title}</h3>
+          <p><span class="badge">{m.kind}</span></p>
+        </Tag>); })}
+    </div>
+  </section>
+</Base>

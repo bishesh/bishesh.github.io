@@ -1,0 +1,59 @@
+---
+import { site, nav } from "../lib/site";
+interface Props { title?: string; description?: string; persona?: string; isHome?: boolean }
+const { title, description, persona = "", isHome = false } = Astro.props;
+const path = Astro.url.pathname;
+const full = title && title !== site.name ? `${title} · ${site.name}` : site.name;
+---
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{full}</title>
+  <meta name="description" content={description ?? site.description} />
+  <meta property="og:title" content={title ?? site.name} />
+  <meta property="og:description" content={description ?? site.description} />
+  <meta property="og:type" content="website" />
+  <link rel="canonical" href={new URL(path, Astro.site)} />
+  <meta name="theme-color" content="#F8F9FC" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#0E1120" media="(prefers-color-scheme: dark)" />
+  <link rel="icon" href="/assets/img/favicon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;0,8..60,700;1,8..60,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/assets/css/site.css" />
+  <script is:inline>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body data-persona={persona || undefined}>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="/">{site.name}<span>{site.native_name}</span></a>
+      <nav class="nav" id="nav" aria-label="Main">
+        {nav.map((item) => (
+          <a href={item.url} aria-current={path === item.url ? "page" : undefined} data-persona={item.persona || undefined}>
+            {item.persona && <i class={`dot ${item.persona}`} />}{item.label}
+          </a>
+        ))}
+        <button class="theme-toggle" type="button" aria-label="Toggle dark mode" data-theme-toggle>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M20 14.5A8 8 0 0 1 9.5 4a8 8 0 1 0 10.5 10.5z" /></svg>
+        </button>
+      </nav>
+      <button class="nav-toggle" type="button" aria-controls="nav" aria-expanded="false" data-nav-toggle>Menu</button>
+    </div>
+  </header>
+  {isHome && <div class="tri-band" aria-hidden="true"><i /><i /><i /></div>}
+  <main>
+    {persona && !isHome && <div class="page-rule" aria-hidden="true" />}
+    <slot />
+  </main>
+  <footer class="site-footer">
+    <div class="tri-band" aria-hidden="true"><i /><i /><i /></div>
+    <div class="container">
+      <div>© {site.year} {site.name} · Kathmandu, Nepal</div>
+      <div class="links-row">{site.links.map((l: any) => <a href={l.url} rel="me noopener">{l.label}</a>)}</div>
+    </div>
+  </footer>
+  <script is:inline src="/assets/js/site.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { copy, md } from "../lib/site";
+const d = copy("dreamer");
+---
+<Base title="Dreamer" persona="dreamer" description="Building NAAMII — Nepal's AI centre of excellence — from scratch, and the ecosystem around it.">
+  <PageHero persona="dreamer" eyebrow={d.eyebrow} headline={d.headline} lead={d.lead} stats={d.stats} />
+  <section class="container section" style="padding-top:1rem">
+    <div class="grid grid-2" style="align-items:start">
+      <div class="prose" set:html={md(d.story)} />
+      <div class="callout"><p class="quote">{d.quote}</p></div>
+    </div>
+  </section>
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">NAAMII</div><h2>{d.pillars_title}</h2><p class="lead">{d.pillars_lead}</p></div>
+    <div class="grid grid-3">{d.pillars.map((p: any) => <div class="card"><h3>{p.name}</h3><p>{p.text}</p></div>)}</div>
+  </section>
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">Milestones</div><h2>From an idea in France to 52 people in Kathmandu</h2></div>
+    <ol class="timeline">{d.milestones.map((m: any) => <li><span class="when">{m.when}</span><h4>{m.title}</h4>{m.text && <p>{m.text}</p>}</li>)}</ol>
+  </section>
+  <section class="container section">
+    <div class="grid grid-2">
+      {d.next.map((b: any) => <div class="card"><div class="eyebrow" style="margin-bottom:.6rem">{b.kicker}</div><h3>{b.title}</h3><div class="prose small" set:html={md(b.text)} /></div>)}
+    </div>
+    <div class="actions"><a class="btn" href="/government/">Government &amp; policy engagement →</a><a class="btn" href="/talks/?personaF=dreamer">Talks on this →</a></div>
+  </section>
+</Base>

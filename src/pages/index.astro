@@ -1,0 +1,64 @@
+---
+import Base from "../layouts/Base.astro";
+import Glyph from "../components/Glyph.astro";
+import TalkCard from "../components/TalkCard.astro";
+import { copy, md, getTalks, featuredFirst } from "../lib/site";
+const home = copy("home");
+const talks = featuredFirst((await getTalks()).filter((t) => t.video)).slice(0, 3);
+---
+<Base isHome>
+  <div class="dusk">
+    <section class="container hero">
+      <div>
+        <h1>Bishesh Khanal</h1>
+        <p class="roles"><b class="d">Dreamer</b>, <b class="s">scientist</b> and <b class="e">entrepreneur</b> — building AI for the real world, from Nepal.</p>
+        <div class="prose" set:html={md(home.intro)} />
+        <div class="actions">
+          <a class="btn solid" href="/scientist/">Research</a>
+          <a class="btn" href="/talks/">Talks</a>
+          <a class="btn" href={home.cv_url}>CV</a>
+        </div>
+      </div>
+      <div class="portrait">{home.portrait ? <img src={home.portrait} alt="Portrait of Bishesh Khanal" /> : "portrait — add public/assets/img/portrait.jpg"}</div>
+    </section>
+  </div>
+
+  <section class="container section" style="padding-top:0">
+    <div class="grid grid-3">
+      {home.personas.map((p: any) => (
+        <a class="card persona-card" data-persona={p.key} href={`/${p.key}/`}>
+          <Glyph g={p.key} />
+          <h3>{p.name}</h3>
+          <div class="tagline">{p.tagline}</div>
+          <p>{p.summary}</p>
+          <span class="more">{p.cta} →</span>
+        </a>
+      ))}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="stats" style="max-width:none;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))">
+      {home.stats.map((s: any) => <div class="stat"><b>{s.value}</b><span>{s.label}</span></div>)}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">Now</div><h2>What I'm working on</h2></div>
+    <div class="grid grid-3">
+      {home.now.map((n: any) => (
+        <div class="card" data-persona={n.persona} style="border-top:3px solid var(--accent)">
+          <div class="eyebrow" style="margin-bottom:.6rem"><Glyph g={n.persona} />{n.persona}</div>
+          <h3>{n.title}</h3>
+          <p>{n.text}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">Talks</div><h2>On stage</h2></div>
+    <div class="talk-grid">{talks.map((t) => <TalkCard t={t} />)}</div>
+    <div class="actions"><a class="btn" href="/talks/">All talks →</a></div>
+  </section>
+</Base>

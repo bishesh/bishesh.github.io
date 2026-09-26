@@ -1,0 +1,45 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import TalkCard from "../components/TalkCard.astro";
+import { getTalks, featuredFirst, fuzzyDate } from "../lib/site";
+const talks = await getTalks();
+const tiers = [
+  { key: "international", label: "International", note: "Keynotes and invited talks abroad and at global venues", style: "grid" },
+  { key: "regional", label: "Regional · South Asia", note: "India and the region", style: "grid" },
+  { key: "national", label: "National", note: "Government, national conferences, media and institutions across Nepal", style: "compact" },
+  { key: "local", label: "Local", note: "Colleges, schools, hospitals and meetups", style: "list" },
+];
+const kinds = ["keynote", "invited-talk", "panel", "podcast", "interview", "lecture", "tv"];
+const label = (k: string) => (k === "tv" ? "TV" : (k[0].toUpperCase() + k.slice(1)).replace("-", " "));
+---
+<Base title="Talks" description="Keynotes, invited talks, panels and podcasts by Bishesh Khanal — international first.">
+  <PageHero eyebrow="Talks" headline="Talks & conversations"
+    lead={`${talks.length} talks, panels and interviews since 2016 — on AI in health, AI centres of excellence for the Global South, and how work is being reorganized. The dot shows which persona a talk speaks to.`} />
+  <section class="container" data-filters="talks">
+    <div class="chips">
+      <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All</button>
+      {["dreamer", "scientist", "entrepreneur"].map((p) => <button class="chip" data-key="personaF" data-value={p} aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{talks.filter((t) => t.persona === p).length}</span></button>)}
+      <span style="width:1rem" />
+      {kinds.map((k) => { const n = talks.filter((t) => t.kind === k).length; return n > 0 && <button class="chip" data-key="kind" data-value={k} aria-pressed="false">{label(k)} <span class="n">{n}</span></button>; })}
+    </div>
+  </section>
+  <div class="container">
+    {tiers.map((tier) => { const items = featuredFirst(talks.filter((t) => t.scope === tier.key)); return items.length > 0 && (
+      <section class="tier" data-filter-group="talks">
+        <div class="tier-head"><h2>{tier.label}</h2><span class="meta">{tier.note} · {items.length}</span></div>
+        {tier.style === "list" ? (
+          <ul class="rows">
+            {items.map((t) => (
+              <li class="row" data-filterable="talks" data-persona-f={t.persona} data-kind={t.kind}>
+                <span class="d">{fuzzyDate(t.date)}</span>
+                <span><i class={`dot ${t.persona}`} /><span class="t">{t.url || t.video ? <a href={t.video ? `https://www.youtube.com/watch?v=${t.video}` : t.url}>{t.title}</a> : t.title}</span> <span class="v">— {t.venue}</span></span>
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <div class={`talk-grid${tier.style === "compact" ? " compact" : ""}`}>{items.map((t) => <TalkCard t={t} />)}</div>
+        )}
+      </section>); })}
+  </div>
+</Base>

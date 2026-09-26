@@ -1,0 +1,13 @@
+---
+import Glyph from "./Glyph.astro";
+import { md } from "../lib/site";
+interface Props { persona?: string; eyebrow: string; headline: string; lead?: string; stats?: { value: string; label: string }[] }
+const { persona = "", eyebrow, headline, lead, stats } = Astro.props;
+---
+<section class="page-hero container">
+  <div class="eyebrow">{persona && <Glyph g={persona} />}{eyebrow}</div>
+  <h1>{headline}</h1>
+  {lead && <div class="lead" set:html={md(lead)} />}
+  {stats && <div class="stats">{stats.map((s) => <div class="stat"><b>{s.value}</b><span>{s.label}</span></div>)}</div>}
+  <slot />
+</section>

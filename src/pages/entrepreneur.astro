@@ -1,0 +1,20 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { copy, md, mdInline } from "../lib/site";
+const d = copy("entrepreneur");
+---
+<Base title="Entrepreneur" persona="entrepreneur" description="Tangible, Diyo.ai, Terahs — and NAAMII, built from scratch as a profit-not-distributing venture.">
+  <PageHero persona="entrepreneur" eyebrow={d.eyebrow} headline={d.headline} lead={d.lead} />
+  <section class="container section" style="padding-top:1rem">
+    <div class="grid grid-3">
+      {d.ventures.map((v: any) => (
+        <div class={`card venture${v.primary ? " primary" : ""}`}>
+          <div><div class="kicker">{v.role}</div><h3>{v.url ? <a href={v.url}>{v.name}</a> : v.name}</h3><div class="prose small" set:html={md(v.text)} /></div>
+          {v.points && <div><ul>{v.points.map((p: string) => <li set:html={mdInline(p)} />)}</ul></div>}
+        </div>
+      ))}
+    </div>
+  </section>
+  <section class="container section"><div class="callout prose" style="max-width:none" set:html={md(d.closing)} /></section>
+</Base>

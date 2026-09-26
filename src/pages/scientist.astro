@@ -1,0 +1,48 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import { copy, md, mdInline, getPubs, themes, pubLink } from "../lib/site";
+const d = copy("scientist");
+const pubs = await getPubs();
+const themed = themes.filter((t) => t.key !== "other").map((t) => ({ ...t, n: pubs.filter((p) => p.themes.includes(t.key)).length })).filter((t) => t.n > 0);
+const featured = pubs.filter((p) => p.featured);
+---
+<Base title="Scientist" persona="scientist" description="Research from medical imaging to health AI in low-resource settings, and the reorganization of work.">
+  <PageHero persona="scientist" eyebrow={d.eyebrow} headline={d.headline} lead={d.lead} stats={d.stats} />
+  <section class="container section" style="padding-top:1rem">
+    <div class="section-head"><div class="eyebrow">The arc</div><h2>{d.arc_title}</h2></div>
+    <div class="eras">
+      {d.eras.map((e: any) => (
+        <div class={`era${e.now ? " now" : ""}`}>
+          <div><div class="when">{e.when}</div><div class="where">{e.where}</div></div>
+          <div><h3>{e.title}</h3><div class="prose" set:html={md(e.text)} />
+            {e.chain && <ol class="chain">{e.chain.map((c: string) => <li>{c}</li>)}</ol>}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">Publications by theme</div><h2>{pubs.length} papers, {themed.length} threads</h2></div>
+    <div class="grid grid-3">
+      {themed.map((t) => <a class="card theme-card" href={`/publications/?themes=${t.key}`}><span class="n">{t.n} paper{t.n === 1 ? "" : "s"}</span><h3>{t.label}</h3><p>{t.blurb}</p></a>)}
+    </div>
+  </section>
+  <section class="container section">
+    <div class="section-head"><div class="eyebrow">Selected work</div><h2>A few papers to start with</h2></div>
+    <ol class="pub-list" style="max-width:820px">
+      {featured.map((p) => { const href = pubLink(p); return (
+        <li class="pub"><div class="title">{href ? <a href={href}>{p.title}</a> : p.title}</div><div class="authors" set:html={mdInline(p.authors)} /><div class="venue">{p.venue}</div></li>); })}
+    </ol>
+    <div class="actions"><a class="btn solid" href="/publications/">All publications →</a></div>
+  </section>
+  {d.projects && (
+    <section class="container section">
+      <div class="section-head"><div class="eyebrow">Projects</div><h2>What the lab is building</h2></div>
+      <div class="grid grid-3">{d.projects.map((p: any) => <div class="card"><h3>{p.name}</h3><p>{p.text}</p></div>)}</div>
+    </section>
+  )}
+  <section class="container section">
+    <div class="grid grid-2">{d.service.map((b: any) => <div class="card"><h3>{b.title}</h3><div class="prose small" set:html={md(b.text)} /></div>)}</div>
+  </section>
+</Base>

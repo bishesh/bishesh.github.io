@@ -1,0 +1,21 @@
+---
+import { youtubeId, fuzzyDate } from "../lib/site";
+interface Props { t: any }
+const { t } = Astro.props;
+const yid = youtubeId(t.video);
+const href = yid ? `https://www.youtube.com/watch?v=${yid}` : t.url || t.video || "";
+const Tag = href ? "a" : "div";
+const cut = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
+---
+<Tag class="talk-card" href={href || undefined} rel={href ? "noopener" : undefined} data-filterable="talks" data-persona-f={t.persona} data-kind={t.kind}>
+  <div class="thumb" data-persona={t.persona}>
+    {yid ? (
+      <>
+        <img loading="lazy" src={`https://i.ytimg.com/vi/${yid}/hqdefault.jpg`} alt="" />
+        <span class="play"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor" /></svg>Watch</span>
+      </>
+    ) : <span class="ph">{cut(t.venue, 70)}</span>}
+  </div>
+  <div class="t">{t.title}</div>
+  <div class="v"><i class={`dot ${t.persona}`} title={t.persona} /><span>{cut(t.venue, 90)}{t.date && ` · ${fuzzyDate(t.date)}`}</span></div>
+</Tag>

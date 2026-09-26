@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "Personal website of Bishesh Khanal — Dreamer · Scientist · Entrepreneur",
   "scripts": {
-    "dev": "eleventy --serve --port 8080",
-    "build": "eleventy",
+    "dev": "astro dev",
+    "build": "astro build", "preview": "astro preview", "check": "astro sync && astro build",
     "import": "node scripts/import-dossier.mjs"
   },
   "repository": {
@@ -20,9 +20,11 @@
   },
   "homepage": "https://github.com/bishesh/bishesh.github.io#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6",
-    "js-yaml": "^5.4.2",
-    "markdown-it": "^15.0.2"
+    "js-yaml": "^5.4.2"
   },
-  "private": true
+  "private": true,
+  "dependencies": {
+    "astro": "^7.3.5",
+    "marked": "^18.0.14"
+  }
 }
