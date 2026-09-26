@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
-import { copy, md, mdInline, getPubs, themes, pubLink } from "../lib/site";
+import { copy, md, getPubs, themes, pubLink, formatAuthors } from "../lib/site";
 const d = copy("scientist");
 const pubs = await getPubs();
 const themed = themes.filter((t) => t.key !== "other").map((t) => ({ ...t, n: pubs.filter((p) => p.themes.includes(t.key)).length })).filter((t) => t.n > 0);
@@ -32,7 +32,7 @@ const featured = pubs.filter((p) => p.featured);
     <div class="section-head"><div class="eyebrow">Selected work</div><h2>A few papers to start with</h2></div>
     <ol class="pub-list" style="max-width:820px">
       {featured.map((p) => { const href = pubLink(p); return (
-        <li class="pub"><div class="title">{href ? <a href={href}>{p.title}</a> : p.title}</div><div class="authors" set:html={mdInline(p.authors)} /><div class="venue">{p.venue}</div></li>); })}
+        <li class="pub"><div class="title">{href ? <a href={href}>{p.title}</a> : p.title}</div><div class="authors" set:html={formatAuthors(p.authors)} /><div class="venue">{p.venue}</div></li>); })}
     </ol>
     <div class="actions"><a class="btn solid" href="/publications/">All publications →</a></div>
   </section>

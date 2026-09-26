@@ -1,10 +1,19 @@
 # Publications — the site renders this file directly. Edit here (GitHub web editor is fine).
 # Imported from cortex/dossier by scripts/import-dossier.mjs on 2026-09-26.
 # `review:` marks a keyword guess or a dossier "verify" note — delete it once checked.
-# Bishesh is written **Khanal B** (bold). Themes: see themes.yaml. Types: journal · conference · workshop · preprint · proceedings · thesis · other.
+# authors: a YAML list, in paper order; Bishesh is written **Khanal B** (bold). Long lists are shortened at RENDER time, never here. Themes: see themes.yaml. Types: journal · conference · workshop · preprint · proceedings · thesis · other.
 
 - title: Automated quality assessment of blind sweep obstetric ultrasound for improved diagnosis
-  authors: Bhandari P, Poudel K, Luitel N, Acharya B, Ghimire A, Wellman T, Koepsell K, Regmi PR, **Khanal B**
+  authors:
+    - Bhandari P
+    - Poudel K
+    - Luitel N
+    - Acharya B
+    - Ghimire A
+    - Wellman T
+    - Koepsell K
+    - Regmi PR
+    - '**Khanal B**'
   venue: Medical Imaging with Deep Learning (MIDL). Proc Mach Learn Res, 2026;315:2987-2997
   year: 2026
   type: conference
@@ -14,15 +23,35 @@
   arxiv: '2603.25886'
   review: 'dossier says: verify authors/link'
 - title: Evaluating large language models' responses to sexual and reproductive health queries in Nepali
-  authors: Sharma M, Khadka S, Aryal UC, Bhatta BH, Bhattarai B, Dahal S, et al
+  authors:
+    - Sharma M
+    - Khadka S
+    - Aryal UC
+    - Bhatta BH
+    - Bhattarai B
+    - Dahal S
+    - Gautam K
+    - Joshi P
+    - Kafle S
+    - Khadka S
+    - Khadka S
+    - Lamichhane B
+    - Lamichhane S
+    - Parajuli A
+    - Pokharel S
+    - Sitaula S
+    - Verma N
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2026
   type: preprint
   themes:
     - low-resource-language
-  review: 'dossier says: verify authors/link; Bishesh not found in author list'
+  authors_source: openalex:W7140953708
 - title: 'The AI pyramid: a conceptual framework for workforce capability in the age of AI'
-  authors: Khatri A, **Khanal B**
+  authors:
+    - Khatri A
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2026
   type: preprint
@@ -31,19 +60,77 @@
   featured: true
   review: 'dossier says: verify authors/link'
 - title: >-
-    From development to deployment of AI-assisted telehealth and screening for vision and hearing-threatening diseases
-    in resource-constrained settings
-  authors: Shakya M, Adhikari B, Shrestha N, et al
+    From development to deployment of AI-assisted telehealth and screening for vision and hearing-threatening diseases in
+    resource-constrained settings
+  authors:
+    - Shakya M
+    - Adhikari B
+    - Shrestha N
+    - Koirala B
+    - Adhikari A
+    - Poudyal P
+    - Mathema L
+    - Buddhacharya S
+    - Khatri B
+    - '**Khanal B**'
   venue: MICCAI Workshop
   year: 2026
   type: workshop
   themes:
     - frugal-diagnostics
-  review: 'dossier says: verify authors/link; Bishesh not found in author list'
+  authors_source: openalex:W4414698874
 - title: 'FUTURE-AI: international consensus guideline for trustworthy and deployable artificial intelligence in healthcare'
-  authors: >-
-    Lekadir K, Frangi AF, Porras AR, Glocker B, Cintas C, Langlotz CP, Weicken E, Asselbergs FW, Prior F, Collins GS, et
-    al
+  authors:
+    - Lekadir K
+    - Frangi AF
+    - Porras AR
+    - Glocker B
+    - Cintas C
+    - Langlotz CP
+    - Weicken E
+    - Asselbergs FW
+    - Prior F
+    - Collins GS
+    - Kaissis G
+    - Tsakou G
+    - Buvat I
+    - Kalpathy-Cramer J
+    - Mongan J
+    - Schnabel JA
+    - Kushibar K
+    - Riklund K
+    - Marias K
+    - Amugongo LM
+    - Fromont LA
+    - Maier-Hein L
+    - Cerdá-Alberich L
+    - Martí-Bonmatí L
+    - Cardoso MJ
+    - Bobowicz M
+    - Shabani M
+    - Tsiknakis M
+    - Zuluaga MA
+    - Fritzsche MC
+    - Camacho M
+    - Linguraru MG
+    - Wenzel M
+    - De Bruijne M
+    - Tolsgaard MG
+    - Goisauf M
+    - Cano Abadía M
+    - Papanikolaou N
+    - Lazrak N
+    - Pujol O
+    - Osuala R
+    - Napel S
+    - Colantonio S
+    - Joshi S
+    - Klein S
+    - Aussó S
+    - Rogers WA
+    - Salahuddin Z
+    - Starmans MPA
+    - FUTURE-AI Consortium (incl. **Khanal B**)
   venue: BMJ, 2025;388:e081554
   year: 2025
   type: journal
@@ -51,11 +138,24 @@
     - trustworthy-ai-policy
   featured: true
   doi: 10.1136/bmj-2024-081554
-  review: Bishesh not found in author list
+  authors_source: europepmc:10.1136/bmj-2024-081554
 - title: Transforming healthcare through just, equitable and quality driven artificial intelligence solutions in South Asia
-  authors: >-
-    Adhikari S, Ahmed I, Bajracharya D, **Khanal B**, Solomon C, Jayaratne K, Mamum KAA, Talukder MSH, Shakya S,
-    Manandhar S, et al
+  authors:
+    - Adhikari S
+    - Ahmed I
+    - Bajracharya D
+    - '**Khanal B**'
+    - Solomon C
+    - Jayaratne K
+    - Mamum KAA
+    - Talukder MSH
+    - Shakya S
+    - Manandhar S
+    - Memon ZA
+    - Chowdhury MH
+    - Ul Islam I
+    - Rakhshani NS
+    - Khan MI
   venue: NPJ Digit Med, 2025;8(1):139
   year: 2025
   type: journal
@@ -63,16 +163,37 @@
     - trustworthy-ai-policy
   featured: true
   doi: 10.1038/s41746-025-01534-0
+  authors_source: europepmc:10.1038/s41746-025-01534-0
 - title: Topology-driven fusion of nnU-Net and MedNeXt for accurate brain tumor segmentation on Sub-Saharan Africa dataset
-  authors: Bohara P, Shrestha PK, Rai A, et al
+  authors:
+    - Bohara P
+    - Shrestha PK
+    - Rai A
+    - Lamgade UP
+    - Raymond C
+    - Zhang D
+    - Lorumbu A
+    - Jones C
+    - Shakya M
+    - '**Khanal B**'
+    - Kulung P
   venue: MICCAI
   year: 2025
   type: conference
   themes:
     - imaging-methods
-  review: 'dossier says: verify authors/link; Bishesh not found in author list'
+  authors_source: openalex:W7151745151
 - title: Adaptive frame selection for gestational age estimation from blind sweep fetal ultrasound videos
-  authors: Akumu T, Elbatel M, Campello VM, Osuala R, Martin-Isla C, Valenzuela I, Li X, **Khanal B**, Lekadir K
+  authors:
+    - Akumu T
+    - Elbatel M
+    - Campello VM
+    - Osuala R
+    - Martin-Isla C
+    - Valenzuela I
+    - Li X
+    - '**Khanal B**'
+    - Lekadir K
   venue: 'Medical Image Computing and Computer Assisted Intervention (MICCAI). LNCS 15973. Cham: Springer; 2025:3-12'
   year: 2025
   type: conference
@@ -80,7 +201,17 @@
     - ultrasound
   code: https://github.com/tanya-akumu/selectGA
 - title: Assistive artificial intelligence in epilepsy and its impact on epilepsy care in low- and middle-income countries
-  authors: Koirala N, Adhikari SR, Adhikari M, Yadav T, Anwar AR, Ciolac D, Shrestha B, Adhikari I, **Khanal B**, Muthuraman M
+  authors:
+    - Koirala N
+    - Adhikari SR
+    - Adhikari M
+    - Yadav T
+    - Anwar AR
+    - Ciolac D
+    - Shrestha B
+    - Adhikari I
+    - '**Khanal B**'
+    - Muthuraman M
   venue: Brain Sci, 2025;15(5):481
   year: 2025
   type: journal
@@ -88,41 +219,150 @@
     - trustworthy-ai-policy
   doi: 10.3390/brainsci15050481
 - title: Multimodal lead-specific modeling of ECG for low-cost pulmonary hypertension assessment
-  authors: Suvon MNI, Zhou S, Tripathi PC, Fan W, Alabed S, **Khanal B**, Osmani V, Swift AJ, Lu H, et al
+  authors:
+    - Suvon MNI
+    - Zhou S
+    - Tripathi PC
+    - Fan W
+    - Alabed S
+    - '**Khanal B**'
+    - Osmani V
+    - Swift AJ
+    - Lu H
+    - et al
   venue: arXiv preprint
   year: 2025
   type: preprint
   themes:
     - frugal-diagnostics
   arxiv: '2503.13470'
+  hidden: true
+  review: >-
+    same paper as "Multimodal latent fusion of ECG leads…" (arXiv 2503.13470 now carries that title) — hidden as a duplicate; delete this
+    entry if you agree
 - title: Multimodal latent fusion of ECG leads for early assessment of pulmonary hypertension
-  authors: Suvon MNI, Zhou S, Tripathi PC, et al
+  authors:
+    - Suvon MNI
+    - Zhou S
+    - Tripathi PC
+    - Fan W
+    - Alabed S
+    - '**Khanal B**'
+    - Osmani V
+    - Swift AJ
+    - Chen
+    - Chen
+    - Lu H
   venue: arXiv preprint
   year: 2025
   type: preprint
   themes:
     - frugal-diagnostics
-  review: 'dossier says: verify authors/link; Bishesh not found in author list'
+  review: 'source gives incomplete name(s): Chen, Chen — fix from the paper'
+  authors_source: openalex:W4415058443
+  arxiv: '2503.13470'
 - title: Leapfrogging health services delivery in resource-limited settings with artificial intelligence
-  authors: Pandey KR, **Khanal B**, Anazodo U, et al
+  authors:
+    - Pandey KR
+    - '**Khanal B**'
+    - Anazodo U
+    - et al
   venue: SSRN
   year: 2025
   type: preprint
   themes:
     - trustworthy-ai-policy
   review: 'dossier says: verify authors/link'
-- title: >-
-    Mapping the potentials and limitations of using generative AI technologies to address socio-economic challenges in
-    LMICs
-  authors: Adams R, Adeleke F, Junck L, et al
+- title: Mapping the potentials and limitations of using generative AI technologies to address socio-economic challenges in LMICs
+  authors:
+    - Adams R
+    - Adeleke F
+    - Junck L
+    - Alayande A
+    - Segun S
+    - Gupta A
+    - Aneja U
+    - Parkes-Ratanshi R
+    - Abdella S
+    - Gaffley M
+    - Mahoney S
+    - Archegas J
+    - Adade NE
+    - Adekanmbi O
+    - Akogo D
+    - Anebelundu C
+    - Bian L
+    - Brey Z
+    - Chowdhury M
+    - Cohen D
+    - Devarsetty P
+    - Diallo MA
+    - Duncan E
+    - Kawak ME
+    - Elhajj I
+    - Etuk I
+    - Germani A
+    - Govathson C
+    - Hendry B
+    - Hirst J
+    - Hooda Y
+    - Jain S
+    - Jjingo D
+    - Khalid S
+    - '**Khanal B**'
+    - Kintu T
+    - Korom R
+    - Lawa O
+    - Lesh N
+    - Leventhal M
+    - Lima HA
+    - Liu XF
+    - Maginga TJ
+    - Mahale A
+    - Makamu R
+    - Mamun KA
+    - Minaye H
+    - Mobisson N
+    - Mohamedali E
+    - Morales HMP
+    - Morris S
+    - Mugume A
+    - Mustafa M
+    - Nakatumba-Nabende J
+    - Nguyen TT
+    - Nsenga J
+    - Ogunremi T
+    - Patel B
+    - Ciabati LMDO
+    - Proctor JL
+    - Quakyi NK
+    - Ravi N
+    - Resende V
+    - Roman TE
+    - Sharma A
+    - Santos HDPD
+    - Sikiru R
+    - Sultan F
+    - Taylor A
+    - Trocoli-Couto PHFS
+    - Urs U
+    - Vo T
+    - Yusuf F
+    - Zaimova R
+    - Zaman M
   venue: VeriXiv
   year: 2025
   type: preprint
   themes:
     - trustworthy-ai-policy
-  review: 'dossier says: verify authors/link; Bishesh not found in author list'
+  authors_source: openalex:W4409159718
 - title: 'Correction to: Transforming healthcare through just, equitable and quality driven AI solutions in South Asia'
-  authors: Adhikari S, Ahmed I, Bajracharya D, **Khanal B**, et al
+  authors:
+    - Adhikari S
+    - Ahmed I
+    - Bajracharya D
+    - '**Khanal B**'
+    - et al
   venue: NPJ Digit Med
   year: 2025
   type: correction
@@ -130,7 +370,13 @@
     - trustworthy-ai-policy
   hidden: true
 - title: Investigating the robustness of vision transformers against label noise in medical image classification
-  authors: Khanal B, Shrestha P, Amgain S, **Khanal B**, Bhattarai B, Linte CA
+  authors:
+    - Khanal B
+    - Shrestha P
+    - Amgain S
+    - '**Khanal B**'
+    - Bhattarai B
+    - Linte CA
   venue: 46th Annual Int. Conf. IEEE Eng. Med. Biol. Soc. (EMBC). 2024:1-6. IEEE
   year: 2024
   type: conference
@@ -139,7 +385,11 @@
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
 - title: 'VLSM-adapter: finetuning vision-language segmentation efficiently with lightweight blocks'
-  authors: Dhakal M, Adhikari R, Thapaliya S, **Khanal B**
+  authors:
+    - Dhakal M
+    - Adhikari R
+    - Thapaliya S
+    - '**Khanal B**'
   venue: MICCAI. 2024:712-722. Springer
   year: 2024
   type: conference
@@ -148,7 +398,11 @@
     - imaging-methods
   featured: true
 - title: 'TuneVLSeg: prompt tuning benchmark for vision-language segmentation models'
-  authors: Adhikari R, Thapaliya S, Dhakal M, **Khanal B**
+  authors:
+    - Adhikari R
+    - Thapaliya S
+    - Dhakal M
+    - '**Khanal B**'
   venue: Asian Conf. on Computer Vision (ACCV). 2024:126-144
   year: 2024
   type: conference
@@ -156,17 +410,25 @@
     - foundation-models
     - imaging-methods
 - title: AI-assisted cervical cancer screening
-  authors: Poudel K, Poudel L, Shakya PR, Poudel A, Shrestha A, **Khanal B**
+  authors:
+    - Poudel K
+    - Poudel L
+    - Shakya PR
+    - Poudel A
+    - Shrestha A
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2024
   type: preprint
   themes:
     - frugal-diagnostics
   arxiv: '2403.11936'
-- title: >-
-    How does self-supervised pretraining improve robustness against noisy labels across various medical image
-    classification datasets?
-  authors: Khanal B, Bhattarai B, **Khanal B**, Linte C
+- title: How does self-supervised pretraining improve robustness against noisy labels across various medical image classification datasets?
+  authors:
+    - Khanal B
+    - Bhattarai B
+    - '**Khanal B**'
+    - Linte C
   venue: arXiv preprint
   year: 2024
   type: preprint
@@ -176,7 +438,13 @@
   arxiv: '2401.07990'
   review: two 'Khanal B' — check which is Bishesh
 - title: Exploring transfer learning in medical image segmentation using vision-language models
-  authors: Poudel K, Dhakal M, Bhandari P, Adhikari R, Thapaliya S, **Khanal B**
+  authors:
+    - Poudel K
+    - Dhakal M
+    - Bhandari P
+    - Adhikari R
+    - Thapaliya S
+    - '**Khanal B**'
   venue: Medical Imaging with Deep Learning (MIDL), Paris, 2024;7:1142-1165
   year: 2024
   type: conference
@@ -184,7 +452,11 @@
     - low-resource-language
     - foundation-models
 - title: 'Nlpineers@ NLU of Devanagari script languages 2025: hate speech detection using ensembling of BERT-based models'
-  authors: Guragain A, Poudel N, Piryani R, **Khanal B**
+  authors:
+    - Guragain A
+    - Poudel N
+    - Piryani R
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2024
   type: workshop
@@ -192,9 +464,18 @@
     - low-resource-language
   arxiv: '2412.08163'
 - title: >-
-    Parameter-efficient fine-tuning for improved convolutional baseline for brain tumor segmentation in Sub-Saharan
-    Africa adult glioma dataset
-  authors: Adhikari B, Kulung P, Bohaju J, Poudel LK, Raymond C, Zhang D, Anazodo UC, **Khanal B**, Shakya M
+    Parameter-efficient fine-tuning for improved convolutional baseline for brain tumor segmentation in Sub-Saharan Africa adult glioma
+    dataset
+  authors:
+    - Adhikari B
+    - Kulung P
+    - Bohaju J
+    - Poudel LK
+    - Raymond C
+    - Zhang D
+    - Anazodo UC
+    - '**Khanal B**'
+    - Shakya M
   venue: arXiv preprint
   year: 2024
   type: preprint
@@ -203,14 +484,27 @@
     - imaging-methods
   arxiv: '2412.14100'
 - title: 'Community-based screening of cervical cancer in an urban setting in Nepal: a cross-sectional study'
-  authors: Shrestha A, Poudel L, **Khanal B**, Poudel K, Shakya S, Timsina P, Shakya P, Shrestha S, Paneru B
+  authors:
+    - Shrestha A
+    - Poudel L
+    - '**Khanal B**'
+    - Poudel K
+    - Shakya S
+    - Timsina P
+    - Shakya P
+    - Shrestha S
+    - Paneru B
   venue: Kathmandu Univ Med J, 2024;88(4):413-418
   year: 2024
   type: journal
   themes:
     - frugal-diagnostics
 - title: 'Simplifying medical ultrasound: 5th International Workshop, ASMUS 2024 (with MICCAI 2024), Marrakesh, Morocco'
-  authors: Gomez A, **Khanal B**, King A, Namburete A
+  authors:
+    - Gomez A
+    - '**Khanal B**'
+    - King A
+    - Namburete A
   venue: Springer
   year: 2024
   type: proceedings
@@ -218,15 +512,31 @@
     - ultrasound
     - community
 - title: Fast fetal head compounding from multi-view 3D ultrasound
-  authors: Wright R, Gomez A, Zimmer VA, Toussaint N, **Khanal B**, Matthew J, Skelton E, Kainz B, Rueckert D, Hajnal JV, et al
+  authors:
+    - Wright R
+    - Gomez A
+    - Zimmer VA
+    - Toussaint N
+    - '**Khanal B**'
+    - Matthew J
+    - Skelton E
+    - Kainz B
+    - Rueckert D
+    - Hajnal JV
+    - Schnabel JA
   venue: Med Image Anal, 2023;89:102793
   year: 2023
   type: journal
   themes:
     - ultrasound
   doi: 10.1016/j.media.2023.102793
+  authors_source: europepmc:10.1016/j.media.2023.102793
 - title: Investigating the impact of class-dependent label noise in medical image classification
-  authors: Khanal B, Hasan SMK, **Khanal B**, Linte CA
+  authors:
+    - Khanal B
+    - Hasan SMK
+    - '**Khanal B**'
+    - Linte CA
   venue: Proc. SPIE Medical Imaging. Vol 12464. 2023:1246437
   year: 2023
   type: conference
@@ -234,7 +544,12 @@
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
 - title: 'M-VAAL: multimodal variational adversarial active learning for downstream medical image analysis tasks'
-  authors: Khanal B, Bhattarai B, **Khanal B**, Stoyanov D, Linte CA
+  authors:
+    - Khanal B
+    - Bhattarai B
+    - '**Khanal B**'
+    - Stoyanov D
+    - Linte CA
   venue: Medical Image Understanding and Analysis (MIUA). 2023:48-63. Springer
   year: 2023
   type: conference
@@ -242,7 +557,9 @@
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
 - title: Benchmarking encoder-decoder architectures for biplanar X-ray to 3D bone shape reconstruction
-  authors: Shakya M, **Khanal B**
+  authors:
+    - Shakya M
+    - '**Khanal B**'
   venue: Adv Neural Inf Process Syst (NeurIPS), 2023;36:20469-20481
   year: 2023
   type: conference
@@ -251,7 +568,11 @@
     - modelling-simulation
   featured: true
 - title: Improving medical image classification in noisy labels using only self-supervised pretraining
-  authors: Khanal B, Bhattarai B, **Khanal B**, Linte CA
+  authors:
+    - Khanal B
+    - Bhattarai B
+    - '**Khanal B**'
+    - Linte CA
   venue: MICCAI Workshop on Data Engineering in Medical Imaging (DEMI). 2023:78-90. Springer
   year: 2023
   type: workshop
@@ -259,10 +580,16 @@
     - foundation-models
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
-- title: >-
-    Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone
-    microscopy images
-  authors: Nakarmi S, Pudasaini S, Thapaliya S, Upretee P, Shrestha R, Giri B, Neupane BB, **Khanal B**
+- title: Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images
+  authors:
+    - Nakarmi S
+    - Pudasaini S
+    - Thapaliya S
+    - Upretee P
+    - Shrestha R
+    - Giri B
+    - Neupane BB
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2023
   type: preprint
@@ -270,7 +597,13 @@
     - frugal-diagnostics
   arxiv: '2304.05339'
 - title: 'Simplifying medical ultrasound: 4th International Workshop, ASMUS 2023 (with MICCAI 2023), Vancouver'
-  authors: Kainz B, Noble A, Schnabel JA, **Khanal B**, Müller JP, Day T
+  authors:
+    - Kainz B
+    - Noble A
+    - Schnabel JA
+    - '**Khanal B**'
+    - Müller JP
+    - Day T
   venue: Springer
   year: 2023
   type: proceedings
@@ -278,21 +611,33 @@
     - ultrasound
     - community
 - title: Emerging avenue of artificial intelligence and ethical considerations
-  authors: '**Khanal B**'
+  authors:
+    - '**Khanal B**'
   venue: '2023'
   year: 2023
   type: other
   themes:
     - trustworthy-ai-policy
 - title: Improving medical image classification
-  authors: Bhattarai B, **Khanal B**, Linte CA
+  authors:
+    - Bhattarai B
+    - '**Khanal B**'
+    - Linte CA
   venue: Data Engineering in Medical Imaging (DEMI), MICCAI Workshop. LNCS 14314. 2023:78. Springer
   year: 2023
   type: workshop
   themes:
     - robust-learning
 - title: Challenges of deep learning methods for COVID-19 detection using public datasets
-  authors: Hasan MK, Alam MA, Dahal L, Roy S, Wahid SR, Elahi MTE, Martí R, **Khanal B**
+  authors:
+    - Hasan MK
+    - Alam MA
+    - Dahal L
+    - Roy S
+    - Wahid SR
+    - Elahi MTE
+    - Martí R
+    - '**Khanal B**'
   venue: Informatics Med Unlocked, 2022;30:100945
   year: 2022
   type: journal
@@ -300,7 +645,12 @@
     - xray-3d
   doi: 10.1016/j.imu.2022.100945
 - title: Label geometry aware discriminator for conditional generative networks
-  authors: Sapkota S, Khanal B, Bhattarai B, **Khanal B**, Kim T-K
+  authors:
+    - Sapkota S
+    - Khanal B
+    - Bhattarai B
+    - '**Khanal B**'
+    - Kim T-K
   venue: Int. Conf. on Pattern Recognition (ICPR), Montreal
   year: 2022
   type: conference
@@ -308,16 +658,29 @@
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
 - title: >-
-    Distributed, Collaborative, and Federated Learning, and Affordable AI and Healthcare for Resource Diverse Global
-    Health: DeCaF 2022 & FAIR 2022 (with MICCAI 2022), Singapore
-  authors: Albarqouni S, Bakas S, Bano S, Cardoso MJ, **Khanal B**, Landman B, Li X, Qin C, Rekik I, Rieke N, et al
+    Distributed, Collaborative, and Federated Learning, and Affordable AI and Healthcare for Resource Diverse Global Health: DeCaF 2022 &
+    FAIR 2022 (with MICCAI 2022), Singapore
+  authors:
+    - Albarqouni S
+    - Bakas S
+    - Bano S
+    - Cardoso MJ
+    - '**Khanal B**'
+    - Landman B
+    - Li X
+    - Qin C
+    - Rekik I
+    - Rieke N
+    - et al
   venue: Springer
   year: 2022
   type: proceedings
   themes:
     - community
 - title: 'FixmatchSeg: fixing FixMatch for semi-supervised semantic segmentation'
-  authors: Upretee P, **Khanal B**
+  authors:
+    - Upretee P
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2022
   type: preprint
@@ -326,23 +689,44 @@
     - imaging-methods
   arxiv: '2208.00400'
 - title: COVID-19-related Nepali tweets classification in a low resource setting
-  authors: Adhikari R, Thapaliya S, Basnet N, Poudel S, Shakya A, **Khanal B**
+  authors:
+    - Adhikari R
+    - Thapaliya S
+    - Basnet N
+    - Poudel S
+    - Shakya A
+    - '**Khanal B**'
   venue: Social Media Mining for Health (SMM4H), COLING 2022
   year: 2022
   type: workshop
   themes:
     - low-resource-language
 - title: >-
-    Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health:
-    DART 2021 & FAIR 2021
-  authors: Albarqouni S, Cardoso MJ, Dou Q, Kamnitsas K, **Khanal B**, Rekik I, Rieke N, Sheet D, Tsaftaris S, Xu D, et al
+    Domain Adaptation and Representation Transfer, and Affordable Healthcare and AI for Resource Diverse Global Health: DART 2021 & FAIR
+    2021
+  authors:
+    - Albarqouni S
+    - Cardoso MJ
+    - Dou Q
+    - Kamnitsas K
+    - '**Khanal B**'
+    - Rekik I
+    - Rieke N
+    - Sheet D
+    - Tsaftaris S
+    - Xu D
+    - et al
   venue: Springer; 2021 (pub 2022)
   year: 2022
   type: proceedings
   themes:
     - community
 - title: 'COVID-19 control strategies and intervention effects in resource limited settings: a modeling study'
-  authors: Pandey KR, Subedee A, **Khanal B**, Koirala B
+  authors:
+    - Pandey KR
+    - Subedee A
+    - '**Khanal B**'
+    - Koirala B
   venue: PLoS One, 2021;16(6):e0252570
   year: 2021
   type: journal
@@ -350,9 +734,26 @@
     - modelling-simulation
   doi: 10.1371/journal.pone.0252570
 - title: >-
-    Evaluation and comparison of accurate automated spinal curvature estimation algorithms with spinal AP X-ray images:
-    the AASCE2019 challenge
-  authors: Wang L, Xie C, Lin Y, Zhou H-Y, Chen K, Cheng D, Dubost F, Collery B, Khanal B, **Khanal B**, et al
+    Evaluation and comparison of accurate automated spinal curvature estimation algorithms with spinal AP X-ray images: the AASCE2019
+    challenge
+  authors:
+    - Wang L
+    - Xie C
+    - Lin Y
+    - Zhou HY
+    - Chen K
+    - Cheng D
+    - Dubost F
+    - Collery B
+    - Khanal B
+    - '**Khanal B**'
+    - Tao R
+    - Xu S
+    - Upadhyay Bharadwaj U
+    - Zhong Z
+    - Li J
+    - Wang S
+    - Li S
   venue: Med Image Anal, 2021;72:102115
   year: 2021
   type: journal
@@ -361,8 +762,13 @@
     - modelling-simulation
   doi: 10.1016/j.media.2021.102115
   review: two 'Khanal B' — check which is Bishesh
+  authors_source: europepmc:10.1016/j.media.2021.102115
 - title: Machine-learning-assisted analysis of colorimetric assays on paper analytical devices
-  authors: Khanal B, Pokhrel P, **Khanal B**, Giri B
+  authors:
+    - Khanal B
+    - Pokhrel P
+    - '**Khanal B**'
+    - Giri B
   venue: ACS Omega, 2021;6(49):33837-33845
   year: 2021
   type: journal
@@ -371,11 +777,20 @@
   doi: 10.1021/acsomega.1c05086
   review: two 'Khanal B' — check which is Bishesh
 - title: >-
-    Towards automated extraction of 2D standard fetal head planes from 3D ultrasound acquisitions: a clinical evaluation
-    and quality assessment comparison
-  authors: >-
-    Skelton E, Matthew J, Li Y, **Khanal B**, Cerrolaza JJ, Toussaint N, Gupta C, Knight C, Kainz B, Hajnal JV, Rueckert
-    D
+    Towards automated extraction of 2D standard fetal head planes from 3D ultrasound acquisitions: a clinical evaluation and quality
+    assessment comparison
+  authors:
+    - Skelton E
+    - Matthew J
+    - Li Y
+    - '**Khanal B**'
+    - Cerrolaza JJ
+    - Toussaint N
+    - Gupta C
+    - Knight C
+    - Kainz B
+    - Hajnal JV
+    - Rueckert D
   venue: Radiography, 2021;27(2):519-526
   year: 2021
   type: journal
@@ -383,7 +798,11 @@
     - ultrasound
   doi: 10.1016/j.radi.2020.10.017
 - title: Automatic Cobb angle detection using vertebra detector and vertebra corners regression
-  authors: Khanal B, Dahal L, Adhikari P, **Khanal B**
+  authors:
+    - Khanal B
+    - Dahal L
+    - Adhikari P
+    - '**Khanal B**'
   venue: Computational Methods and Clinical Applications for Spine Imaging (CSI 2019). LNCS. 2020:81-87. Springer
   year: 2020
   type: conference
@@ -391,7 +810,10 @@
     - xray-3d
   review: two 'Khanal B' — check which is Bishesh
 - title: Uncertainty estimation in deep 2D echocardiography segmentation
-  authors: Dahal L, Kafle A, **Khanal B**
+  authors:
+    - Dahal L
+    - Kafle A
+    - '**Khanal B**'
   venue: arXiv preprint
   year: 2020
   type: preprint
@@ -400,47 +822,99 @@
     - imaging-methods
   arxiv: '2005.09349'
 - title: Ensemble U-Net model for efficient polyp segmentation
-  authors: Shrestha S, **Khanal B**, Ali S, et al
+  authors:
+    - Shrestha S
+    - '**Khanal B**'
+    - Ali S
   venue: MediaEval
   year: 2020
   type: workshop
   themes:
     - imaging-methods
+  authors_source: openalex:W3173936132
+  review: source list is no longer than the old one — check it is complete
 - title: 'Controlling meshes via curvature: spin transformations for pose-invariant shape processing'
-  authors: Le Folgoc L, Castro DC, Tan J, **Khanal B**, Kamnitsas K, Walker I, Alansary A, Glocker B
+  authors:
+    - Le Folgoc L
+    - Castro DC
+    - Tan J
+    - '**Khanal B**'
+    - Kamnitsas K
+    - Walker I
+    - Alansary A
+    - Glocker B
   venue: Information Processing in Medical Imaging (IPMI), Hong Kong. LNCS 11492. 2019:221-234. Springer
   year: 2019
   type: conference
   themes:
     - modelling-simulation
 - title: Confident head circumference measurement from ultrasound with real-time feedback for sonographers
-  authors: Budd S, Sinclair M, **Khanal B**, Matthew J, Lloyd D, Gomez A, Toussaint N, Robinson EC, Kainz B
+  authors:
+    - Budd S
+    - Sinclair M
+    - '**Khanal B**'
+    - Matthew J
+    - Lloyd D
+    - Gomez A
+    - Toussaint N
+    - Robinson EC
+    - Kainz B
   venue: MICCAI. 2019:683-691. Springer
   year: 2019
   type: conference
   themes:
     - ultrasound
 - title: Complete fetal head compounding from multi-view 3D ultrasound
-  authors: >-
-    Wright R, Toussaint N, Gomez A, Zimmer V, **Khanal B**, Matthew J, Skelton E, Kainz B, Rueckert D, Hajnal JV,
-    Schnabel JA
+  authors:
+    - Wright R
+    - Toussaint N
+    - Gomez A
+    - Zimmer V
+    - '**Khanal B**'
+    - Matthew J
+    - Skelton E
+    - Kainz B
+    - Rueckert D
+    - Hajnal JV
+    - Schnabel JA
   venue: MICCAI. 2019:384-392. Springer
   year: 2019
   type: conference
   themes:
     - ultrasound
 - title: Towards whole placenta segmentation at late gestation using multi-view ultrasound images
-  authors: Zimmer VA, Gomez A, Skelton E, Toussaint N, Zhang T, **Khanal B**, Wright R, Noh Y, Ho A, Matthew J, et al
+  authors:
+    - Zimmer VA
+    - Gomez A
+    - Skelton E
+    - Toussaint N
+    - Zhang T
+    - '**Khanal B**'
+    - Wright R
+    - Noh Y
+    - Ho A
+    - Matthew J
+    - Hajnal JV
+    - Schnabel JA
   venue: MICCAI. 2019:628-636. Springer
   year: 2019
   type: conference
   themes:
     - ultrasound
     - imaging-methods
+  authors_source: openalex:W2980198536
 - title: 'Image reconstruction in a manifold of image patches: application to whole-fetus ultrasound imaging'
-  authors: >-
-    Gomez A, Zimmer VA, Toussaint N, Wright R, Clough JR, **Khanal B**, van Poppel MPM, Skelton E, Matthews J, Schnabel
-    JA
+  authors:
+    - Gomez A
+    - Zimmer VA
+    - Toussaint N
+    - Wright R
+    - Clough JR
+    - '**Khanal B**'
+    - van Poppel MPM
+    - Skelton E
+    - Matthews J
+    - Schnabel JA
   venue: Int. Workshop on Machine Learning for Medical Image Reconstruction (MLMIR). 2019:226-235. Springer
   year: 2019
   type: workshop
@@ -448,7 +922,17 @@
     - ultrasound
     - imaging-methods
 - title: 3-D reconstruction in canonical coordinate space from arbitrarily oriented 2-D images
-  authors: Hou B, **Khanal B**, Alansary A, McDonagh S, Davidson A, Rutherford M, Hajnal JV, Rueckert D, Glocker B, Kainz B
+  authors:
+    - Hou B
+    - '**Khanal B**'
+    - Alansary A
+    - McDonagh S
+    - Davidson A
+    - Rutherford M
+    - Hajnal JV
+    - Rueckert D
+    - Glocker B
+    - Kainz B
   venue: IEEE Trans Med Imaging, 2018;37(8):1737-1750
   year: 2018
   type: journal
@@ -457,37 +941,91 @@
     - modelling-simulation
   doi: 10.1109/TMI.2018.2807770
 - title: Computing CNN loss and gradients for pose estimation with Riemannian geometry
-  authors: Hou B, Miolane N, **Khanal B**, Lee MCH, Alansary A, McDonagh S, Hajnal JV, Rueckert D, Glocker B, Kainz B
+  authors:
+    - Hou B
+    - Miolane N
+    - '**Khanal B**'
+    - Lee MCH
+    - Alansary A
+    - McDonagh S
+    - Hajnal JV
+    - Rueckert D
+    - Glocker B
+    - Kainz B
   venue: MICCAI. 2018:756-764. Springer
   year: 2018
   type: conference
   themes:
     - modelling-simulation
 - title: Fast multiple landmark localisation using a patch-based iterative network
-  authors: Li Y, Alansary A, Cerrolaza JJ, **Khanal B**, Sinclair M, Matthew J, Gupta C, Knight C, Kainz B, Rueckert D
+  authors:
+    - Li Y
+    - Alansary A
+    - Cerrolaza JJ
+    - '**Khanal B**'
+    - Sinclair M
+    - Matthew J
+    - Gupta C
+    - Knight C
+    - Kainz B
+    - Rueckert D
   venue: MICCAI. 2018:563-571. Springer
   year: 2018
   type: conference
   themes:
     - ultrasound
 - title: Standard plane detection in 3D fetal ultrasound using an iterative transformation network
-  authors: Li Y, **Khanal B**, Hou B, Alansary A, Cerrolaza JJ, Sinclair M, Matthew J, Gupta C, Knight C, Kainz B, et al
+  authors:
+    - Li Y
+    - '**Khanal B**'
+    - Hou B
+    - Alansary A
+    - Cerrolaza JJ
+    - Sinclair M
+    - Matthew J
+    - Gupta C
+    - Knight C
+    - Kainz B
+    - Rueckert D
   venue: MICCAI. 2018:392-400. Springer
   year: 2018
   type: conference
   themes:
     - ultrasound
   featured: true
+  authors_source: openalex:W2809092945
 - title: 'EchoFusion: tracking and reconstruction of objects in 4D freehand ultrasound imaging without external trackers'
-  authors: '**Khanal B**, Gomez A, Toussaint N, McDonagh S, Zimmer V, Skelton E, Matthew J, Grzech D, Wright R, Gupta C, et al'
+  authors:
+    - '**Khanal B**'
+    - Gomez A
+    - Toussaint N
+    - McDonagh S
+    - Zimmer V
+    - Skelton E
+    - Matthew J
+    - Grzech D
+    - Wright R
+    - Gupta C
+    - Hou B
+    - Rueckert D
+    - Schnabel JA
+    - Kainz B
   venue: Preterm, Perinatal and Paediatric Image Analysis (PIPPI). 2018:117-127. Springer
   year: 2018
   type: workshop
   themes:
     - ultrasound
     - imaging-methods
+  authors_source: openalex:W2884077521
 - title: Weakly supervised localisation for fetal ultrasound images
-  authors: Toussaint N, **Khanal B**, Sinclair M, Gomez A, Skelton E, Matthew J, Schnabel JA
+  authors:
+    - Toussaint N
+    - '**Khanal B**'
+    - Sinclair M
+    - Gomez A
+    - Skelton E
+    - Matthew J
+    - Schnabel JA
   venue: Deep Learning in Medical Image Analysis (DLMIA). 2018:192-200. Springer
   year: 2018
   type: workshop
@@ -495,15 +1033,35 @@
     - ultrasound
     - robust-learning
 - title: 'Multi-view image reconstruction: application to fetal ultrasound compounding'
-  authors: Zimmer VA, Gomez A, Noh Y, Toussaint N, **Khanal B**, Wright R, Peralta L, van Poppel M, Skelton E, Matthew J, et al
+  authors:
+    - Zimmer VA
+    - Gomez A
+    - Noh Y
+    - Toussaint N
+    - '**Khanal B**'
+    - Wright R
+    - Peralta L
+    - Poppel MV
+    - Skelton E
+    - Matthew J
+    - Schnabel JA
   venue: PIPPI. 2018:107-116. Springer
   year: 2018
   type: workshop
   themes:
     - ultrasound
     - imaging-methods
+  authors_source: openalex:W2892190788
 - title: LSTM spatial co-transformer networks for registration of 3D fetal US and MR brain images
-  authors: Wright R, **Khanal B**, Gomez A, Skelton E, Matthew J, Hajnal JV, Rueckert D, Schnabel JA
+  authors:
+    - Wright R
+    - '**Khanal B**'
+    - Gomez A
+    - Skelton E
+    - Matthew J
+    - Hajnal JV
+    - Rueckert D
+    - Schnabel JA
   venue: PIPPI. 2018:149-159. Springer
   year: 2018
   type: workshop
@@ -511,28 +1069,64 @@
     - ultrasound
     - modelling-simulation
 - title: Deep pose estimation for image-based registration
-  authors: Hou B, Miolane N, **Khanal B**, et al
+  authors:
+    - Hou B
+    - Miolane N
+    - '**Khanal B**'
+    - Lee M
+    - Alansary A
+    - McDonagh S
+    - Hajnal JV
+    - Rueckert D
+    - Glocker B
+    - Kainz B
   venue: '2018'
   year: 2018
   type: preprint
   themes:
     - modelling-simulation
+  authors_source: openalex:W2906552534
 - title: Spectral analysis towards geometric auto-encoding of subcortical structures
-  authors: Le Folgoc L, **Khanal B**, Alansary A, Kamnitsas K, Walker I, Glocker B
+  authors:
+    - Le Folgoc L
+    - '**Khanal B**'
+    - Alansary A
+    - Kamnitsas K
+    - Walker I
+    - Glocker B
   venue: '2018'
   year: 2018
   type: preprint
   themes:
     - modelling-simulation
 - title: Image-based registration in canonical atlas space
-  authors: Hou B, **Khanal B**, Alansary A, McDonagh S, Davidson A, Rutherford M, Hajnal JV, Rueckert D, Glocker B, Kainz B
+  authors:
+    - Hou B
+    - '**Khanal B**'
+    - Alansary A
+    - McDonagh S
+    - Davidson A
+    - Rutherford M
+    - Hajnal JV
+    - Rueckert D
+    - Glocker B
+    - Kainz B
   venue: '2018'
   year: 2018
   type: preprint
   themes:
     - modelling-simulation
 - title: Standard plane localisation in 3D fetal ultrasound using network with geometric and image loss
-  authors: Li Y, Cerrolaza JJ, Sinclair M, Hou B, Alansary A, **Khanal B**, Matthew J, Kainz B, Rueckert D
+  authors:
+    - Li Y
+    - Cerrolaza JJ
+    - Sinclair M
+    - Hou B
+    - Alansary A
+    - '**Khanal B**'
+    - Matthew J
+    - Kainz B
+    - Rueckert D
   venue: '2018'
   year: 2018
   type: preprint
@@ -540,7 +1134,12 @@
     - ultrasound
     - modelling-simulation
 - title: 'Adapted and oversegmenting graphs: application to geometric deep learning'
-  authors: Gomez A, Zimmer VA, **Khanal B**, Toussaint N, Schnabel JA
+  authors:
+    - Gomez A
+    - Zimmer VA
+    - '**Khanal B**'
+    - Toussaint N
+    - Schnabel JA
   venue: arXiv preprint
   year: 2018
   type: preprint
@@ -548,17 +1147,22 @@
     - modelling-simulation
   arxiv: '1806.00411'
 - title: Simulating longitudinal brain MRIs with known volume changes and realistic variations in image intensity
-  authors: '**Khanal B**, Ayache N, Pennec X'
+  authors:
+    - '**Khanal B**'
+    - Ayache N
+    - Pennec X
   venue: Front Neurosci, 2017;11:132
   year: 2017
   type: journal
   themes:
     - modelling-simulation
   doi: 10.3389/fnins.2017.00132
-- title: >-
-    A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer's
-    disease
-  authors: '**Khanal B**, Lorenzi M, Ayache N, Pennec X'
+- title: A biophysical model of brain deformation to simulate and analyze longitudinal MRIs of patients with Alzheimer's disease
+  authors:
+    - '**Khanal B**'
+    - Lorenzi M
+    - Ayache N
+    - Pennec X
   venue: NeuroImage, 2016;134:35-52
   year: 2016
   type: journal
@@ -566,24 +1170,27 @@
     - modelling-simulation
   featured: true
   doi: 10.1016/j.neuroimage.2016.04.010
-- title: >-
-    Modélisation et simulation réaliste d'IRMs cérébrales structurelles longitudinales avec atrophie appliquées à la
-    maladie d'Alzheimer
-  authors: '**Khanal B**'
+- title: Modélisation et simulation réaliste d'IRMs cérébrales structurelles longitudinales avec atrophie appliquées à la maladie d'Alzheimer
+  authors:
+    - '**Khanal B**'
   venue: PhD thesis. Université Côte d'Azur, Nice
   year: 2016
   type: thesis
   themes:
     - modelling-simulation
 - title: Modeling and simulation of realistic longitudinal structural brain MRIs with atrophy in Alzheimer's disease
-  authors: '**Khanal B**'
+  authors:
+    - '**Khanal B**'
   venue: PhD thesis. INRIA Sophia Antipolis
   year: 2016
   type: thesis
   themes:
     - modelling-simulation
 - title: Robust road signs segmentation in color images
-  authors: '**Khanal B**, Ali S, Sidibé D'
+  authors:
+    - '**Khanal B**'
+    - Ali S
+    - Sidibé D
   venue: Int. Conf. on Computer Vision Theory and Applications (VISAPP). Vol 2. 2012:307-310. SCITEPRESS
   year: 2012
   type: conference
@@ -591,21 +1198,31 @@
     - imaging-methods
     - early-vision
 - title: Efficient skin detection under severe illumination changes and shadows
-  authors: '**Khanal B**, Sidibé D'
+  authors:
+    - '**Khanal B**'
+    - Sidibé D
   venue: Int. Conf. on Intelligent Robotics and Applications (ICIRA). 2011:609-618. Springer
   year: 2011
   type: conference
   themes:
     - early-vision
 - title: SoC approach in designing vision-based robot
-  authors: '**Khanal B**, Parajuli D, Twanabasu D, Bista SR'
+  authors:
+    - '**Khanal B**'
+    - Parajuli D
+    - Twanabasu D
+    - Bista SR
   venue: Bachelor's thesis. Institute of Engineering
   year: 2009
   type: thesis
   themes:
     - early-vision
 - title: SoC approach in designing vision-based robot
-  authors: '**Khanal B**, Parajuli D, Twanabasu D, Bista SR'
+  authors:
+    - '**Khanal B**'
+    - Parajuli D
+    - Twanabasu D
+    - Bista SR
   venue: Bachelor's degree project proposal. Institute of Engineering; 2008
   year: 2009
   type: other

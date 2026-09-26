@@ -118,9 +118,14 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 - **Talks** are tiered by `scope`: `international` → large 16:9 cards (first rows),
   `regional` → same grid, `national` → smaller cards, `local` → a compact list, collapsed.
   Within a tier: featured first, then newest.
-- **Publications** are grouped by year, filterable by `themes` and `type`. Bishesh's own name
-  is written `**Khanal B**` in the data and rendered bold — never auto-guessed (Bidur Khanal is
-  also "Khanal B").
+- **Publications** are grouped by year, filterable by `themes` and `type`. `authors:` is a YAML **list in
+  paper order, always complete**. Bishesh is written `**Khanal B**` and rendered bold, never auto-guessed
+  (Bidur Khanal is also "Khanal B"). A consortium credit is written `"X Consortium (incl. **Khanal B**)"`.
+- **Author display rule (his, 2026-09-26)** — `formatAuthors()` in `src/lib/site.ts`, and nowhere else:
+  ≤ 20 authors → show all. > 20 → the first 20, **his name wherever it falls**, and **the last author**,
+  with `…` at every gap. Examples: `A1…A20, …, **Khanal B**` (he is last);
+  `A1…A20, …, Z` (he is inside the first 20); `A1…A20, …, **Khanal B**, …, Z` (he is 35th). The point is
+  that a reader can always tell whether he is the last author. Never shorten the data itself.
 - A page never shows more than one callout per section and never more than three stats in a row.
 
 ## 8. Adding something — checklist

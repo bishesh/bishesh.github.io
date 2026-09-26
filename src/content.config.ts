@@ -23,8 +23,10 @@ const publications = defineCollection({
   loader: list("publications.yaml"),
   schema: z.object({
     title: z.string(),
-    authors: z.string().refine((a) => a === "" || a.includes("**") || /et al/.test(a),
-      "your own name must be wrapped in double asterisks, e.g. \"Khatri A, **Khanal B**\" (or the list must end in 'et al')"),
+    // a list in paper order (a legacy "A, B, C" string is split). Shortening for display is formatAuthors()'s job.
+    authors: z.union([z.array(z.string()), z.string().transform((s) => s.split(/,\s*/))])
+      .refine((a) => a.length === 0 || a.some((x) => x.includes("**") || /et al/.test(x)),
+        "wrap your own name in double asterisks, e.g.  - \"**Khanal B**\"  (or end a truncated list with  - et al)"),
     venue: z.string().default(""),
     year: z.number().int().min(2000).max(2100),
     type: z.enum(["journal", "conference", "workshop", "preprint", "proceedings", "thesis", "other", "correction"]),

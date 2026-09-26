@@ -1,7 +1,7 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
-import { getPubs, themes, groupBy, mdInline, pubLink } from "../lib/site";
+import { getPubs, themes, groupBy, formatAuthors, pubLink } from "../lib/site";
 const pubs = await getPubs();
 const byYear = groupBy(pubs, (p) => String(p.year));
 const types = ["journal", "conference", "workshop", "preprint", "proceedings", "thesis"];
@@ -31,7 +31,7 @@ const types = ["journal", "conference", "workshop", "preprint", "proceedings", "
           {items.map((p) => { const href = pubLink(p); return (
             <li class="pub" data-filterable="pubs" data-themes={p.themes.join(" ")} data-type={p.type}>
               <div class="title">{href ? <a href={href}>{p.title}</a> : p.title}</div>
-              <div class="authors" set:html={mdInline(p.authors)} />
+              <div class="authors" set:html={formatAuthors(p.authors)} />
               <div class="venue">{p.venue}</div>
               <div class="plinks"><span class="badge type">{p.type}</span>
                 {p.doi && <a href={`https://doi.org/${p.doi}`}>DOI</a>}

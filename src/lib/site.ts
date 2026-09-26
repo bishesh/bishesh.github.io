@@ -44,3 +44,19 @@ export const groupBy = <T>(xs: T[], key: (x: T) => string) => {
   return [...g.entries()];
 };
 export const nav = site.nav as { label: string; url: string; persona: string }[];
+
+// Author display rule (his, 2026-09-26): ≤20 authors → all of them. >20 → the first 20, then HIS name
+// wherever it falls, then the LAST author — with "…" marking every gap. So a reader always sees
+// whether he is the last author. The data always keeps the full list; this only shortens the view.
+export const MAX_AUTHORS = 20;
+export const formatAuthors = (authors: string[], max = MAX_AUTHORS) => {
+  const n = authors.length;
+  if (n <= max) return authors.map(mdInline).join(", ");
+  const me = authors.findIndex((a) => a.includes("**"));
+  const show = new Set<number>([...Array(max).keys(), n - 1]);
+  if (me >= 0) show.add(me);
+  const idx = [...show].sort((a, b) => a - b);
+  const out: string[] = [];
+  idx.forEach((i, k) => { if (k > 0 && i - idx[k - 1] > 1) out.push("…"); out.push(mdInline(authors[i])); });
+  return out.join(", ");
+};

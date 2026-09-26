@@ -15,7 +15,7 @@ npm run build        # builds dist/ AND validates every data entry
 
 | To add… | Edit | Notes |
 |---|---|---|
-| a paper | `src/data/publications.yaml` | Copy an entry. Write yourself as `**Khanal B**`. `themes:` keys must exist in `themes.yaml`. `featured: true` puts it on the Scientist page. `hidden: true` keeps it off the site. |
+| a paper | `src/data/publications.yaml` | Copy an entry. List **every** author in order, with yourself as `**Khanal B**`; lists over 20 are shortened on the page automatically, keeping your name and the last author. `node scripts/fill-authors.mjs` replaces any `et al` list with the full one from Crossref, Europe PMC or arXiv. `themes:` keys must exist in `themes.yaml`. `featured: true` puts it on the Scientist page. `hidden: true` keeps it off the site. |
 | a talk / podcast | `src/data/talks.yaml` | `scope:` international · regional · national · local picks the tier. `video:` takes a YouTube id or URL, and the thumbnail follows. `persona:` sets the dot colour. |
 | press | `src/data/media.yaml` | |
 | a government role | `src/data/government.yaml` | Grouped by `body`. |
