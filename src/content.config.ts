@@ -2,17 +2,35 @@
 // A malformed entry (unknown theme, bad scope, missing year…) fails `npm run build` with the file + field,
 // so a bad edit can never reach the live site silently. Entries need no `id:` — the loader assigns one.
 import { defineCollection } from "astro:content";
+import type { Loader } from "astro/loaders";
 import { z } from "astro/zod";
 import fs from "node:fs";
 import * as yaml from "js-yaml";
 
 const read = (f: string) => yaml.load(fs.readFileSync(`${process.cwd()}/src/data/${f}`, "utf8")) as any;
-const list = (f: string) => async () =>
-  (read(f) as any[]).map((x, i) => ({
-    // readable id so a schema error names the entry: "0012-fast-fetal-head-compounding"
-    id: `${String(i).padStart(4, "0")}-${String(x?.title ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 48).replace(/-+$/, "")}`,
-    ...x,
-  }));
+// A loader that owns its watch: it re-reads the YAML whenever the file changes under `astro dev`, and logs it,
+// so an edit shows on the next browser reload. Each entry gets an id (the YAML needs none) that names it in
+// schema errors: "0012-fast-fetal-head-compounding".
+const list = (f: string): Loader => ({
+  name: `yaml-list:${f}`,
+  load: async ({ store, parseData, watcher, logger }) => {
+    const path = `${process.cwd()}/src/data/${f}`;
+    const sync = async () => {
+      const items = yaml.load(fs.readFileSync(path, "utf8")) as any[];
+      store.clear();
+      for (const [i, x] of items.entries()) {
+        const id = `${String(i).padStart(4, "0")}-${String(x?.title ?? "").toLowerCase().replace(/[^a-z0-9]+/g, "-").slice(0, 48).replace(/-+$/, "")}`;
+        store.set({ id, data: await parseData({ id, data: x }) });
+      }
+    };
+    await sync();
+    watcher?.add(path);
+    watcher?.on("change", async (changed) => {
+      if (changed !== path) return;
+      try { await sync(); logger.info(`reloaded ${f}`); } catch (e: any) { logger.error(`${f}: ${e.message}`); }
+    });
+  },
+});
 
 const themeKeys = (read("themes.yaml") as { key: string }[]).map((t) => t.key) as [string, ...string[]];
 const persona = z.enum(["dreamer", "scientist", "entrepreneur"]);

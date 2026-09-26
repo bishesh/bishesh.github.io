@@ -1,5 +1,7 @@
 ---
-import { site, nav } from "../lib/site";
+import { getSite, getNav } from "../lib/site";
+const site = getSite();
+const nav = getNav();
 interface Props { title?: string; description?: string; persona?: string; isHome?: boolean }
 const { title, description, persona = "", isHome = false } = Astro.props;
 const path = Astro.url.pathname;

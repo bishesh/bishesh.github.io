@@ -7,8 +7,10 @@ import { getCollection } from "astro:content";
 export const copy = <T = any>(name: string): T =>
   yaml.load(fs.readFileSync(`${process.cwd()}/src/data/${name}.yaml`, "utf8")) as T;
 
-export const site = copy("site");
-export const themes = copy<{ key: string; label: string; blurb: string }[]>("themes");
+// Read on every access, not once at import: the dev server caches this module, and a constant would keep
+// serving the YAML as it was when the server started.
+export const getSite = () => copy("site");
+export const getThemes = () => copy<{ key: string; label: string; blurb: string }[]>("themes");
 
 export const md = (s?: string) => (s ? (marked.parse(String(s), { async: false }) as string) : "");
 export const mdInline = (s?: string) => (s ? (marked.parseInline(String(s), { async: false }) as string) : "");
@@ -43,7 +45,7 @@ export const groupBy = <T>(xs: T[], key: (x: T) => string) => {
   for (const x of xs) { const k = key(x); if (!g.has(k)) g.set(k, []); g.get(k)!.push(x); }
   return [...g.entries()];
 };
-export const nav = site.nav as { label: string; url: string; persona: string }[];
+export const getNav = () => getSite().nav as { label: string; url: string; persona: string }[];
 
 // Author display rule (his, 2026-09-26): ≤20 authors → all of them. >20 → the first 20, then HIS name
 // wherever it falls, then the LAST author — with "…" marking every gap. So a reader always sees
