@@ -75,33 +75,37 @@ projects:
 # confirmed (Bishram Acharya confirmed current 2026-10-02). Not here yet: the people Mahesh supervises for him
 # (Bikram Chapagain, Bigyan Aryal, Radhika Thagunna); add them once confirmed. `now` = where an alum is now.
 team:
-  title: People I supervise, and where they went
+  title: The TOGAI team, and where they went
   lead: |
     Since 2019: about 20 research assistants at NAAMII and 2 at IIIT Hyderabad, 5 MSc theses and 20 interns. I also
     give visiting lectures at the University of Cambridge (MSc, AI in global health, 2024–) and gave them at Imperial
     College London (PhD students, AI in ultrasound imaging, 2018).
   current:
-    - { name: Mahesh Shakya, role: "PhD student, NAAMII & University of Tübingen", since: "2025–", text: "Thesis on setting change; leads his own health-AI portfolio at NAAMII." }
-    - { name: Tanya Akumu, role: "PhD student, Universitat de Barcelona", since: "2025–" }
-    - { name: Bishram Acharya, role: "Research Assistant, NAAMII", text: "Representation learning (CS-JEPA)." }
-    - { name: Sameer Shrestha, role: "Research Assistant, NAAMII", text: "Ultrasound. Joined as an intern." }
-    - { name: Himani Paudayal, role: "Research Assistant, NAAMII", text: "TOGAI group." }
-    - { name: Prekshya Dawadi, role: "Research Assistant, NAAMII", text: "TOGAI group." }
+    - { name: Dr. Pradeep Raj Regmi, role: "Radiologist & Clinical Research Scientist, TOGAI, NAAMII", text: "A colleague I collaborate with; also radiologist at Tribhuvan University Teaching Hospital (IOM)." }
+    - { name: Mahesh Shakya, role: "PhD student, TOGAI, NAAMII & University of Tübingen", since: "2025–", text: "Thesis on setting change." }
+    - { name: Tanya Akumu, role: "PhD student, Universitat de Barcelona", since: "2025–", text: "Affiliate member, TOGAI, NAAMII." }
+    - { name: Ranjana Koirala, role: "Program Manager, AI and Health, TOGAI, NAAMII", text: "Programme management and public health research." }
+    - { name: Neelam Suwal, role: "Coordinator, TOGAI, NAAMII", text: "Coordination and public health research." }
+    - { name: Bishram Acharya, role: "Research Assistant, TOGAI, NAAMII", text: "Representation learning (CS-JEPA)." }
+    - { name: Sameer Shrestha, role: "Research Assistant, TOGAI, NAAMII", text: "Ultrasound. Joined as an intern." }
+    - { name: Himani Paudayal, role: "Research Assistant, TOGAI, NAAMII" }
+    - { name: Prekshya Dawadi, role: "Research Assistant, TOGAI, NAAMII" }
   # alumni: from people.md, plus the RISE-MICCAI keynote deck's "Where our alumni went next" (added 2026-10-02).
-  # PhDs first, then MSc and onward roles, then those whose next step isn't recorded.
+  # PhDs first, then MSc and onward roles, then those whose next step isn't recorded. TOGAI = the group he leads at
+  # NAAMII; everyone on the deck's TOGAI-alumni slide carries it (Kushal and Krischal are named there only as former RAs).
   alumni:
-    - { name: Bidur Khanal, role: "Research Assistant, NAAMII", text: "I was also on his PhD committee at RIT (2023–25).", now: "NVIDIA, after a PhD at Rochester Institute of Technology" }
-    - { name: Lavsen Dahal, role: "Research Assistant, NAAMII", now: "PhD student, Duke University, USA" }
-    - { name: Pratima Upretee, role: "Research Assistant, NAAMII", now: "PhD student, Ghent University, Belgium" }
-    - { name: Suprim Nakarmi, role: "Research Assistant, NAAMII", now: "PhD student, University of Nevada, Las Vegas, USA" }
-    - { name: Safal Thapaliya, role: "Research Assistant, NAAMII", now: "PhD student, University of Connecticut, USA" }
-    - { name: Manish Dhakal, role: "Research Assistant, NAAMII", now: "PhD student, University of Tennessee, USA" }
-    - { name: Nishant Luitel, role: "Research Assistant, NAAMII", now: "PhD, Rochester Institute of Technology, USA (from autumn 2026)" }
-    - { name: Kanchan Poudel, role: "Research Assistant, NAAMII", now: "MSc Machine Learning, University of Tübingen (ELLIS full scholarship)" }
-    - { name: Rabin Adhikari, role: "TOGAI group, NAAMII", now: "MSc Data Science & AI, Saarland University, Germany" }
-    - { name: Prasiddha Bhandari, role: "Research Assistant, NAAMII", text: "First author, MIDL 2026.", now: "MSc, Germany" }
-    - { name: Anmol Guragain, role: "TOGAI group, NAAMII", now: "Research Engineer, Universidad Politécnica de Madrid, Spain" }
-    - { name: Angelina Ghimire, role: "Research Assistant, NAAMII" }
+    - { name: Bidur Khanal, role: "Research Assistant, TOGAI, NAAMII", text: "I then mentored him through his PhD at RIT, and was on his PhD committee (2023–25).", now: "NVIDIA, after a PhD at Rochester Institute of Technology" }
+    - { name: Lavsen Dahal, role: "Research Assistant, TOGAI, NAAMII", now: "PhD student, Duke University, USA" }
+    - { name: Pratima Upretee, role: "Research Assistant, TOGAI, NAAMII", now: "PhD student, Ghent University, Belgium" }
+    - { name: Suprim Nakarmi, role: "Research Assistant, TOGAI, NAAMII", now: "PhD student, University of Nevada, Las Vegas, USA" }
+    - { name: Safal Thapaliya, role: "Research Assistant, TOGAI, NAAMII", now: "PhD student, University of Connecticut, USA" }
+    - { name: Manish Dhakal, role: "Research Assistant, TOGAI, NAAMII", now: "PhD student, University of Tennessee, USA" }
+    - { name: Nishant Luitel, role: "Research Assistant, TOGAI, NAAMII", now: "PhD, Rochester Institute of Technology, USA (from autumn 2026)" }
+    - { name: Kanchan Poudel, role: "Research Assistant, TOGAI, NAAMII", now: "MSc Machine Learning, University of Tübingen (ELLIS full scholarship)" }
+    - { name: Rabin Adhikari, role: "Research Assistant, TOGAI, NAAMII", now: "MSc Data Science & AI, Saarland University, Germany" }
+    - { name: Prasiddha Bhandari, role: "Research Assistant, TOGAI, NAAMII", text: "First author, MIDL 2026.", now: "MSc, Germany" }
+    - { name: Anmol Guragain, role: "Research Assistant, TOGAI, NAAMII", now: "Research Engineer, Universidad Politécnica de Madrid, Spain" }
+    - { name: Angelina Ghimire, role: "Research Assistant, TOGAI, NAAMII" }
     - { name: Kushal Paudel, role: "Research Assistant, NAAMII" }
     - { name: Krischal Khanal, role: "Research Assistant, NAAMII" }
 service:

@@ -53,7 +53,7 @@ const nav = [
   {d.team && (
     <section class="container section" id="team">
       <div class="section-head"><div class="eyebrow">Team & alumni</div><h2>{d.team.title}</h2><div class="prose" set:html={md(d.team.lead)} /></div>
-      {[{ k: "current", label: "Current team" }, { k: "alumni", label: "Alumni, and where they are now" }, { k: "committee", label: "PhD committees" }].map((g) => d.team[g.k]?.length > 0 && (
+      {[{ k: "current", label: "Current TOGAI team" }, { k: "alumni", label: "Alumni, and where they are now" }, { k: "committee", label: "PhD committees" }].map((g) => d.team[g.k]?.length > 0 && (
         <>
           <h3 class="filter-label team-label">{g.label}</h3>
           <ul class="team-grid">
