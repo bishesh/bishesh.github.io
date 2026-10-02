@@ -1,6 +1,6 @@
 # Service & policy (/service/). Sources: cortex/dossier/cv.md "Professional memberships & services",
 # positions.md "Other engagements", and the former government.yaml.
-# Each section: key (the #anchor), title, persona (its eyebrow colour), items: { when, role, where, text }.
+# Each section: key (the #anchor), title, short (its label in the section bar, if shorter), persona (its eyebrow colour), items: { when, role, where, text }.
 # `when` is free text; items are shown in file order.
 lead: |
   Organizing workshops and schools, sitting on committees, reviewing papers, and helping government use AI
@@ -25,6 +25,7 @@ sections:
       - { when: "", role: "AI expert from Nepal, feedback on UNESCO's global AI-ethics guideline", where: "UNESCO" }
   - key: organizing
     title: Conferences, workshops & schools organized
+    short: Organizing
     persona: scientist
     items:
       - { when: "2025", role: "Co-chair, MIRASOL workshop", where: "MICCAI 2025, Daejeon, South Korea" }

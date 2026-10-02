@@ -1,16 +1,23 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
+import SectionNav from "../components/SectionNav.astro";
 import { copy, md, getPubs, getThemes, pubLink, formatAuthors } from "../lib/site";
 const themes = getThemes();
 const d = copy("scientist");
 const pubs = await getPubs();
 const themed = themes.filter((t) => t.key !== "other").map((t) => ({ ...t, n: pubs.filter((p) => p.themes.includes(t.key)).length })).filter((t) => t.n > 0);
 const featured = pubs.filter((p) => p.featured);
+const nav = [
+  { id: "arc", label: "The arc" }, { id: "themes", label: "Research themes" }, { id: "selected", label: "Selected papers" },
+  ...(d.projects ? [{ id: "projects", label: "Projects" }] : []), ...(d.team ? [{ id: "team", label: "Team & alumni" }] : []),
+  { id: "service", label: "Service & funders" },
+];
 ---
 <Base title="Scientist" persona="scientist" description="Research from medical imaging to health AI in low-resource settings, and the reorganization of work.">
   <PageHero persona="scientist" eyebrow={d.eyebrow} headline={d.headline} lead={d.lead} stats={d.stats} />
-  <section class="container section" style="padding-top:1rem">
+  <SectionNav items={nav} />
+  <section class="container section" id="arc" style="padding-top:2.5rem">
     <div class="section-head"><div class="eyebrow">The arc</div><h2>{d.arc_title}</h2></div>
     <div class="eras">
       {d.eras.map((e: any) => (
@@ -23,13 +30,13 @@ const featured = pubs.filter((p) => p.featured);
       ))}
     </div>
   </section>
-  <section class="container section">
+  <section class="container section" id="themes">
     <div class="section-head"><div class="eyebrow">Publications by theme</div><h2>{pubs.length} papers, {themed.length} threads</h2></div>
     <div class="grid grid-3">
       {themed.map((t) => <a class="card theme-card" href={`/publications/?themes=${t.key}`}><span class="n">{t.n} paper{t.n === 1 ? "" : "s"}</span><h3>{t.label}</h3><p>{t.blurb}</p></a>)}
     </div>
   </section>
-  <section class="container section">
+  <section class="container section" id="selected">
     <div class="section-head"><div class="eyebrow">Selected work</div><h2>A few papers to start with</h2></div>
     <ol class="pub-list" style="max-width:820px">
       {featured.map((p) => { const href = pubLink(p); return (
@@ -38,7 +45,7 @@ const featured = pubs.filter((p) => p.featured);
     <div class="actions"><a class="btn solid" href="/publications/">All publications →</a></div>
   </section>
   {d.projects && (
-    <section class="container section">
+    <section class="container section" id="projects">
       <div class="section-head"><div class="eyebrow">Projects</div><h2>What the lab is building</h2></div>
       <div class="grid grid-3">{d.projects.map((p: any) => <div class="card"><h3>{p.name}</h3><p>{p.text}</p></div>)}</div>
     </section>
@@ -63,7 +70,7 @@ const featured = pubs.filter((p) => p.featured);
       ))}
     </section>
   )}
-  <section class="container section">
+  <section class="container section" id="service">
     <div class="grid grid-2">{d.service.map((b: any) => <div class="card"><h3>{b.title}</h3><div class="prose small" set:html={md(b.text)} /></div>)}</div>
   </section>
 </Base>

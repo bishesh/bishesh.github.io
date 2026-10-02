@@ -9,6 +9,25 @@
   const nt = document.querySelector("[data-nav-toggle]"), nav = document.getElementById("nav");
   nt?.addEventListener("click", () => { const o = nav.classList.toggle("open"); nt.setAttribute("aria-expanded", o); });
 
+  // Section bar: mark the link of the section in view (the last one whose top has passed under the bars).
+  document.querySelectorAll("[data-section-nav]").forEach((nav) => {
+    const links = [...nav.querySelectorAll('a[href^="#"]')];
+    const secs = links.map((a) => document.getElementById(a.hash.slice(1))).filter(Boolean);
+    const mark = () => {
+      const y = 140; let cur = secs[0];
+      secs.forEach((s) => { if (s.getBoundingClientRect().top <= y) cur = s; });
+      if (innerHeight + scrollY >= document.documentElement.scrollHeight - 4) cur = secs[secs.length - 1];
+      links.forEach((a) => {
+        const on = a.hash.slice(1) === cur?.id;
+        a.setAttribute("aria-current", String(on));
+        if (on) { const ul = a.closest("ul"), l = a.offsetLeft - ul.offsetLeft; if (l < ul.scrollLeft || l + a.offsetWidth > ul.scrollLeft + ul.clientWidth) ul.scrollLeft = l - 16; }
+      });
+    };
+    let raf = 0; const later = () => { cancelAnimationFrame(raf); raf = requestAnimationFrame(mark); };
+    addEventListener("scroll", later, { passive: true }); addEventListener("hashchange", later); addEventListener("resize", later);
+    mark();
+  });
+
   // Filters: <div data-filters="pubs"> with .chip[data-key][data-value] (data-single: one value at a time, like tabs); items [data-filterable="pubs"] carry data-<key>="a b c".
   // Within a key: OR. Across keys: AND. value "*" clears the key.
   document.querySelectorAll("[data-filters]").forEach((box) => {

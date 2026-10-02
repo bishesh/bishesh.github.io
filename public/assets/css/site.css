@@ -263,11 +263,18 @@ details.tier > summary:hover h2, details.tier > summary:hover .chev { color: var
 .person .since { font-variant-numeric: tabular-nums; }
 .person .note { font-size: .8125rem; color: var(--ink-soft); }
 .person .now { margin-top: .35rem; font-size: .875rem; font-weight: 600; color: var(--accent-strong); }
-/* service & policy: section jump links, persona-coloured sections, peer-review venues */
-.jump { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1.5rem; }
-.jump a { display: inline-flex; align-items: center; gap: .45rem; font-weight: 500; color: var(--ink); text-decoration: none; border-bottom: 1.5px solid var(--accent); padding-bottom: .15rem; }
-.jump a:hover { color: var(--accent-strong); }
-.service-sec { padding-bottom: 2.5rem; scroll-margin-top: 80px; }
+/* section bar (SectionNav): sticky under the 64px header; the section in view is inked and underlined */
+.section-nav { position: sticky; top: 64px; z-index: 9; background: color-mix(in srgb, var(--paper) 92%, transparent); backdrop-filter: saturate(1.4) blur(10px); border-bottom: 1px solid var(--line-strong); }
+.section-nav ul { list-style: none; margin: 0; padding: 0; display: flex; gap: 0 1.75rem; overflow-x: auto; scrollbar-width: none; }
+.section-nav ul::-webkit-scrollbar { display: none; }
+.section-nav a { display: inline-flex; align-items: center; gap: .45rem; white-space: nowrap; padding: .85rem 0 .7rem; font: 500 .9375rem/1 var(--sans); color: var(--ink-soft); text-decoration: none; border-bottom: 3px solid transparent; }
+.section-nav a:hover { color: var(--ink); }
+.section-nav a[aria-current="true"] { color: var(--ink); font-weight: 600; border-bottom-color: var(--accent-strong); }
+@media (max-width: 720px) { .section-nav ul { gap: 0 1.25rem; mask-image: linear-gradient(to right, #000 85%, transparent); -webkit-mask-image: linear-gradient(to right, #000 85%, transparent); padding-right: 2rem; } }
+[id] { scroll-margin-top: 130px; }
+/* service & policy: persona-coloured sections, peer-review venues */
+.service-sec { padding-bottom: 2.5rem; }
+.service-sec .pub-year > h2.eyebrow { top: 130px; }
 .service-sec .pub-year { grid-template-columns: 220px minmax(0, 1fr); }
 .service-sec .pub-year > h2.eyebrow { font-size: .8125rem; line-height: 1.5; margin: 0; align-items: flex-start; }
 .service-sec .row { grid-template-columns: 120px minmax(0, 1fr); }

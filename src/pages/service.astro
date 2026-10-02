@@ -2,14 +2,15 @@
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
 import Glyph from "../components/Glyph.astro";
+import SectionNav from "../components/SectionNav.astro";
 import { copy } from "../lib/site";
 // Service & policy: a neutral page; each section carries its own persona (eyebrow, glyph, date colour).
 const s = copy("service");
 ---
 <Base title="Service" description="Service and policy: AI policy for Nepal, MICCAI workshops and Nepal AI schools organized, award committees, and peer review.">
-  <PageHero eyebrow="Service" headline="Service & policy" lead={s.lead}>
-    <nav class="jump" aria-label="Sections">{s.sections.map((x: any) => <a href={`#${x.key}`} data-persona={x.persona}><i class={`dot ${x.persona}`} />{x.title}</a>)}</nav>
-  </PageHero>
+  <PageHero eyebrow="Service" headline="Service & policy" lead={s.lead} />
+  <SectionNav items={s.sections.map((x: any) => ({ id: x.key, label: x.short ?? x.title, persona: x.persona }))} />
+  <div style="height:2.5rem" />
   {s.sections.map((x: any) => (
     <section class="container service-sec" id={x.key} data-persona={x.persona}>
       <div class="pub-year">

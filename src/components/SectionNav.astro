@@ -1,0 +1,11 @@
+---
+// A sticky bar of jump links to a long page's sections, under the site header. site.js marks the section in view
+// (aria-current). On a phone it scrolls sideways, with a fade at the edge as the cue. An item's persona colours its dot.
+interface Props { items: { id: string; label: string; persona?: string }[] }
+const { items } = Astro.props;
+---
+<nav class="section-nav" aria-label="On this page" data-section-nav>
+  <div class="container"><ul>
+    {items.map((x) => <li><a href={`#${x.id}`} data-persona={x.persona}>{x.persona && <i class={`dot ${x.persona}`} />}{x.label}</a></li>)}
+  </ul></div>
+</nav>
