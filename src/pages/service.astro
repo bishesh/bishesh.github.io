@@ -1,0 +1,27 @@
+---
+import Base from "../layouts/Base.astro";
+import PageHero from "../components/PageHero.astro";
+import Glyph from "../components/Glyph.astro";
+import { copy } from "../lib/site";
+// Service & policy: a neutral page; each section carries its own persona (eyebrow, glyph, date colour).
+const s = copy("service");
+---
+<Base title="Service" description="Service and policy: AI policy for Nepal, MICCAI workshops and Nepal AI schools organized, award committees, and peer review.">
+  <PageHero eyebrow="Service" headline="Service & policy" lead={s.lead}>
+    <nav class="jump" aria-label="Sections">{s.sections.map((x: any) => <a href={`#${x.key}`} data-persona={x.persona}><i class={`dot ${x.persona}`} />{x.title}</a>)}</nav>
+  </PageHero>
+  {s.sections.map((x: any) => (
+    <section class="container service-sec" id={x.key} data-persona={x.persona}>
+      <div class="pub-year">
+        <h2 class="eyebrow"><Glyph g={x.persona} />{x.title}</h2>
+        {x.venues ? (
+          <ul class="venues">{x.venues.map((v: any) => <li><b>{v.venue}</b><span>{v.years}</span>{v.note && <em>{v.note}</em>}</li>)}</ul>
+        ) : (
+          <ul class="rows">
+            {x.items.map((e: any) => <li class="row"><span class="d">{e.when}</span><span><span class="t">{e.role}</span>{e.where && <><br /><span class="v">{e.where}</span></>}{e.text && <><br /><span class="v">{e.text}</span></>}</span></li>)}
+          </ul>
+        )}
+      </div>
+    </section>
+  ))}
+</Base>

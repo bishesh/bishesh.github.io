@@ -10,7 +10,7 @@ nav:
   - { label: Entrepreneur, url: /entrepreneur/, persona: entrepreneur }
   - { label: Publications, url: /publications/, persona: "" }
   - { label: Talks & media, url: /talks/, persona: "" }
-  - { label: Government, url: /government/, persona: "" }
+  - { label: Service, url: /service/, persona: "" }
 links:
   - { label: Google Scholar, url: "https://scholar.google.com/citations?user=ZfaUCG5h3xsC" }
   - { label: ORCID, url: "https://orcid.org/0000-0002-2775-4748" }

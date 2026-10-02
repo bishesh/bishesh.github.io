@@ -71,10 +71,10 @@ Page → persona map (nav dots live in `src/data/site.yaml`; the page persona is
 
 | Page | Persona |
 |---|---|
-| `/dreamer/`, `/government/` | dreamer |
+| `/dreamer/` | dreamer |
 | `/scientist/`, `/publications/` | scientist |
 | `/entrepreneur/` | entrepreneur |
-| `/`, `/talks/` (Talks & media; `/media/` redirects here), `/cv/` | neutral (items carry their own dot) |
+| `/`, `/talks/` (Talks & media; `/media/` redirects here), `/service/` (Service & policy; `/government/` redirects to `#policy`; each section carries its persona), `/cv/` | neutral (items carry their own dot) |
 
 ## 3. Persona glyphs
 

@@ -43,6 +43,26 @@ const featured = pubs.filter((p) => p.featured);
       <div class="grid grid-3">{d.projects.map((p: any) => <div class="card"><h3>{p.name}</h3><p>{p.text}</p></div>)}</div>
     </section>
   )}
+  {d.team && (
+    <section class="container section" id="team">
+      <div class="section-head"><div class="eyebrow">Team & alumni</div><h2>{d.team.title}</h2><div class="prose" set:html={md(d.team.lead)} /></div>
+      {[{ k: "current", label: "Current team" }, { k: "alumni", label: "Alumni, and where they are now" }, { k: "committee", label: "PhD committees" }].map((g) => d.team[g.k]?.length > 0 && (
+        <>
+          <h3 class="filter-label team-label">{g.label}</h3>
+          <ul class="team-grid">
+            {d.team[g.k].map((p: any) => (
+              <li class="card person">
+                <b class="name">{p.name}</b>
+                <span class="role">{p.role}{p.since && <span class="since"> · {p.since}</span>}</span>
+                {p.text && <span class="note">{p.text}</span>}
+                {p.now && <span class="now"><span aria-hidden="true">→ </span><span class="visually-hidden">Now: </span>{p.now}</span>}
+              </li>
+            ))}
+          </ul>
+        </>
+      ))}
+    </section>
+  )}
   <section class="container section">
     <div class="grid grid-2">{d.service.map((b: any) => <div class="card"><h3>{b.title}</h3><div class="prose small" set:html={md(b.text)} /></div>)}</div>
   </section>

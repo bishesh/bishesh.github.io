@@ -1,0 +1,62 @@
+# Service & policy (/service/). Sources: cortex/dossier/cv.md "Professional memberships & services",
+# positions.md "Other engagements", and the former government.yaml.
+# Each section: key (the #anchor), title, persona (its eyebrow colour), items: { when, role, where, text }.
+# `when` is free text; items are shown in file order.
+lead: |
+  Organizing workshops and schools, sitting on committees, reviewing papers, and helping government use AI
+  well. Most of the policy work is behind the scenes: I help shape AI policy and help public institutions see
+  what AI can realistically do for service delivery.
+sections:
+  - key: policy
+    title: Policy & government
+    persona: dreamer
+    items:
+      - { when: "2024", role: "Member, committee preparing the AI Policy of Nepal", where: "Government of Nepal · Ministry of Education, Science & Technology" }
+      - { when: "27 Oct 2024", role: "Invited talk, national AI Conference: AI landscape in Nepal and a centres-of-excellence ecosystem", where: "Government of Nepal" }
+      - { when: "5 Jan 2024", role: "Briefing, Family Welfare Division: AI-powered task-shifting in fetal ultrasound and maternal health", where: "Government of Nepal · Ministry of Health & Population" }
+      - { when: "2023, 2024", role: "Invited talks on AI in international development", where: "UK FCDO · Indo-Pacific & Asia-Pacific networks" }
+      - { when: "12 Apr 2023", role: "Invited talk: AI for transforming health care in LMICs", where: "National Health Research Council (NHRC)" }
+      - { when: "2022", role: "PI, prototyping chatbots for better government service delivery", where: "UNDP Nepal" }
+      - { when: "2020", role: "Member, Technology & Innovation High-Level Committee for the COVID-19 response", where: "Government of Nepal · Ministry of Education, Science & Technology" }
+      - { when: "2020", role: "Coordinator, scientific committee, Nepal AI Conference 2020", where: "Government of Nepal · Ministry of Education, Science & Technology", text: "Cancelled due to COVID-19." }
+      - { when: "2020", role: "PI, COVID-19 policy-level decision support system (NAST innovation grant)", where: "Nepal Academy of Science & Technology (NAST)" }
+      - { when: "2019", role: "Member, recommending annual programmes under the Science, Technology & Innovation Policy", where: "Government of Nepal · Ministry of Education, Science & Technology" }
+      - { when: "23 Sep 2019", role: "Speech representing the young scientists of Nepal, National Science Day", where: "Government of Nepal" }
+      - { when: "", role: "AI expert from Nepal, feedback on UNESCO's global AI-ethics guideline", where: "UNESCO" }
+  - key: organizing
+    title: Conferences, workshops & schools organized
+    persona: scientist
+    items:
+      - { when: "2025", role: "Co-chair, MIRASOL workshop", where: "MICCAI 2025, Daejeon, South Korea" }
+      - { when: "2023, 2024", role: "Co-chair, ASMUS workshop (Advances in Simplifying Medical Ultrasound)", where: "MICCAI 2023, Vancouver, Canada · MICCAI 2024, Marrakesh, Morocco" }
+      - { when: "2021, 2022", role: "Co-chair, FAIR workshop (Affordable AI and Healthcare for Resource Diverse Global Health)", where: "MICCAI 2021 (France, virtual) · MICCAI 2022, Singapore" }
+      - { when: "2019", role: "Session co-organizer, Global Health Imaging in Developing Countries", where: "ISBI 2019, Venice, Italy" }
+      - { when: "2018, 2019, 2021, 2023", role: "Chair, Annual Nepal AI School (ANAIS)", where: "NAAMII, Nepal", text: "400+ participants from 20+ countries across editions." }
+  - key: committees
+    title: Committees & academies
+    persona: scientist
+    items:
+      - { when: "2025", role: "Committee member (one of three), MICCAI Young Scientist Publication Impact Award", where: "MICCAI Society" }
+      - { when: "2024", role: "Member, Advisory Committee", where: "Fairness in Medical Imaging" }
+      - { when: "2021–", role: "Founding executive member (2021–2023), now member", where: "National Young Academy of Nepal (NAYAN)" }
+  - key: review
+    title: Peer review
+    persona: scientist
+    # venue · years reviewed. `note` shows after the years.
+    venues:
+      - { venue: MICCAI, years: "2015–" }
+      - { venue: IEEE TMI, years: "2018–" }
+      - { venue: CVPR, years: "2021–", note: "Outstanding Reviewer 2021" }
+      - { venue: NeurIPS, years: "2023–" }
+      - { venue: ECCV, years: "2024–" }
+      - { venue: ICCV, years: "2017, 2021–" }
+      - { venue: ICLR, years: "2019" }
+      - { venue: MIDL, years: "2021–" }
+      - { venue: IJCAI, years: "2017–" }
+      - { venue: MRM, years: "2017, 2018" }
+  - key: community
+    title: Community
+    persona: dreamer
+    items:
+      - { when: "", role: "Founder, abhinavnepal.com", where: "Crowd-sourced open database of Nepali scholars and scientists" }
+      - { when: "", role: "Co-mentor (with Dr. Raunak Shrestha), RSTMH Small Grant awarded to Parikshit Prasai", where: "Royal Society of Tropical Medicine & Hygiene" }

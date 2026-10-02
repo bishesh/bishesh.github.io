@@ -1,19 +1,13 @@
 ---
-import Base from "../layouts/Base.astro";
-import PageHero from "../components/PageHero.astro";
-import { copy, groupBy } from "../lib/site";
-const g = copy("government");
+// Government became Service & policy (/service/); its rows are the #policy section. Old links keep working.
 ---
-<Base title="Government" persona="dreamer" description="Policy and government engagement — Nepal's AI policy, national committees and public-sector AI.">
-  <PageHero persona="dreamer" eyebrow="Dreamer · Government" headline="Working with government" lead={g.lead} />
-  <section class="container section" style="padding-top:1rem">
-    {groupBy(g.engagements, (e: any) => e.body).map(([body, items]) => (
-      <div class="pub-year">
-        <h2 style="font-family:var(--serif);font-size:1.05rem;line-height:1.35">{body}</h2>
-        <ul class="rows" style="margin-bottom:1.5rem">
-          {items.map((e: any) => <li class="row"><span class="d">{e.when}</span><span><span class="t">{e.role}</span>{e.text && <><br /><span class="v">{e.text}</span></>}</span></li>)}
-        </ul>
-      </div>
-    ))}
-  </section>
-</Base>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Service & policy · Bishesh Khanal</title>
+  <link rel="canonical" href="/service/#policy" />
+  <meta http-equiv="refresh" content="0; url=/service/#policy" />
+</head>
+<body><a href="/service/#policy">Service & policy</a></body>
+</html>

@@ -18,7 +18,7 @@ npm run build        # builds dist/ AND validates every data entry
 | a paper | `src/data/publications.yaml` | Copy an entry. List **every** author in order, with yourself as `**Khanal B**`; lists over 20 are shortened on the page automatically, keeping your name and the last author. `node scripts/fill-authors.mjs` replaces any `et al` list with the full one from Crossref, Europe PMC or arXiv. `themes:` keys must exist in `themes.yaml`. `featured: true` puts it on the Scientist page. `hidden: true` keeps it off the site. |
 | a talk / panel / podcast / TV interview | `src/data/talks.yaml` | `scope:` international (venue or audience outside Nepal, plus ANAIS and HAICon) · national picks the section. `kind:` picks the tab (talks, panels, podcasts, video & TV). `video:` takes a YouTube id or URL, and the thumbnail follows; otherwise `image:` (a file in `public/assets/img/talks/`). `persona:` sets the dot colour. `role:` and `people:` (name, role, affiliation, profile `url`) list hosts, guests, moderators and co-panelists. |
 | press | `src/data/media.yaml` | Shows under the *Articles* tab of Talks & media. `scope:` international · national, `image:` a preview picture in `public/assets/img/media/`. |
-| a government role | `src/data/government.yaml` | Grouped by `body`. |
+| a service or policy role | `src/data/service.yaml` | One list per section (policy, organizing, committees, review, community); `when` is free text. |
 | page text | `src/data/{home,dreamer,scientist,entrepreneur,cv}.yaml` | Markdown is allowed in `lead`, `story` and `text`. |
 
 **Every list is schema-checked** (`src/content.config.ts`). A typo such as `themes: [ultrasuond]`, an unknown

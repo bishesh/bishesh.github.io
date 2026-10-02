@@ -71,13 +71,35 @@ projects:
   - { name: Frugal diagnostics, text: "Smartphone microscopy, paper-based assays and AI-assisted cervical screening, built for places without a lab." }
   - { name: Foundation models at the edge, text: "Compressing multimodal foundation models so they are more accurate with fewer parameters, on devices that fit the setting." }
   - { name: CDiTH, IIIT Hyderabad, text: "As consultant advisor: endometriosis, surgical-video understanding, and evaluation of hospital AI." }
+# Team & alumni. From cortex/dossier/people.md (research group) and cv.md (teaching & supervision), only rows he has
+# confirmed (Bishram Acharya confirmed current 2026-10-02). Not here yet: the people Mahesh supervises for him
+# (Bikram Chapagain, Bigyan Aryal, Radhika Thagunna); add them once confirmed. `now` = where an alum is now.
+team:
+  title: People I supervise, and where they went
+  lead: |
+    Since 2019: about 20 research assistants at NAAMII and 2 at IIIT Hyderabad, 5 MSc theses and 20 interns. I also
+    give visiting lectures at the University of Cambridge (MSc, AI in global health, 2024–) and gave them at Imperial
+    College London (PhD students, AI in ultrasound imaging, 2018).
+  current:
+    - { name: Mahesh Shakya, role: "PhD student, NAAMII & University of Tübingen", since: "2025–", text: "Thesis on setting change; leads his own health-AI portfolio at NAAMII." }
+    - { name: Tanya Akumu, role: "PhD student, Universitat de Barcelona", since: "2025–" }
+    - { name: Bishram Acharya, role: "Research Assistant, NAAMII", text: "Representation learning (CS-JEPA)." }
+    - { name: Sameer Shrestha, role: "Research Assistant, NAAMII", text: "Ultrasound. Joined as an intern." }
+    - { name: Himani Paudayal, role: "Research Assistant, NAAMII", text: "TOGAI group." }
+    - { name: Prekshya Dawadi, role: "Research Assistant, NAAMII", text: "TOGAI group." }
+  alumni:
+    - { name: Kanchan Poudel, role: "Research Assistant, NAAMII", now: "MSc Machine Learning, University of Tübingen (ELLIS full scholarship)" }
+    - { name: Nishant Luitel, role: "Research Assistant, NAAMII", now: "PhD, Rochester Institute of Technology, USA (from autumn 2026)" }
+    - { name: Prasiddha Bhandari, role: "Research Assistant, NAAMII", text: "First author, MIDL 2026.", now: "MSc, Germany" }
+    - { name: Angelina Ghimire, role: "Research Assistant, NAAMII" }
+  committee:
+    - { name: Bidur Khanal, role: "PhD committee member, Rochester Institute of Technology", since: "2023–25" }
 service:
   - title: Service to the field
     text: |
-      - Committee, MICCAI Young Scientist Publication Impact Award (2025)
-      - Co-chair: ASMUS (2023, 2024), FAIR (2021, 2022), MIRASOL (2025); ISBI 2019 session on global-health imaging
-      - Advisory committee, Fairness in Medical Imaging
-      - Reviewer: NeurIPS, CVPR, ICCV, ECCV, ICLR, MICCAI, MIDL, IEEE TMI; Outstanding Reviewer, CVPR 2021
+      Co-chair of the ASMUS, FAIR and MIRASOL workshops at MICCAI, the MICCAI Young Scientist Publication Impact
+      Award committee (2025), and reviewer for NeurIPS, CVPR, MICCAI, IEEE TMI and others.
+      [Service & policy →](/service/)
   - title: Funders & partners
     text: |
       Gates Foundation · GE HealthCare · IDRC / Grand Challenges Canada · Lacuna Fund / Wellcome ·
