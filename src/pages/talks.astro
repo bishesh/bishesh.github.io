@@ -1,44 +1,72 @@
 ---
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
-import TalkCard from "../components/TalkCard.astro";
-import { getTalks, featuredFirst, fuzzyDate } from "../lib/site";
-const talks = await getTalks();
+import AppearanceCard from "../components/AppearanceCard.astro";
+import { getAppearances, FORMATS, KIND_LABEL, fuzzyDate, peopleByRole } from "../lib/site";
+
+// Talks & media: every talk, panel, podcast, video interview and article on one page, sliced along independent
+// dimensions. Format is the tab (one at a time); kind or role refines it (shown under the tab it belongs to);
+// persona cuts across all of them; reach (scope) is the section. Filtering is site.js's chip filter.
+const all = await getAppearances();
+const rank = (x: any) => (x.featured ? 2 : 0) + (x.thumb ? 1 : 0);
+const sorted = (xs: typeof all) => [...xs].sort((a, b) => rank(b) - rank(a) || String(b.date).localeCompare(String(a.date)));
 const tiers = [
-  { key: "international", label: "International", note: "Keynotes and invited talks abroad and at global venues", style: "grid" },
+  { key: "international", label: "International", note: "Global venues, talks abroad, international podcasts", style: "grid" },
   { key: "regional", label: "Regional · South Asia", note: "India and the region", style: "grid" },
-  { key: "national", label: "National", note: "Government, national conferences, media and institutions across Nepal", style: "compact" },
+  { key: "national", label: "National", note: "Government, national conferences, Nepali media and institutions", style: "compact" },
   { key: "local", label: "Local", note: "Colleges, schools, hospitals and meetups", style: "list" },
 ];
-const kinds = ["keynote", "invited-talk", "panel", "podcast", "interview", "lecture", "tv"];
-const label = (k: string) => (k === "tv" ? "TV" : (k[0].toUpperCase() + k.slice(1)).replace("-", " "));
+const count = (f: (x: (typeof all)[number]) => boolean) => all.filter(f).length;
+const formats = FORMATS.map((f) => ({ ...f, n: count((x) => x.format === f.key) })).filter((f) => f.n);
+// the second row under each tab: kinds within that format, or (podcasts) his role
+const refine = formats.map((f) => ({
+  format: f.key,
+  key: f.key === "podcasts" ? "role" : "kind",
+  values: f.key === "podcasts"
+    ? [{ v: "host", label: "Bishesh hosts" }, { v: "guest", label: "Bishesh as guest" }]
+    : f.kinds.map((k) => ({ v: k, label: KIND_LABEL[k] })),
+})).map((r) => ({
+  ...r,
+  values: r.values.map((x) => ({ ...x, n: count((m) => m.format === r.format && (r.key === "role" ? m.role : m.kind) === x.v) })).filter((x) => x.n),
+})).filter((r) => r.values.length > 1);
+const personas = ["dreamer", "scientist", "entrepreneur"];
 ---
-<Base title="Talks" description="Keynotes, invited talks, panels and podcasts by Bishesh Khanal — international first.">
-  <PageHero eyebrow="Talks" headline="Talks & conversations"
-    lead={`${talks.length} talks, panels and interviews since 2016 — on AI in health, AI centres of excellence for the Global South, and how work is being reorganized. The dot shows which persona a talk speaks to.`} />
+<Base title="Talks & media" description="Keynotes, talks, panels, podcasts, interviews and press coverage of Bishesh Khanal — international first.">
+  <PageHero eyebrow="Talks & media" headline="Talks, conversations & press"
+    lead={`${count((x) => x.format !== "articles")} talks, panels, podcasts and interviews since 2016, and ${count((x) => x.format === "articles")} articles — on AI in health, AI centres of excellence for the Global South, and how work is being reorganized. In English and Nepali. The dot shows which persona each piece speaks to.`} />
   <section class="container" data-filters="talks">
-    <div class="chips">
-      <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All</button>
-      {["dreamer", "scientist", "entrepreneur"].map((p) => <button class="chip" data-key="personaF" data-value={p} aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{talks.filter((t) => t.persona === p).length}</span></button>)}
-      <span style="width:1rem" />
-      {kinds.map((k) => { const n = talks.filter((t) => t.kind === k).length; return n > 0 && <button class="chip" data-key="kind" data-value={k} aria-pressed="false">{label(k)} <span class="n">{n}</span></button>; })}
+    <div class="tabs" role="group" aria-label="Type">
+      <button class="tab" data-key="format" data-value="*" data-single aria-pressed="true">All <span class="n">{all.length}</span></button>
+      {formats.map((f) => <button class="tab" data-key="format" data-value={f.key} data-single aria-pressed="false">{f.label} <span class="n">{f.n}</span></button>)}
     </div>
+    {refine.map((r) => (
+      <div class="chips" data-for-key="format" data-for={r.format} hidden>
+        <button class="chip" data-key={r.key} data-value="*" aria-pressed="true">All</button>
+        {r.values.map((x) => <button class="chip" data-key={r.key} data-value={x.v} aria-pressed="false">{x.label} <span class="n">{x.n}</span></button>)}
+      </div>
+    ))}
+    <div class="chips">
+      <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All personas</button>
+      {personas.map((p) => <button class="chip" data-key="personaF" data-value={p} data-live aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{count((x) => x.persona === p)}</span></button>)}
+    </div>
+    <p class="meta">Showing <span data-filter-count="talks">{all.length}</span></p>
   </section>
   <div class="container">
-    {tiers.map((tier) => { const items = featuredFirst(talks.filter((t) => t.scope === tier.key)); return items.length > 0 && (
+    {tiers.map((tier) => { const items = sorted(all.filter((t) => t.scope === tier.key)); return items.length > 0 && (
       <section class="tier" data-filter-group="talks">
-        <div class="tier-head"><h2>{tier.label}</h2><span class="meta">{tier.note} · {items.length}</span></div>
+        <div class="tier-head"><h2>{tier.label}</h2><span class="meta">{tier.note}</span></div>
         {tier.style === "list" ? (
           <ul class="rows">
             {items.map((t) => (
-              <li class="row" data-filterable="talks" data-persona-f={t.persona} data-kind={t.kind}>
+              <li class="row" data-filterable="talks" data-format={t.format} data-kind={t.kind} data-persona-f={t.persona} data-role={t.role}>
                 <span class="d">{fuzzyDate(t.date)}</span>
-                <span><i class={`dot ${t.persona}`} /><span class="t">{t.url || t.video ? <a href={t.video ? `https://www.youtube.com/watch?v=${t.video}` : t.url}>{t.title}</a> : t.title}</span> <span class="v">— {t.venue}</span></span>
+                <span><i class={`dot ${t.persona}`} /><span class="t">{t.href ? <a href={t.href}>{t.title}</a> : t.title}</span> <span class="v">— {t.outlet}</span>
+                  {peopleByRole(t.people).map((g) => <span class="v"> · {g.label.toLowerCase()} {g.ps.map((p, i) => <>{i > 0 && ", "}{p.url ? <a href={p.url} rel="noopener">{p.name}</a> : p.name}</>)}</span>)}</span>
               </li>
             ))}
           </ul>
         ) : (
-          <div class={`talk-grid${tier.style === "compact" ? " compact" : ""}`}>{items.map((t) => <TalkCard t={t} />)}</div>
+          <div class={`talk-grid${tier.style === "compact" ? " compact" : ""}`}>{items.map((m) => <AppearanceCard m={m} />)}</div>
         )}
       </section>); })}
   </div>

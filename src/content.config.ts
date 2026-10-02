@@ -35,6 +35,12 @@ const list = (f: string): Loader => ({
 
 const themeKeys = (read("themes.yaml") as { key: string }[]).map((t) => t.key) as [string, ...string[]];
 const persona = z.enum(["dreamer", "scientist", "entrepreneur"]);
+// podcasts, interviews, panels: your role, and the other people on it (affiliation as at the event; url: a profile)
+const role = z.enum(["host", "guest", "panelist", "moderator"]).optional();
+const people = z.array(z.object({
+  name: z.string(), role: z.enum(["host", "co-host", "guest", "moderator", "panelist"]),
+  affiliation: z.string().optional(), url: z.string().url().optional(),
+})).default([]);
 const dateish = z.union([z.string(), z.number()]).transform(String)
   .refine((s) => s === "" || /^\d{4}(-\d{2}(-\d{2})?)?$/.test(s), "date must be YYYY, YYYY-MM or YYYY-MM-DD");
 
@@ -63,7 +69,8 @@ const talks = defineCollection({
     scope: z.enum(["international", "regional", "national", "local"]),
     persona,
     kind: z.enum(["keynote", "invited-talk", "panel", "podcast", "interview", "lecture", "tv"]),
-    video: z.string().optional(), url: z.string().url().optional(), language: z.enum(["en", "ne"]).optional(),
+    video: z.string().optional(), url: z.string().url().optional(), language: z.enum(["en", "ne"]).optional(), role, people,
+    image: z.string().optional(), // a photo for the card when there is no video: a path under public/ or a URL
     featured: z.boolean().optional(), hidden: z.boolean().optional(), review: z.union([z.string(), z.boolean()]).optional(),
   }),
 });
@@ -73,6 +80,9 @@ const media = defineCollection({
   schema: z.object({
     title: z.string(), outlet: z.string(), date: dateish, language: z.enum(["en", "ne"]).default("en"),
     kind: z.enum(["feature", "interview", "news", "op-ed", "podcast", "tv"]), persona,
+    scope: z.enum(["international", "national"]).default("national"),
+    // a preview picture: a path under public/ ("/assets/img/media/x.jpg") or a URL. A YouTube video brings its own.
+    image: z.string().optional(), video: z.string().optional(), role, people,
     url: z.string().url().optional(), hidden: z.boolean().optional(), review: z.string().optional(),
   }),
 });

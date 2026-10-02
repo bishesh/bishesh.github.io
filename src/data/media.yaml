@@ -1,52 +1,68 @@
-# Media coverage. kind: feature | interview | news | op-ed | podcast | tv · language: en | ne · persona colours the card.
+# Media coverage. kind: feature | interview | news | op-ed | podcast | tv · language: en | ne · scope: international | national
+# role: host | guest (yours) · people: [{ name, role: host | co-host | guest, url }] · persona colours the dot · image: a preview picture (local path under public/, or a URL) · video: a YouTube id/URL.
+# Video interviews, TV and video podcasts already in talks.yaml (kind: interview | tv | podcast, with video:) show on the
+# Media page too, so do not repeat them here.
 # Merged from a web research pass 2026-09-26 (each page fetched, name confirmed). `review:` = unverified; `hidden: true` keeps it off the page.
 
 - title: Nothing artificial about his intelligence
   outlet: Nepali Times
   date: '2023-09-28'
   language: en
+  scope: national
   kind: feature
   persona: dreamer
   url: https://nepalitimes.com/here-now/nothing-artificial-about-his-intelligence
+  image: /assets/img/media/nepalitimes-2023-09-ai.jpg
 - title: Artificially intelligent medicine
   outlet: Nepali Times
   date: '2023-07-09'
   language: en
+  scope: national
   kind: feature
   persona: scientist
   url: https://nepalitimes.com/artificially-intelligent-medicine
+  image: /assets/img/media/nepalitimes-2023-07-medicine.jpg
 - title: AI educational programme launched in Kathmandu
   outlet: The Kathmandu Post
   date: '2023-08-04'
   language: en
+  scope: national
   kind: news
   persona: scientist
   url: https://kathmandupost.com/art-culture/2023/08/04/ai-educational-programme-launched-in-kathmandu
+  image: /assets/img/media/kathmandupost-2023-08-ai-school.jpg
 - title: King's College partners with NAAMII for AI education
   outlet: The Himalayan Times
   date: '2023-08-04'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://thehimalayantimes.com/kathmandu/kings-college-partners-with-naamii-for-ai-education
+  image: /assets/img/media/himalayan-2023-08-kings.jpg
 - title: UNESCO brings key stakeholders together for an inclusive dialogue on AI governance in Nepal
   outlet: The Himalayan Times
   date: '2023-11-28'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://thehimalayantimes.com/kathmandu/unesco-brings-key-stakeholders-together-for-an-inclusive-dialogue-on-ai-governance-in-nepal
+  image: /assets/img/media/himalayan-2023-11-unesco.jpg
 - title: 'News Commentary: As AI ecosystem overwhelms world, Nepal needs to augment pace'
   outlet: The Rising Nepal
   date: '2024-04-01'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://risingnepaldaily.com/news/40997
+  image: /assets/img/media/risingnepal-2024-04-ai.jpg
 - title: Fifth Annual Nepal AI School to commence tomorrow in Lalitpur
   outlet: The Rising Nepal
   date: '2024-12-26'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://risingnepaldaily.com/news/54351
@@ -54,27 +70,34 @@
   outlet: myRepublica
   date: '2024-12-26'
   language: en
+  scope: national
   kind: news
   persona: scientist
   url: https://myrepublica.nagariknetwork.com/index.php/news/fifth-edition-of-ai-education-related-program-to-be-held-in-lalitpur-676cac5f90230.html
+  image: /assets/img/media/republica-2024-12-ai-school.jpg
 - title: स्वास्थ्य एआईको विषयमा छलफल गर्न 'हाइकन' सम्मेलन (HAICon conference to discuss health AI)
   outlet: Ratopati
   date: '2025-01-07'
   language: ne
+  scope: national
   kind: news
   persona: scientist
   url: https://www.ratopati.com/story/466549/39hicon39-conference-to-discuss-health-ai
+  image: /assets/img/media/ratopati-2025-01-haicon.jpg
 - title: ICT Award 2024 Successfully Organized as 22 Entities Win Awards
   outlet: TechLekh
   date: '2024-12-25'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://techlekh.com/ict-award-nepal/
+  image: /assets/img/media/techlekh-2024-12-ict-award.jpg
 - title: Talking Robot Friend 'GOLU' Made by Five Nepali Scientists
   outlet: ICT Frame
   date: '2021-07-13'
   language: en
+  scope: national
   kind: news
   persona: entrepreneur
   url: https://ictframe.com/talking-robot-friend-golu-made-by-five-nepali-scientists/
@@ -82,6 +105,7 @@
   outlet: ICT Frame
   date: '2019-11-13'
   language: en
+  scope: national
   kind: news
   persona: dreamer
   url: https://ictframe.com/doece-silver-jubilee-celebration-event-2076-kicks-off/
@@ -89,6 +113,7 @@
   outlet: ICT Frame
   date: '2019-05-24'
   language: en
+  scope: national
   kind: news
   persona: scientist
   url: https://ictframe.com/kathmandu-university-to-host-artificial-intelligence-for-sustainable-development/
@@ -96,20 +121,31 @@
   outlet: Hamro Patro (HamroLekh)
   date: '2019-10-21'
   language: ne
+  scope: national
   kind: op-ed
   persona: scientist
   url: https://www.hamropatro.com/posts/articles-HamroLekh/articles-HamroLekh-Udaudo-Prawidhima-Nepalko-Bhawishya
+  image: /assets/img/media/hamropatro-2019-10-future.jpg
 - title: 'Bishesh Khanal: NAAMII - a model for low-resource excellence'
   outlet: AI-ready Healthcare (podcast, Spotify)
   date: '2025-11-11'
   language: en
+  scope: international
   kind: podcast
   persona: dreamer
   url: https://open.spotify.com/episode/6SUSITuZnHdsbwVLfbuDhT
+  image: /assets/img/media/spotify-2025-11-ai-ready.jpg
+  role: guest
+  people:
+    - { name: Dr. Anirban Mukhopadhyay, role: host, url: 'https://www.informatik.tu-darmstadt.de/gris/startseite_1/team/team_details_60224.en.jsp' }
+  review: >-
+    Host taken from the show (Anirban Mukhopadhyay, TU Darmstadt, created and hosts AI-ready Healthcare); the episode
+    page itself could not be read, so a co-host such as Henry Krumb is not ruled out.
 - title: Interview with Bishesh Khanal on AI
   outlet: TechPana
   date: 2024-01
   language: ne
+  scope: national
   kind: interview
   persona: scientist
   url: https://techpana.com/2024/145736/interview-with-bishesh-khanal-on-ai-
@@ -123,6 +159,7 @@
   outlet: TechPana
   date: '2024'
   language: ne
+  scope: national
   kind: news
   persona: scientist
   url: https://techpana.com/2024/148108/nepali-it-company-develops-tech-to-detect-parasites-through-smartphone-photos
@@ -134,6 +171,7 @@
   outlet: The Zerone (Medium magazine, by Yunika Bajracharya)
   date: ''
   language: en
+  scope: national
   kind: interview
   persona: scientist
   url: https://medium.com/zerone-magazine/innovating-for-a-better-future-in-conversation-with-bishesh-khanal-bd288a2ef15e
@@ -145,6 +183,7 @@
   outlet: Chautaari
   date: 2018-06
   language: en
+  scope: national
   kind: interview
   persona: scientist
   url: https://chautaari.com/computational-biomedicine-bishesh-khanal/

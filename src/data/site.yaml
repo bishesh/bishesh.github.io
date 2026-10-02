@@ -9,8 +9,7 @@ nav:
   - { label: Scientist, url: /scientist/, persona: scientist }
   - { label: Entrepreneur, url: /entrepreneur/, persona: entrepreneur }
   - { label: Publications, url: /publications/, persona: "" }
-  - { label: Talks, url: /talks/, persona: "" }
-  - { label: Media, url: /media/, persona: "" }
+  - { label: Talks & media, url: /talks/, persona: "" }
   - { label: Government, url: /government/, persona: "" }
 links:
   - { label: Google Scholar, url: "https://scholar.google.com/citations?user=ZfaUCG5h3xsC" }

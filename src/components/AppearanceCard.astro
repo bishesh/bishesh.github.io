@@ -1,0 +1,44 @@
+---
+// One talk, podcast, video or article as a picture-led card: preview image (a YouTube frame, or the article's own
+// picture), then title, venue/outlet · date, the people on it (hosts, guests, moderator, co-panelists, with
+// affiliation and profile link), and labels: kind (Keynote, Feature…), his role
+// (host / guest) and language. The picture and the title are the links, so the people's profile links can sit inside.
+// data-* attributes feed the chip filters on the Talks & media page.
+import { fuzzyDate, KIND_LABEL, peopleByRole, type Appearance } from "../lib/site";
+interface Props { m: Appearance }
+const { m } = Astro.props;
+const A = m.href ? "a" : "span";
+const link = m.href ? { href: m.href, rel: "noopener" } : {};
+const cut = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1).trimEnd() + "…" : s);
+const lang = m.language === "ne" ? "नेपाली" : m.language === "en" ? "English" : "";
+const roles = peopleByRole(m.people);
+---
+<div class="talk-card media-card" data-filterable="talks" data-format={m.format} data-kind={m.kind} data-persona-f={m.persona} data-role={m.role}>
+  <A class="thumb" data-persona={m.persona} {...link} tabindex={m.href ? -1 : undefined} aria-hidden={m.href ? "true" : undefined}>
+    {m.thumb ? <img loading="lazy" src={m.thumb} alt="" /> : <span class="ph">{cut(m.outlet, 70)}</span>}
+    {m.action && (
+      <span class="play">
+        {m.action === "Watch"
+          ? <svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor" /></svg>
+          : <svg width="10" height="10" viewBox="0 0 10 10"><path d="M1 4v2M3.5 2.5v5M6 1v8M8.5 3v4" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" /></svg>}
+        {m.action}
+      </span>
+    )}
+  </A>
+  <A class="t" lang={m.language === "ne" ? "ne" : undefined} {...link}>{m.title}</A>
+  <div class="v"><i class={`dot ${m.persona}`} title={m.persona} /><span>{cut(m.outlet, 90)}{m.date && ` · ${fuzzyDate(m.date)}`}</span></div>
+  {roles.length > 0 && (
+    <dl class="people">
+      {roles.map((g) => (
+        <div><dt>{g.label}</dt>{g.ps.map((p) => (
+          <dd>{p.url ? <a href={p.url} rel="noopener">{p.name}</a> : p.name}{p.affiliation && <span class="aff">, {p.affiliation}</span>}</dd>
+        ))}</div>
+      ))}
+    </dl>
+  )}
+  <div class="tags">
+    <span class={`tag kind${m.kind === "keynote" ? " key" : ""}`}>{KIND_LABEL[m.kind] ?? m.kind}</span>
+    {(m.role === "host" || m.role === "guest") && <span class={`tag role ${m.role}`}>{m.role === "host" ? "Bishesh hosts" : "Bishesh as guest"}</span>}
+    {lang && <span class="tag" lang={m.language}>{lang}</span>}
+  </div>
+</div>

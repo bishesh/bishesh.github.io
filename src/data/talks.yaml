@@ -3,7 +3,19 @@
 # `review:` marks a keyword guess or a dossier "verify" note — delete it once checked.
 # scope: international | regional | national | local  ·  persona: dreamer | scientist | entrepreneur
 # kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  featured: true pins to the top of its tier
+# role: host | guest | panelist | moderator — your role  ·  people: the others, each
+#   { name, role: host | co-host | guest | moderator | panelist, affiliation (as at the event), url (a profile) }
+# image: a photo for the card when there is no video (put it in public/assets/img/talks/)
 
+- title: 'Big Things Can Happen From Small Places: a journey of building an excellence ecosystem in resource-constrained settings'
+  venue: RISE-MICCAI Luncheon, MICCAI 2026, Schuman Auditorium, Strasbourg, France
+  date: '2026-09-30'
+  scope: international
+  persona: dreamer
+  kind: keynote
+  url: https://rise-miccai.org/
+  language: en
+  featured: true
 - title: 'From curiosity to discovery: the journey of Dr. Bishesh Khanal — ICT Samachar'
   venue: ICT Samachar, Kathmandu
   date: '2026-09-11'
@@ -16,10 +28,15 @@
 - title: Dialogues in Health AI, Ep. 1 — How AI will reshape healthcare, health systems & the workforce
   venue: Dialogues in Health AI podcast (NAAMII × WHO SEARO), NAAMII AI Research channel, Kathmandu
   date: '2026-08-15'
-  scope: national
+  scope: international
   persona: scientist
   kind: podcast
   video: 6DQ6KRylKr0
+  language: en
+  role: host
+  people:
+    - { name: Dr. Kiran Raj Pandey, role: co-host, url: 'https://naamii.org/about/team-and-leadership/kiran_raj_pandey' }
+    - { name: Dr. Anurag Agrawal, role: guest, url: 'https://www.ashoka.edu.in/profile/anurag-agrawal/' }
 - title: AI in Radiology — RADCON 2026
   venue: RADCON 2026, Nepal Radiologists' Association
   date: '2026-06-11'
@@ -27,6 +44,22 @@
   persona: scientist
   kind: keynote
   video: FHtRwAheq20
+- title: 'Hype, hope or/and harm: what mistakes we should have avoided back in the 2020s? — panel on AI in global child health'
+  venue: 44th GTP Annual Conference, AI in international child health, Dinslaken, Germany
+  date: '2026-03-14'
+  scope: international
+  persona: scientist
+  kind: panel
+  url: https://globalchildhealth.de/gtp2026/
+  image: /assets/img/talks/gtp-2026-03-panel.jpg
+  language: en
+  role: panelist
+  people:
+    - { name: Dr. Sarah Kotsias-Konopelska, role: moderator, affiliation: 'Chair, GTP (Society for Tropical Paediatrics & International Child Health)', url: 'https://globalchildhealth.de/vorstand/' }
+    - { name: Dr. Annie Hartley, role: panelist, affiliation: 'LiGHT, EPFL, Lausanne', url: 'https://people.epfl.ch/mary-anne.hartley' }
+    - { name: Dr. Robert Moshiro, role: panelist, affiliation: 'Paediatrician, Dar es Salaam, Tanzania' }
+    - { name: Dr. Markus Vogel, role: panelist, affiliation: 'CMIO, Microsoft (Nuance), Düsseldorf' }
+  # people and places from Markus Vogel's LinkedIn post (16 Mar 2026); title, date and venue from the GTP programme
 - title: UN Open Science and Open Scholarship Conference 2025 — panel
   venue: UN Open Science and Open Scholarship Conference (OS25), Dag Hammarskjöld Library
   date: '2025-11-17'
@@ -34,14 +67,28 @@
   persona: dreamer
   kind: panel
   video: mhoyfb4SMVo
+  language: en
+  role: panelist
+  people:
+    - { name: Roheena Anand, role: moderator, affiliation: Public Library of Science (PLOS), url: 'https://www.un.org/en/node/235410' }
+    - { name: Sadao Kurohashi, role: panelist, affiliation: National Institute of Informatics; Kyoto University, url: 'https://www.un.org/en/node/234205' }
+    - { name: Nayat Sánchez-Pi, role: panelist, affiliation: 'Inria; Inria Chile; Binational Franco-Chilean Center on AI', url: 'https://www.un.org/en/node/234866' }
   featured: true
 - title: 'AI-driven innovation: from Nepal to the global startup ecosystem'
-  venue: NAAMII AI Research channel
+  venue: Annual Nepal AI School (ANAIS), Kathmandu — on the NAAMII AI Research channel
   date: '2025-10-30'
-  scope: national
+  scope: international
   persona: entrepreneur
   kind: panel
   video: brOBWWbOuB0
+  language: en
+  role: panelist
+  people:
+    - { name: Nirdesh Dwa, role: moderator, affiliation: 'Founder, Veda App' }
+    - { name: Michael Bronstein, role: panelist, affiliation: University of Oxford; AITHYRA, url: 'https://www.cs.ox.ac.uk/people/michael.bronstein/' }
+  review: >-
+    Date is the video's upload date; check it against the ANAIS edition. Any other panelists? Only Bronstein is named
+    in the video title. Moderator's name spelled "Nirdesh Dwa" as in Veda App press; you wrote "Dewa".
 - title: Professional Excellence, ICT Award 2024
   venue: ICT Award 2024, Kathmandu
   date: '2025-01-20'
@@ -53,7 +100,7 @@
 - title: Low Resource and Trustworthy AI in Healthcare
   venue: ANAIS 2024 (Jan 5) & HAICon 2025 (Jan 8), Kathmandu, Nepal
   date: '2025'
-  scope: national
+  scope: international
   persona: dreamer
   kind: invited-talk
   review: true
@@ -246,7 +293,7 @@
 - title: 'Introduction: Annual Nepal AI School (ANAIS)'
   venue: 4th ANAIS, Paathsala School, Kathmandu
   date: '2023-05-22'
-  scope: national
+  scope: international
   persona: dreamer
   kind: invited-talk
   review: true
@@ -328,6 +375,9 @@
   kind: podcast
   video: 4AKSsXTNKs4
   language: ne
+  role: guest
+  people:
+    - { name: Sushant Pradhan, role: host, url: 'http://sushantpradhan.com' }
 - title: Incubating start-ups in (non-profit) research institutes in Nepal
   venue: Annual Conf., National Young Academy of Nepal (NAYAN), Godavari Village Resort, Lalitpur
   date: '2022-12-23'
@@ -363,6 +413,12 @@
   persona: scientist
   kind: panel
   video: W17N5ofHk5k
+  role: panelist
+  people:
+    - { name: Anup Ghimire, role: moderator, affiliation: The Doers; Viewfinders, url: 'https://www.linkedin.com/in/anup-ghimire-9366aa5a/' }
+    - { name: Ujjwal Koirala, role: panelist, url: 'https://np.linkedin.com/in/ujjwal-koirala-105059141' }
+    - { name: Er. Shrawan Thakur, role: panelist, url: 'https://shrawanthakur.com/' }
+    - { name: Aayush Adhikari, role: panelist, url: 'https://www.linkedin.com/in/aayush-adhikari-577546119/' }
   language: ne
 - title: Let's Get Real with Bishesh Khanal — The Doers Podcast, EP110
   venue: The Doers Podcast (host Anup Ghimire), Kathmandu
@@ -372,10 +428,13 @@
   kind: podcast
   video: 2_IbrP863lA
   language: ne
+  role: guest
+  people:
+    - { name: Anup Ghimire, role: host, url: 'https://www.linkedin.com/in/anup-ghimire-9366aa5a/' }
 - title: Machine Learning and the Third Nepal Winter School in AI
   venue: 3rd ANAIS, Khwopa Engineering College, Bhaktapur
   date: '2021-12-20'
-  scope: national
+  scope: international
   persona: dreamer
   kind: invited-talk
   review: true
@@ -410,7 +469,25 @@
   persona: scientist
   kind: panel
   video: 4n0BRbyBjBg
+  role: panelist
+  people:
+    - { name: Dr. Binod Bhattarai, role: panelist, affiliation: Imperial College London; NAAMII, url: 'https://www.abdn.ac.uk/people/binod.bhattarai' }
+    - { name: Dr. Suresh Manandhar, role: panelist, affiliation: NAAMII }
+    - { name: Niranjan Shrestha, role: moderator, affiliation: Laxmi Group }
+  # affiliations as of Jan 2020: Binod Bhattarai was at Imperial (now Aberdeen, linked); Suresh Manandhar was NAAMII's director (now Wiseyak)
   language: ne
+- title: Is deep learning the nirvana of AI? — panel, India Science Festival
+  venue: India Science Festival, Pune, India
+  date: 2020-01
+  scope: regional
+  persona: scientist
+  kind: panel
+  url: https://www.indiasciencefest.org/
+  language: en
+  role: panelist
+  people:
+    - { name: Manish Gupta, role: moderator, affiliation: 'Director, Google Research India', url: 'https://cerai.iitm.ac.in/people/manish-gupta/' }
+  # from the old site; no video or list of the other panelists
 - title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
   venue: India Science Festival
   date: 2020-01
@@ -420,13 +497,6 @@
   review: dossier had Jan 2019; old site + video say Jan 2020
   video: R0_fRAOK4rc
   featured: true
-- title: Machine Learning in Ultrasound for Assisted Navigation
-  venue: Centre for Doctoral Training, Imperial College London, UK
-  date: '2019-12-04'
-  scope: international
-  persona: scientist
-  kind: invited-talk
-  review: true
 - title: >-
     Research Outside Universities in Nepal: Need, Opportunities and Challenges of Multidisciplinary Collaborative
     Research and Innovation
@@ -459,6 +529,15 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: Speech on behalf of Nepal's young scientists — National Science Day
+  venue: National Science Day, Government of Nepal, Kathmandu
+  date: 2019-09
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  url: https://www.hamropatro.com/posts/articles-HamroLekh/articles-HamroLekh-Udaudo-Prawidhima-Nepalko-Bhawishya
+  language: ne
+  # the link is the speech's text, published by Hamro Patro (also in media.yaml as an op-ed)
 - title: 'Computer Vision and Deep Learning: Python Ecosystem'
   venue: Python Users Group, Kathmandu
   date: '2019-09-14'
@@ -475,6 +554,13 @@
   persona: scientist
   kind: panel
   video: LL12vtkSdzA
+  role: panelist
+  people:
+    - { name: Yanki Ukyab, role: moderator, affiliation: Niti Foundation }
+    - { name: Dr. Bal Krishna Bal, role: panelist, affiliation: Kathmandu University }
+    - { name: Dr. Saroj Dhital, role: panelist, affiliation: Kathmandu Model Hospital }
+    - { name: Sixit Bhatta, role: panelist, affiliation: Tootle }
+    - { name: Subash Manandhar, role: panelist, affiliation: Fusemachines }
   language: ne
 - title: 'AI and Healthcare: Nepali Population & Patient-Specific Medicine, and Moving from mere Consumers to Innovators'
   venue: Hospital for Advanced Surgery, Kathmandu
@@ -494,13 +580,6 @@
   venue: Civil Engineering Dept, IoE, Pulchowk Campus
   date: '2019-07-25'
   scope: local
-  persona: scientist
-  kind: invited-talk
-  review: true
-- title: Modeling and Simulation of Realistic Longitudinal Brain MRIs with Atrophy in Alzheimer's Disease
-  venue: Summer School in NeuroImaging, Symbiosis International University, Pune, India
-  date: '2019-07-24'
-  scope: regional
   persona: scientist
   kind: invited-talk
   review: true
@@ -563,26 +642,26 @@
 - title: Introduction to AI; linear algebra for computer vision — First Nepal Winter School in AI
   venue: First Nepal Winter School in AI (NAAMII), Kathmandu
   date: 2018-12
-  scope: national
+  scope: international
   persona: scientist
   kind: lecture
   video: 5hwjExAZGRs
 - title: Image representation, processing and feature extraction — First Nepal Winter School in AI
   venue: First Nepal Winter School in AI (NAAMII), Kathmandu
   date: 2018-12
-  scope: national
+  scope: international
   persona: scientist
   kind: lecture
   video: nDsqFgwJuG8
 - title: Medical imaging informatics (with Taman Upadhaya) — First Nepal Winter School in AI
   venue: First Nepal Winter School in AI (NAAMII), Kathmandu
   date: 2018-12
-  scope: national
+  scope: international
   persona: scientist
   kind: lecture
   video: D8I15_KsOII
-- title: With Binod Bhattarai on NAAMII and the first AI winter school — The Connection, Palika TV
-  venue: THE CONNECTION with Kishor Niraula, Kathmandu
+- title: With Binod Bhattarai on NAAMII and the first AI winter school — The Connection, News 24
+  venue: THE CONNECTION with Kishor Niraula, News 24 TV, Kathmandu
   date: 2018-12
   scope: national
   persona: dreamer
@@ -596,6 +675,15 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: Superintelligence — panel, Future Frontiers Conference
+  venue: Future Frontiers Conference (Imperial College London × LSE), London, UK
+  date: '2018-11-03'
+  scope: international
+  persona: scientist
+  kind: panel
+  language: en
+  role: panelist
+  # no video, link or list of co-panelists survives; add people: here if any turn up
 - title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
   venue: Parallel Forum (AI/ML/Statistical Modeling in Big Data Analytics), CERN, Switzerland (online)
   date: '2018-05-19'

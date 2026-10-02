@@ -15,7 +15,7 @@ const talks = featuredFirst((await getTalks()).filter((t) => t.video)).slice(0, 
         <div class="prose" set:html={md(home.intro)} />
         <div class="actions">
           <a class="btn solid" href="/scientist/">Research</a>
-          <a class="btn" href="/talks/">Talks</a>
+          <a class="btn" href="/talks/">Talks &amp; media</a>
           <a class="btn" href={home.cv_url}>CV</a>
         </div>
       </div>
@@ -59,6 +59,6 @@ const talks = featuredFirst((await getTalks()).filter((t) => t.video)).slice(0, 
   <section class="container section">
     <div class="section-head"><div class="eyebrow">Talks</div><h2>On stage</h2></div>
     <div class="talk-grid">{talks.map((t) => <TalkCard t={t} />)}</div>
-    <div class="actions"><a class="btn" href="/talks/">All talks →</a></div>
+    <div class="actions"><a class="btn" href="/talks/">All talks &amp; media →</a></div>
   </section>
 </Base>

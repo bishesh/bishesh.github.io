@@ -9,7 +9,7 @@
   const nt = document.querySelector("[data-nav-toggle]"), nav = document.getElementById("nav");
   nt?.addEventListener("click", () => { const o = nav.classList.toggle("open"); nt.setAttribute("aria-expanded", o); });
 
-  // Filters: <div data-filters="pubs"> with .chip[data-key][data-value]; items [data-filterable="pubs"] carry data-<key>="a b c".
+  // Filters: <div data-filters="pubs"> with .chip[data-key][data-value] (data-single: one value at a time, like tabs); items [data-filterable="pubs"] carry data-<key>="a b c".
   // Within a key: OR. Across keys: AND. value "*" clears the key.
   document.querySelectorAll("[data-filters]").forEach((box) => {
     const scope = box.dataset.filters, state = {};
@@ -24,17 +24,31 @@
       });
       groups.forEach((g) => (g.hidden = !g.querySelector(`[data-filterable="${scope}"]:not([hidden])`)));
       if (counter) counter.textContent = shown;
+      // live counts on [data-live] chips: what that value would show, given every other key's current choice
+      box.querySelectorAll("[data-live][data-key]").forEach((c) => {
+        const k = c.dataset.key, v = c.dataset.value, n = c.querySelector(".n"); if (!n || v === "*") return;
+        n.textContent = items.filter((el) => Object.entries(state).every(([kk, vals]) => kk === k || !vals.size ||
+          (el.dataset[kk] || "").split(" ").some((x) => vals.has(x))) && (el.dataset[k] || "").split(" ").includes(v)).length;
+      });
     };
+    const press = (k) => box.querySelectorAll(`[data-key="${k}"]`).forEach((x) =>
+      x.setAttribute("aria-pressed", x.dataset.value === "*" ? String(!state[k]?.size) : String(!!state[k]?.has(x.dataset.value))));
     box.addEventListener("click", (e) => {
-      const c = e.target.closest(".chip[data-key]"); if (!c) return;
+      const c = e.target.closest("[data-key]"); if (!c) return;
       const k = c.dataset.key, v = c.dataset.value; state[k] ??= new Set();
-      if (v === "*") state[k].clear(); else state[k].has(v) ? state[k].delete(v) : state[k].add(v);
-      box.querySelectorAll(`.chip[data-key="${k}"]`).forEach((x) =>
-        x.setAttribute("aria-pressed", x.dataset.value === "*" ? String(!state[k].size) : String(state[k].has(x.dataset.value))));
+      if (v === "*") state[k].clear();
+      else if ("single" in c.dataset) { state[k].clear(); state[k].add(v); }
+      else state[k].has(v) ? state[k].delete(v) : state[k].add(v);
+      press(k);
+      // rows that refine one value of this key (data-for-key/data-for): show only under it, reset when hidden
+      box.querySelectorAll(`[data-for-key="${k}"]`).forEach((row) => {
+        row.hidden = !state[k].has(row.dataset.for);
+        if (row.hidden) row.querySelectorAll("[data-key]").forEach((x) => { state[x.dataset.key]?.clear(); press(x.dataset.key); });
+      });
       apply();
     });
     // deep link: ?theme=ultrasound
     const q = new URLSearchParams(location.search);
-    q.forEach((v, k) => box.querySelector(`.chip[data-key="${k}"][data-value="${v}"]`)?.click());
+    q.forEach((v, k) => box.querySelector(`[data-key="${k}"][data-value="${v}"]`)?.click());
   });
 })();

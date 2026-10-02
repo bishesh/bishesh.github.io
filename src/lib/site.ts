@@ -62,3 +62,53 @@ export const formatAuthors = (authors: string[], max = MAX_AUTHORS) => {
   idx.forEach((i, k) => { if (k > 0 && i - idx[k - 1] > 1) out.push("…"); out.push(mdInline(authors[i])); });
   return out.join(", ");
 };
+
+// Talks & media, as one list. Talks (talks.yaml) and press (media.yaml) are normalised to one shape so the
+// "Talks & media" page can slice them along independent dimensions: format (the tab), kind (keynote, feature…),
+// persona, reach (scope: the section) and, for podcasts and interviews, his role (host / guest).
+export const FORMATS = [
+  { key: "talks", label: "Talks", kinds: ["keynote", "invited-talk", "lecture"] },
+  { key: "panels", label: "Panels", kinds: ["panel"] },
+  { key: "podcasts", label: "Podcasts", kinds: ["podcast"] },
+  { key: "video", label: "Video & TV", kinds: ["interview", "tv"] },
+  { key: "articles", label: "Articles", kinds: ["interview", "feature", "news", "op-ed"] },
+] as const;
+export const KIND_LABEL: Record<string, string> = {
+  keynote: "Keynote", "invited-talk": "Invited talk", lecture: "Lecture", panel: "Panel", podcast: "Podcast",
+  interview: "Interview", tv: "TV", feature: "Feature", news: "News", "op-ed": "Op-ed",
+};
+export type Person = { name: string; role: "host" | "co-host" | "guest" | "moderator" | "panelist"; affiliation?: string; url?: string };
+// the people on an appearance, grouped by role in a fixed order, with display labels
+export const peopleByRole = (people: Person[]) =>
+  ([["host", "Host"], ["co-host", "Co-host"], ["moderator", "Moderator"], ["panelist", "Co-panelist"], ["guest", "Guest"]] as const)
+    .map(([r, label]) => ({ ps: people.filter((p) => p.role === r), label }))
+    .filter((g) => g.ps.length)
+    .map((g) => ({ ...g, label: g.label + (g.ps.length > 1 ? "s" : "") }));
+export type Appearance = {
+  format: string; kind: string; title: string; outlet: string; date: string; language?: string; scope: string;
+  persona: string; role?: string; people: Person[]; href: string; thumb: string; action: string; featured?: boolean;
+};
+export const getAppearances = async (): Promise<Appearance[]> => {
+  const yt = (id: string) => ({ href: `https://www.youtube.com/watch?v=${id}`, thumb: `https://i.ytimg.com/vi/${id}/hqdefault.jpg` });
+  const talks = (await getTalks()).map((t) => {
+    const id = youtubeId(t.video);
+    return {
+      format: { panel: "panels", podcast: "podcasts", interview: "video", tv: "video" }[t.kind as string] ?? "talks",
+      kind: t.kind, title: t.title, outlet: t.venue, date: t.date, language: t.language, scope: t.scope,
+      persona: t.persona, role: t.role, people: t.people ?? [], featured: t.featured,
+      ...(id ? yt(id) : { href: t.url || "", thumb: t.image || "" }),
+      action: id ? "Watch" : "",
+    };
+  });
+  const press = (await getMedia()).map((m) => {
+    const id = youtubeId(m.video);
+    const format = id || m.kind === "tv" ? "video" : m.kind === "podcast" ? "podcasts" : "articles";
+    return {
+      format, kind: m.kind, title: m.title, outlet: m.outlet, date: m.date, language: m.language, scope: m.scope,
+      persona: m.persona, role: m.role, people: m.people ?? [],
+      ...(id ? yt(id) : { href: m.url || "", thumb: m.image || "" }),
+      action: id ? "Watch" : format === "podcasts" ? "Listen" : "",
+    };
+  });
+  return [...talks, ...press];
+};

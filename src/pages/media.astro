@@ -1,19 +1,17 @@
 ---
-import Base from "../layouts/Base.astro";
-import PageHero from "../components/PageHero.astro";
-import { getMedia, fuzzyDate } from "../lib/site";
-const media = (await getMedia()).sort((a, b) => b.date.localeCompare(a.date));
+// Media merged into Talks & media (/talks/). Old links keep working: /media/#podcasts → /talks/?format=podcasts.
 ---
-<Base title="Media" description="Press coverage, interviews and podcasts featuring Bishesh Khanal.">
-  <PageHero eyebrow="Media" headline="In the media" lead="Interviews, features and podcasts — in English and Nepali." />
-  <section class="container">
-    <div class="grid grid-3">
-      {media.map((m) => { const Tag = m.url ? "a" : "div"; return (
-        <Tag class="card hoverable" href={m.url} rel={m.url ? "noopener" : undefined} data-persona={m.persona} style="border-top:3px solid var(--accent)">
-          <div class="meta" style="margin-bottom:.5rem">{m.outlet} · {fuzzyDate(m.date)}{m.language === "ne" && " · नेपाली"}</div>
-          <h3>{m.title}</h3>
-          <p><span class="badge">{m.kind}</span></p>
-        </Tag>); })}
-    </div>
-  </section>
-</Base>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <title>Talks & media · Bishesh Khanal</title>
+  <link rel="canonical" href="/talks/?format=articles" />
+  <meta http-equiv="refresh" content="0; url=/talks/?format=articles" />
+  <script is:inline>
+    var h = location.hash.slice(1), f = { read: "articles", video: "video", podcasts: "podcasts" }[h] || "articles";
+    location.replace("/talks/?format=" + f);
+  </script>
+</head>
+<body><a href="/talks/?format=articles">Talks & media</a></body>
+</html>

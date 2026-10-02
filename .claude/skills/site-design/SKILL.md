@@ -44,7 +44,7 @@ Rules:
 5. **Signatures, once each:** the **tri-band** (crimson | indigo | ember, 3px) under the home header
    and in the footer, and the **dusk wash** (`.dusk`, three 10% radial glows) behind the home hero only.
    It nods to the gradient heroes of Tangible and Terahs. Don't reuse either elsewhere.
-6. Neutral pages (Talks, Media, CV) use `--ink` as accent and let **each item carry its own persona
+6. Neutral pages (Talks & media, CV) use `--ink` as accent and let **each item carry its own persona
    dot**. Cross-cutting content is coloured by what it speaks to, not by where it sits.
 
 ## 2. How persona colour is applied (the mechanism)
@@ -69,7 +69,7 @@ Page → persona map (nav dots live in `src/data/site.yaml`; the page persona is
 | `/dreamer/`, `/government/` | dreamer |
 | `/scientist/`, `/publications/` | scientist |
 | `/entrepreneur/` | entrepreneur |
-| `/`, `/talks/`, `/media/`, `/cv/` | neutral (items carry their own dot) |
+| `/`, `/talks/` (Talks & media; `/media/` redirects here), `/cv/` | neutral (items carry their own dot) |
 
 ## 3. Persona glyphs
 
@@ -115,9 +115,13 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 
 ## 7. Content hierarchy rules
 
-- **Talks** are tiered by `scope`: `international` → large 16:9 cards (first rows),
-  `regional` → same grid, `national` → smaller cards, `local` → a compact list, collapsed.
-  Within a tier: featured first, then newest.
+- **Talks & media** (`/talks/`) holds talks, panels, podcasts, video/TV interviews and press as one list
+  (`getAppearances()` in `src/lib/site.ts`, cards from `AppearanceCard.astro`). Dimensions: *type* is a tab
+  (one at a time); *kind* or *role* refines it under its own tab; *persona* chips cut across; *reach* (`scope`)
+  is the section: `international` → large 16:9 cards, `regional` → same grid, `national` → smaller cards,
+  `local` → a compact list. Within a section: featured first, then items with a picture, then newest.
+  Cards name the people (host, guest, moderator, co-panelists, with affiliation and profile link) and carry
+  labels for kind, his role and language.
 - **Publications** are grouped by year, filterable by `themes` and `type`. `authors:` is a YAML **list in
   paper order, always complete**. Bishesh is written `**Khanal B**` and rendered bold, never auto-guessed
   (Bidur Khanal is also "Khanal B"). A consortium credit is written `"X Consortium (incl. **Khanal B**)"`.
