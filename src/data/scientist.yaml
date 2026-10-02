@@ -99,9 +99,8 @@ team:
       orgs: ["TOGAI, NAAMII"]
       details: ["Programme management", "Public health research"]
     - name: Neelam Suwal
-      title: Coordinator
+      title: Public Health Research Coordinator
       orgs: ["TOGAI, NAAMII"]
-      details: ["Coordination", "Public health research"]
     - { name: Bishram Acharya, title: Research Assistant, orgs: ["TOGAI, NAAMII"] }
     - { name: Sameer Shrestha, title: Research Assistant, orgs: ["TOGAI, NAAMII"], details: ["Joined as an intern"] }
     - { name: Himani Paudayal, title: Research Assistant, orgs: ["TOGAI, NAAMII"] }
