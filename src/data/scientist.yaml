@@ -87,13 +87,24 @@ team:
     - { name: Sameer Shrestha, role: "Research Assistant, NAAMII", text: "Ultrasound. Joined as an intern." }
     - { name: Himani Paudayal, role: "Research Assistant, NAAMII", text: "TOGAI group." }
     - { name: Prekshya Dawadi, role: "Research Assistant, NAAMII", text: "TOGAI group." }
+  # alumni: from people.md, plus the RISE-MICCAI keynote deck's "Where our alumni went next" (added 2026-10-02).
+  # PhDs first, then MSc and onward roles, then those whose next step isn't recorded.
   alumni:
-    - { name: Kanchan Poudel, role: "Research Assistant, NAAMII", now: "MSc Machine Learning, University of Tübingen (ELLIS full scholarship)" }
+    - { name: Bidur Khanal, role: "Research Assistant, NAAMII", text: "I was also on his PhD committee at RIT (2023–25).", now: "NVIDIA, after a PhD at Rochester Institute of Technology" }
+    - { name: Lavsen Dahal, role: "Research Assistant, NAAMII", now: "PhD student, Duke University, USA" }
+    - { name: Pratima Upretee, role: "Research Assistant, NAAMII", now: "PhD student, Ghent University, Belgium" }
+    - { name: Suprim Nakarmi, role: "Research Assistant, NAAMII", now: "PhD student, University of Nevada, Las Vegas, USA" }
+    - { name: Safal Thapaliya, role: "Research Assistant, NAAMII", now: "PhD student, University of Connecticut, USA" }
+    - { name: Manish Dhakal, role: "Research Assistant, NAAMII", now: "PhD student, University of Tennessee, USA" }
     - { name: Nishant Luitel, role: "Research Assistant, NAAMII", now: "PhD, Rochester Institute of Technology, USA (from autumn 2026)" }
+    # scholarship name unconfirmed: NAAMII records say ELLIS, the Open House slide says ELIZA (people.md)
+    - { name: Kanchan Poudel, role: "Research Assistant, NAAMII", now: "MSc Machine Learning, University of Tübingen (full scholarship)" }
+    - { name: Rabin Adhikari, role: "TOGAI group, NAAMII", now: "MSc Data Science & AI, Saarland University, Germany" }
     - { name: Prasiddha Bhandari, role: "Research Assistant, NAAMII", text: "First author, MIDL 2026.", now: "MSc, Germany" }
+    - { name: Anmol Guragain, role: "TOGAI group, NAAMII", now: "Research Engineer, Universidad Politécnica de Madrid, Spain" }
     - { name: Angelina Ghimire, role: "Research Assistant, NAAMII" }
-  committee:
-    - { name: Bidur Khanal, role: "PhD committee member, Rochester Institute of Technology", since: "2023–25" }
+    - { name: Kushal Paudel, role: "Research Assistant, NAAMII" }
+    - { name: Krischal Khanal, role: "Research Assistant, NAAMII" }
 service:
   - title: Service to the field
     text: |
