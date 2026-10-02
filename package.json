@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "astro dev",
     "build": "astro build", "preview": "astro preview", "check": "astro sync && astro build",
-    "import": "node scripts/import-dossier.mjs"
+    "import": "node scripts/import-dossier.mjs",
+    "deploy": "sh scripts/deploy.sh"
   },
   "repository": {
     "type": "git",

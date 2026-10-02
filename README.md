@@ -8,10 +8,11 @@ A static site built with [Astro](https://astro.build), served on GitHub Pages. A
 ```sh
 npm install
 npm run dev          # http://localhost:8080, live-reloads on save (Astro 7 detaches it; `npx astro dev stop` ends it)
-npm run build        # builds dist/ AND validates every data entry
+npm run build        # builds docs/ AND validates every data entry
+npm run deploy       # on master: build, commit docs/, push (this is what updates the live site)
 ```
 
-## Updating content (the GitHub web editor is enough)
+## Updating content
 
 | To add… | Edit | Notes |
 |---|---|---|
@@ -22,8 +23,8 @@ npm run build        # builds dist/ AND validates every data entry
 | page text | `src/data/{home,dreamer,scientist,entrepreneur,cv}.yaml` | Markdown is allowed in `lead`, `story` and `text`. |
 
 **Every list is schema-checked** (`src/content.config.ts`). A typo such as `themes: [ultrasuond]`, an unknown
-`scope`, or a missing `year` fails the build with the entry and field named, and the list of allowed values. On a
-branch, the *Check site* action shows it red. On `master`, the deploy stops and the live site stays as it was.
+`scope`, or a missing `year` fails the build with the entry and field named, and the list of allowed values.
+When that happens, `npm run deploy` stops before committing anything, so the live site stays as it was.
 
 `review:` marks a keyword guess or an unverified item. Check it, then delete the field; the page ignores it either way.
 
@@ -33,9 +34,11 @@ The visual contract is `.claude/skills/site-design/SKILL.md`: the "Three Houses"
 are quiet echoes of NAAMII, Tangible and Terahs, plus typography and components. A page picks its persona with
 `<Base persona="…">`, and that is all it does to change colour.
 
-## Going live
+## Deploying
 
-The site is built on the `redesign` branch. `master` still holds the old Nikola site, and Pages serves it
-(legacy "deploy from branch"). To switch over:
-1. Repo Settings → Pages → Build and deployment → Source: **GitHub Actions**.
-2. Merge `redesign` into `master`. `.github/workflows/deploy.yml` builds, validates and publishes.
+GitHub Pages serves the `docs/` folder of `master` (Settings → Pages → "Deploy from a branch", `master` / `/docs`).
+There is no GitHub Actions build, so the built site is committed: edit `src/data/`, then run `npm run deploy` on
+`master`. Pushing source changes without `npm run deploy` leaves the live site unchanged, and that includes edits
+made in the GitHub web editor.
+
+The old Nikola site is kept as the tags `nikola-site` (what was served) and `nikola-src` (its source).

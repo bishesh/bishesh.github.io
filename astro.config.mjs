@@ -13,6 +13,8 @@ const reloadOnData = {
 export default defineConfig({
   site: "https://bishesh.github.io",
   trailingSlash: "always",
+  // GitHub Pages serves master:/docs (legacy "deploy from branch"; no Actions), so the build is committed there.
+  outDir: "docs",
   server: { port: 8080 },
   devToolbar: { enabled: false },
   vite: { plugins: [reloadOnData] },
