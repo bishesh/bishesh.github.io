@@ -44,7 +44,7 @@ const personas = ["dreamer", "scientist", "entrepreneur"];
     <div class="chip-rows">
     <div class="chips">
       <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All personas</button>
-      {personas.map((p) => <button class="chip" data-key="personaF" data-value={p} data-live aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{count((x) => x.persona === p)}</span></button>)}
+      {personas.map((p) => <button class="chip" data-key="personaF" data-value={p} data-persona={p} data-live aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{count((x) => x.persona === p)}</span></button>)}
     </div>
     <div class="chips">
       <button class="chip" data-key="scope" data-value="*" aria-pressed="true">All reach</button>

@@ -30,8 +30,13 @@ Neutrals are **cool, not beige**:
 | `--surface` | `#FFFFFF` | `#161A2C` | cards |
 | `--ink` | `#121829` | `#ECEEF5` | deep navy ink (after Tangible's `#10192b`) |
 | `--ink-soft` | `#454D59` | `#B5BACB` | NAAMII's Dark Blue Grey, used verbatim |
-| `--muted` | `#737A8C` | `#878DA2` | metadata only |
+| `--muted` | `#5E6577` | `#9097AC` | metadata only; ≥ 4.5:1 on `--paper` (the old `#737A8C` failed) |
 | `--line` | `#E3E6EE` | `#262B41` | hairlines |
+| `--line-strong` | `#C3C9D8` | `#3B4262` | edges of controls (chips, tags, the tab rule) |
+
+Voice: quiet surfaces, **decisive marks**. Text never sits in a pale grey on a pale ground, and a selected
+control is solid ink (or the persona's 700), not a faint tint. He is a bit of a rebel: bold where it marks a
+choice, never flashy.
 
 Rules:
 1. **Accents are for marks, not fields.** A persona colour may appear as: the 3px top rule, the
@@ -105,9 +110,9 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 | `.page-rule` | 3px bar at top of `<main>` | `--accent` |
 | `.eyebrow` | glyph + label | `--accent-strong` |
 | `.persona-card` | glyph, name, one-liner, link | left edge 3px `--accent`, tint on hover |
-| `.chip` | pill filter/tag | outline `--line`; active = `--accent-tint` bg + `--accent-strong` text |
+| `.chip` | pill filter/tag | `--ink` text on a `--line-strong` edge; hover = `--accent-tint`; **pressed = solid `--accent-strong` fill, `--paper` text** (ink on neutral pages, the persona's 700 on its pages; a persona chip carries `data-persona` and fills in its own colour) |
 | `.dot` | 8px circle before an item | the item's own persona colour |
-| `.pub` | title · authors (self bolded) · venue · year · links | links in `--accent-strong` |
+| `.pub` | title · authors (self bolded) · venue · year · links | venue (italic, 500) and links in `--accent-strong` |
 | `.talk-card` | 16:9 thumbnail, title, venue · city · date, scope badge, persona dot | dot only |
 | `.timeline` | year column + entries | year in `--accent-strong`, rail `--line` |
 | `.stat` | big number + label | number in `--ink`, label `--muted`; no accent (numbers don't belong to a persona) |
