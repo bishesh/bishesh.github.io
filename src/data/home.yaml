@@ -1,4 +1,4 @@
-portrait: ""            # e.g. /assets/img/portrait.jpg (4:5)
+portrait: /assets/img/portrait.jpg   # 4:5
 cv_url: /cv/
 intro: |
   I am the founding Chairperson of [NAAMII](https://naamii.org.np), Nepal's AI centre of excellence,
