@@ -225,11 +225,16 @@ details.tier > summary:hover h2, details.tier > summary:hover .chev { color: var
 .talk-card .v { font-size: .875rem; color: var(--ink-soft); display: flex; gap: .5rem; align-items: baseline; }
 .talk-card .v .dot { transform: translateY(-1px); }
 /* talks & media: type tabs, refine rows, appearance cards (people + labels) */
-.tabs { display: flex; flex-wrap: wrap; gap: 0 1.5rem; border-bottom: 1px solid var(--line); margin-bottom: 1.25rem; }
-.tab { flex: none; white-space: nowrap; font: 500 .9375rem/1 var(--sans); background: none; border: 0; border-bottom: 2px solid transparent; margin-bottom: -1px; padding: .9rem 0; color: var(--ink-soft); cursor: pointer; display: inline-flex; gap: .4rem; align-items: baseline; transition: color .15s ease-out, border-color .15s ease-out; }
+.talks-bar { padding-top: clamp(1.25rem, 4vw, 2.25rem); }
+.talks-bar + .container > .tier:first-child { margin-top: 1.75rem; }
+.tabs { display: flex; gap: 0 2.25rem; border-bottom: 1px solid var(--line); margin-bottom: 1.25rem; overflow-x: auto; scrollbar-width: none; }
+.tabs::-webkit-scrollbar { display: none; }
+.tab { flex: none; white-space: nowrap; font: 600 1.375rem/1.1 var(--serif); background: none; border: 0; border-bottom: 3px solid transparent; padding: 1rem 0 .85rem; color: var(--muted); cursor: pointer; display: inline-flex; gap: .45rem; align-items: baseline; transition: color .15s ease-out, border-color .15s ease-out; }
 .tab:hover { color: var(--ink); }
-.tab[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); font-weight: 600; }
-.tab .n { color: var(--muted); font-variant-numeric: tabular-nums; font-weight: 500; font-size: .8125rem; }
+.tab[aria-pressed="true"] { color: var(--ink); border-bottom-color: var(--ink); }
+.tab .n { color: var(--muted); font: 500 .875rem/1 var(--sans); font-variant-numeric: tabular-nums; }
+.chip-rows { display: flex; flex-wrap: wrap; gap: 0 1.5rem; }
+@media (max-width: 600px) { .tabs { flex-wrap: wrap; gap: 0 1.25rem; } .tab { font-size: 1.125rem; padding: .75rem 0 .6rem; } details.tier > summary .meta { display: none; } details.tier > summary .chev { margin-left: auto; } }
 .tabs + .chips { margin-top: -.25rem; }
 .chips[hidden], .media-card[hidden] { display: none; }
 .media-card a.t, .media-card a.thumb { text-decoration: none; }

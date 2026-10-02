@@ -1,6 +1,5 @@
 ---
 import Base from "../layouts/Base.astro";
-import PageHero from "../components/PageHero.astro";
 import AppearanceCard from "../components/AppearanceCard.astro";
 import { getAppearances, FORMATS, KIND_LABEL } from "../lib/site";
 
@@ -30,9 +29,8 @@ const refine = formats.map((f) => ({
 const personas = ["dreamer", "scientist", "entrepreneur"];
 ---
 <Base title="Talks & media" description="Keynotes, talks, panels, podcasts, interviews and press coverage of Bishesh Khanal — international first.">
-  <PageHero eyebrow="Talks & media" headline="Talks, conversations & press"
-    lead={`${count((x) => x.format !== "articles")} talks, panels, podcasts and interviews since 2016, and ${count((x) => x.format === "articles")} articles — on AI in health, AI centres of excellence for the Global South, and how work is being reorganized. In English and Nepali. The dot shows which persona each piece speaks to.`} />
-  <section class="container" data-filters="talks">
+  <h1 class="visually-hidden">Talks & media</h1>
+  <section class="container talks-bar" data-filters="talks">
     <div class="tabs" role="group" aria-label="Type">
       <button class="tab" data-key="format" data-value="*" data-single aria-pressed="true">All <span class="n">{all.length}</span></button>
       {formats.map((f) => <button class="tab" data-key="format" data-value={f.key} data-single aria-pressed="false">{f.label} <span class="n">{f.n}</span></button>)}
@@ -43,6 +41,7 @@ const personas = ["dreamer", "scientist", "entrepreneur"];
         {r.values.map((x) => <button class="chip" data-key={r.key} data-value={x.v} aria-pressed="false">{x.label} <span class="n">{x.n}</span></button>)}
       </div>
     ))}
+    <div class="chip-rows">
     <div class="chips">
       <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All personas</button>
       {personas.map((p) => <button class="chip" data-key="personaF" data-value={p} data-live aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{count((x) => x.persona === p)}</span></button>)}
@@ -51,7 +50,7 @@ const personas = ["dreamer", "scientist", "entrepreneur"];
       <button class="chip" data-key="scope" data-value="*" aria-pressed="true">All reach</button>
       {tiers.map((t) => <button class="chip" data-key="scope" data-value={t.key} data-live aria-pressed="false">{t.label} <span class="n">{count((x) => x.scope === t.key)}</span></button>)}
     </div>
-    <p class="meta">Showing <span data-filter-count="talks">{all.length}</span></p>
+    </div>
   </section>
   <div class="container">
     {tiers.map((tier) => { const items = sorted(all.filter((t) => t.scope === tier.key)); return items.length > 0 && (
