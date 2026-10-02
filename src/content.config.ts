@@ -5,6 +5,7 @@ import { defineCollection } from "astro:content";
 import type { Loader } from "astro/loaders";
 import { z } from "astro/zod";
 import fs from "node:fs";
+import nodePath from "node:path";
 import * as yaml from "js-yaml";
 
 const read = (f: string) => yaml.load(fs.readFileSync(`${process.cwd()}/src/data/${f}`, "utf8")) as any;
@@ -26,7 +27,7 @@ const list = (f: string): Loader => ({
     await sync();
     watcher?.add(path);
     watcher?.on("change", async (changed) => {
-      if (changed !== path) return;
+      if (nodePath.resolve(changed) !== path) return; // the watcher may report a cwd-relative path
       try { await sync(); logger.info(`reloaded ${f}`); } catch (e: any) { logger.error(`${f}: ${e.message}`); }
     });
   },
