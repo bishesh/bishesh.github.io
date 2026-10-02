@@ -13,7 +13,7 @@ const cut = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1).trimEnd(
 const lang = m.language === "ne" ? "नेपाली" : m.language === "en" ? "English" : "";
 const roles = peopleByRole(m.people);
 ---
-<div class="talk-card media-card" data-filterable="talks" data-format={m.format} data-kind={m.kind} data-persona-f={m.persona} data-role={m.role}>
+<div class="talk-card media-card" data-filterable="talks" data-format={m.format} data-kind={m.kind} data-persona-f={m.persona} data-role={m.role} data-scope={m.scope}>
   <A class="thumb" data-persona={m.persona} {...link} tabindex={m.href ? -1 : undefined} aria-hidden={m.href ? "true" : undefined}>
     {m.thumb ? <img loading="lazy" src={m.thumb} alt="" /> : <span class="ph">{cut(m.outlet, 70)}</span>}
     {m.action && (

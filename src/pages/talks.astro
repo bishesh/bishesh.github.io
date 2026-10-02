@@ -2,19 +2,17 @@
 import Base from "../layouts/Base.astro";
 import PageHero from "../components/PageHero.astro";
 import AppearanceCard from "../components/AppearanceCard.astro";
-import { getAppearances, FORMATS, KIND_LABEL, fuzzyDate, peopleByRole } from "../lib/site";
+import { getAppearances, FORMATS, KIND_LABEL } from "../lib/site";
 
 // Talks & media: every talk, panel, podcast, video interview and article on one page, sliced along independent
 // dimensions. Format is the tab (one at a time); kind or role refines it (shown under the tab it belongs to);
-// persona cuts across all of them; reach (scope) is the section. Filtering is site.js's chip filter.
+// persona cuts across all of them; reach (scope) is both a chip row and the section, and each section collapses.
+// Within a section: newest first. Filtering is site.js's chip filter.
 const all = await getAppearances();
-const rank = (x: any) => (x.featured ? 2 : 0) + (x.thumb ? 1 : 0);
-const sorted = (xs: typeof all) => [...xs].sort((a, b) => rank(b) - rank(a) || String(b.date).localeCompare(String(a.date)));
+const sorted = (xs: typeof all) => [...xs].sort((a, b) => String(b.date).localeCompare(String(a.date)));
 const tiers = [
-  { key: "international", label: "International", note: "Global venues, talks abroad, international podcasts", style: "grid" },
-  { key: "regional", label: "Regional · South Asia", note: "India and the region", style: "grid" },
-  { key: "national", label: "National", note: "Government, national conferences, Nepali media and institutions", style: "compact" },
-  { key: "local", label: "Local", note: "Colleges, schools, hospitals and meetups", style: "list" },
+  { key: "international", label: "International", note: "Talks abroad, global venues and audiences, ANAIS and HAICon", style: "grid" },
+  { key: "national", label: "National", note: "Government, conferences, institutions and media in Nepal", style: "compact" },
 ];
 const count = (f: (x: (typeof all)[number]) => boolean) => all.filter(f).length;
 const formats = FORMATS.map((f) => ({ ...f, n: count((x) => x.format === f.key) })).filter((f) => f.n);
@@ -49,25 +47,20 @@ const personas = ["dreamer", "scientist", "entrepreneur"];
       <button class="chip" data-key="personaF" data-value="*" aria-pressed="true">All personas</button>
       {personas.map((p) => <button class="chip" data-key="personaF" data-value={p} data-live aria-pressed="false"><i class={`dot ${p}`} />{p[0].toUpperCase() + p.slice(1)} <span class="n">{count((x) => x.persona === p)}</span></button>)}
     </div>
+    <div class="chips">
+      <button class="chip" data-key="scope" data-value="*" aria-pressed="true">All reach</button>
+      {tiers.map((t) => <button class="chip" data-key="scope" data-value={t.key} data-live aria-pressed="false">{t.label} <span class="n">{count((x) => x.scope === t.key)}</span></button>)}
+    </div>
     <p class="meta">Showing <span data-filter-count="talks">{all.length}</span></p>
   </section>
   <div class="container">
     {tiers.map((tier) => { const items = sorted(all.filter((t) => t.scope === tier.key)); return items.length > 0 && (
-      <section class="tier" data-filter-group="talks">
-        <div class="tier-head"><h2>{tier.label}</h2><span class="meta">{tier.note}</span></div>
-        {tier.style === "list" ? (
-          <ul class="rows">
-            {items.map((t) => (
-              <li class="row" data-filterable="talks" data-format={t.format} data-kind={t.kind} data-persona-f={t.persona} data-role={t.role}>
-                <span class="d">{fuzzyDate(t.date)}</span>
-                <span><i class={`dot ${t.persona}`} /><span class="t">{t.href ? <a href={t.href}>{t.title}</a> : t.title}</span> <span class="v">— {t.outlet}</span>
-                  {peopleByRole(t.people).map((g) => <span class="v"> · {g.label.toLowerCase()} {g.ps.map((p, i) => <>{i > 0 && ", "}{p.url ? <a href={p.url} rel="noopener">{p.name}</a> : p.name}</>)}</span>)}</span>
-              </li>
-            ))}
-          </ul>
-        ) : (
-          <div class={`talk-grid${tier.style === "compact" ? " compact" : ""}`}>{items.map((m) => <AppearanceCard m={m} />)}</div>
-        )}
-      </section>); })}
+      <details class="tier" open data-filter-group="talks">
+        <summary class="tier-head">
+          <h2>{tier.label} <span class="n" data-group-count>{items.length}</span></h2><span class="meta">{tier.note}</span>
+          <svg class="chev" width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 5l4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" /></svg>
+        </summary>
+        <div class={`talk-grid${tier.style === "compact" ? " compact" : ""}`}>{items.map((m) => <AppearanceCard m={m} />)}</div>
+      </details>); })}
   </div>
 </Base>

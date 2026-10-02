@@ -66,7 +66,7 @@ const talks = defineCollection({
   loader: list("talks.yaml"),
   schema: z.object({
     title: z.string(), venue: z.string().default(""), date: dateish,
-    scope: z.enum(["international", "regional", "national", "local"]),
+    scope: z.enum(["international", "national"]), // international: venue or audience outside Nepal, and ANAIS/HAICon
     persona,
     kind: z.enum(["keynote", "invited-talk", "panel", "podcast", "interview", "lecture", "tv"]),
     video: z.string().optional(), url: z.string().url().optional(), language: z.enum(["en", "ne"]).optional(), role, people,

@@ -22,7 +22,10 @@
         const ok = Object.entries(state).every(([k, vals]) => !vals.size || (el.dataset[k] || "").split(" ").some((v) => vals.has(v)));
         el.hidden = !ok; if (ok) shown++;
       });
-      groups.forEach((g) => (g.hidden = !g.querySelector(`[data-filterable="${scope}"]:not([hidden])`)));
+      groups.forEach((g) => {
+        const n = g.querySelectorAll(`[data-filterable="${scope}"]:not([hidden])`).length;
+        g.hidden = !n; const c = g.querySelector("[data-group-count]"); if (c) c.textContent = n;
+      });
       if (counter) counter.textContent = shown;
       // live counts on [data-live] chips: what that value would show, given every other key's current choice
       box.querySelectorAll("[data-live][data-key]").forEach((c) => {

@@ -118,8 +118,9 @@ Use them at 20–28px in eyebrows and persona cards. Never fill them, never anim
 - **Talks & media** (`/talks/`) holds talks, panels, podcasts, video/TV interviews and press as one list
   (`getAppearances()` in `src/lib/site.ts`, cards from `AppearanceCard.astro`). Dimensions: *type* is a tab
   (one at a time); *kind* or *role* refines it under its own tab; *persona* chips cut across; *reach* (`scope`)
-  is the section: `international` → large 16:9 cards, `regional` → same grid, `national` → smaller cards,
-  `local` → a compact list. Within a section: featured first, then items with a picture, then newest.
+  is a chip row (so a visitor sees both reaches and their counts from the top) and the section, a collapsible
+  `<details>` with a live count: `international` (venue or audience outside Nepal, plus ANAIS and HAICon) → large
+  16:9 cards, `national` → smaller cards. Within a section: newest first.
   Cards name the people (host, guest, moderator, co-panelists, with affiliation and profile link) and carry
   labels for kind, his role and language.
 - **Publications** are grouped by year, filterable by `themes` and `type`. `authors:` is a YAML **list in

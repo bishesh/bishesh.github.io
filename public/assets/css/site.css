@@ -202,7 +202,16 @@ a.card:hover, .card.hoverable:hover { box-shadow: var(--shadow); transform: tran
 /* ---------- 13. talks & media ---------- */
 .tier { margin-top: 3rem; }
 .tier-head { display: flex; align-items: baseline; justify-content: space-between; gap: 1rem; border-bottom: 1px solid var(--line); padding-bottom: .75rem; margin-bottom: 1.5rem; }
-.tier-head h2 { font-size: 1.5rem; margin: 0; }
+.tier-head h2 { font-size: 1.5rem; margin: 0; white-space: nowrap; }
+.tier-head h2 .n { font: 500 .9375rem/1 var(--sans); color: var(--muted); font-variant-numeric: tabular-nums; margin-left: .35rem; }
+.tier[hidden] { display: none; }
+details.tier > summary { cursor: pointer; list-style: none; }
+details.tier > summary::-webkit-details-marker { display: none; }
+details.tier > summary .meta { margin-left: auto; }
+details.tier > summary .chev { flex: none; align-self: center; color: var(--muted); transition: transform .15s ease-out; }
+details.tier:not([open]) > summary .chev { transform: rotate(-90deg); }
+details.tier:not([open]) > summary { margin-bottom: 0; }
+details.tier > summary:hover h2, details.tier > summary:hover .chev { color: var(--accent-strong); }
 .talk-grid { display: grid; gap: 1.5rem 1.25rem; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
 .talk-grid.compact { grid-template-columns: repeat(auto-fill, minmax(min(100%, 230px), 1fr)); }
 .talk-card { display: flex; flex-direction: column; gap: .6rem; text-decoration: none; }
