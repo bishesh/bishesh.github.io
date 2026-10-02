@@ -53,15 +53,16 @@ const nav = [
   {d.team && (
     <section class="container section" id="team">
       <div class="section-head"><div class="eyebrow">Team & alumni</div><h2>{d.team.title}</h2><div class="prose" set:html={md(d.team.lead)} /></div>
-      {[{ k: "current", label: "Current TOGAI team" }, { k: "alumni", label: "Alumni, and where they are now" }, { k: "committee", label: "PhD committees" }].map((g) => d.team[g.k]?.length > 0 && (
+      {[{ k: "current", label: "Current TOGAI team" }, { k: "alumni", label: "Alumni, and where they are now" }].map((g) => d.team[g.k]?.length > 0 && (
         <>
           <h3 class="filter-label team-label">{g.label}</h3>
           <ul class="team-grid">
             {d.team[g.k].map((p: any) => (
-              <li class="card person">
+              <li class={`card person ${g.k}`}>
                 <b class="name">{p.name}</b>
-                <span class="role">{p.role}{p.since && <span class="since"> · {p.since}</span>}</span>
-                {p.text && <span class="note">{p.text}</span>}
+                <span class="title">{p.title}</span>
+                {p.orgs?.map((o: string) => <span class="org">{o}</span>)}
+                {p.details?.length > 0 && <ul class="details">{p.details.map((x: string) => <li>{x}</li>)}</ul>}
                 {p.now && <span class="now"><span aria-hidden="true">→ </span><span class="visually-hidden">Now: </span>{p.now}</span>}
               </li>
             ))}
