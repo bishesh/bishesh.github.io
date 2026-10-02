@@ -37,15 +37,36 @@
   people:
     - { name: Dr. Kiran Raj Pandey, role: co-host, url: 'https://naamii.org/about/team-and-leadership/kiran_raj_pandey' }
     - { name: Dr. Anurag Agrawal, role: guest, url: 'https://www.ashoka.edu.in/profile/anurag-agrawal/' }
-- title: AI in Radiology — RADCON 2026
-  venue: RADCON 2026, Nepal Radiologists' Association
-  date: '2026-06-11'
+- title: 'Health AI in Nepal: Excellence in Resource Constraints'
+  venue: 'GE Healthcare, Bangalore, India'
+  date: '2026-07-24'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Health AI in Low-Resource Settings
+  venue: 'King''s College London, UK'
+  date: '2026-05-22'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Health AI in Nepal: Excellence in Resource Constraints'
+  venue: '12th National Summit of Health and Population Scientists in Nepal, National Health Research Council (NHRC), Kathmandu'
+  date: '2026-04-10'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI in Radiology in Nepal: Excellence in Resource Constraints'
+  venue: "RADCON 2026, The Radiologist as the Clinical Navigator: Breaking Cross-Border Imaging Barriers, Nepal Radiologists' Association"
+  date: '2026-04-09'
   scope: national
   persona: scientist
   kind: keynote
   video: FHtRwAheq20
 - title: 'Hype, hope or/and harm: what mistakes we should have avoided back in the 2020s? — panel on AI in global child health'
-  venue: 44th GTP Annual Conference, AI in international child health, Dinslaken, Germany
+  venue: 44th GTP Annual Conference 2026, Dinslaken, Germany
   date: '2026-03-14'
   scope: international
   persona: scientist
@@ -60,20 +81,78 @@
     - { name: Dr. Robert Moshiro, role: panelist, affiliation: 'Paediatrician, Dar es Salaam, Tanzania' }
     - { name: Dr. Markus Vogel, role: panelist, affiliation: 'CMIO, Microsoft (Nuance), Düsseldorf' }
   # people and places from Markus Vogel's LinkedIn post (16 Mar 2026); title, date and venue from the GTP programme
-- title: UN Open Science and Open Scholarship Conference 2025 — panel
-  venue: UN Open Science and Open Scholarship Conference (OS25), Dag Hammarskjöld Library
-  date: '2025-11-17'
+- title: Transforming Global Child Health with AI
+  venue: '44th GTP Annual Conference 2026, Dinslaken, Germany'
+  date: '2026-03-14'
   scope: international
-  persona: dreamer
-  kind: panel
-  video: mhoyfb4SMVo
+  persona: scientist
+  kind: invited-talk
   language: en
-  role: panelist
-  people:
-    - { name: Roheena Anand, role: moderator, affiliation: Public Library of Science (PLOS), url: 'https://www.un.org/en/node/235410' }
-    - { name: Sadao Kurohashi, role: panelist, affiliation: National Institute of Informatics; Kyoto University, url: 'https://www.un.org/en/node/234205' }
-    - { name: Nayat Sánchez-Pi, role: panelist, affiliation: 'Inria; Inria Chile; Binational Franco-Chilean Center on AI', url: 'https://www.un.org/en/node/234866' }
-  featured: true
+  review: true
+- title: AI-Assisted Smartphone Microscopy; Perspectives for AI-powered Health Systems
+  venue: '44th GTP Annual Conference 2026, Dinslaken, Germany'
+  date: '2026-03-14'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  language: en
+  review: true
+- title: 'AI in Medicine: NAAMII''s work in Nepal'
+  venue: 'Digital Literacy for Clinicians (DLC-2026), Tribhuvan University Teaching Hospital (TUTH), Maharajgunj, Kathmandu'
+  date: '2026-02-27'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Health Systems & AI: Perspectives from Resource-Constrained Settings'
+  venue: 'Digital Health Applications: EHR, Telemedicine and AI in Health, WHO-SEARO & WCO-DPR Korea webinar series on digital public infrastructures for health (online)'
+  date: '2026-02-26'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'NAAMII, Nepal''s 1st AI Center of Excellence: Building an Ecosystem Enabling Transformations Across Sectors'
+  venue: 'NAAMII visit by the Ministry of Communication & Information Technology, Govt of Nepal'
+  date: '2026-02-25'
+  scope: national
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'NAAMII, Nepal''s 1st AI Center of Excellence: Building an Ecosystem Enabling Transformations Across Sectors'
+  venue: 'Scaling Innovations: Bridging Valleys – US Nepal Tech Conversations, in support of ANAIS 2025, Kathmandu'
+  date: '2026-01-07'
+  scope: international
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
+- title: 'NAAMII, Nepal''s 1st AI Center of Excellence: Building an Ecosystem Enabling Transformations Across Sectors'
+  venue: 'AI and the Future of Leadership, Tangible, Kathmandu'
+  date: '2026-01-05'
+  scope: local
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
+- title: 'Transforming Healthcare with AI: Advancing Equitable and Sustainable AI for Health in the Global South'
+  venue: 'AI in Healthcare: Transforming Care through Intelligence and Innovation, Upendra Devkota Foundation, Kathmandu'
+  date: '2026-01-02'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Health Systems & AI: Perspectives from Resource-Constrained Settings'
+  venue: 'Emerging Practices in Digital Health Interoperability – GenAI for Global Health, Regional Open Digital Health Summit, Delhi, India'
+  date: '2025-11-19'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI Research to Product Development @NAAMII: Models and Challenges with IP'
+  venue: '2nd Intellectual Property Summit: Sustaining and Growing an Innovation Community, Ho Chi Minh City, Vietnam'
+  date: '2025-11-06'
+  scope: international
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
 - title: 'AI-driven innovation: from Nepal to the global startup ecosystem'
   venue: Annual Nepal AI School (ANAIS), Kathmandu — on the NAAMII AI Research channel
   date: '2025-10-30'
@@ -89,6 +168,99 @@
   review: >-
     Date is the video's upload date; check it against the ANAIS edition. Any other panelists? Only Bronstein is named
     in the video title. Moderator's name spelled "Nirdesh Dwa" as in Veda App press; you wrote "Dewa".
+- title: AI, Open Science and the Global Digital Divide
+  venue: Day 1, Panel 2, 4th UN Open Science and Open Scholarship Conference (OS25, UN Dag Hammarskjöld Library), United Nations University, Tokyo, Japan
+  date: '2025-10-16'
+  scope: international
+  persona: dreamer
+  kind: panel
+  video: mhoyfb4SMVo
+  language: en
+  role: panelist
+  people:
+    - { name: Roheena Anand, role: moderator, affiliation: Public Library of Science (PLOS), url: 'https://www.un.org/en/node/235410' }
+    - { name: Sadao Kurohashi, role: panelist, affiliation: National Institute of Informatics; Kyoto University, url: 'https://www.un.org/en/node/234205' }
+    - { name: Nayat Sánchez-Pi, role: panelist, affiliation: 'Inria; Inria Chile; Binational Franco-Chilean Center on AI', url: 'https://www.un.org/en/node/234866' }
+  featured: true
+- title: Equitable Global AI Innovation Ecosystem and Open Science
+  venue: 'Talk in the panel AI, Open Science and the Global Digital Divide, 4th UN Open Science and Open Scholarship Conference, United Nations University, Tokyo, Japan'
+  date: '2025-10-16'
+  scope: international
+  persona: dreamer
+  kind: invited-talk
+  video: mhoyfb4SMVo
+  language: en
+  # same recording as the panel; add ?t= to the video when his talk's timestamp is known
+- title: Healthcare AI in Resource-Constrained Settings
+  venue: 'Challenges and Opportunities of Medical AI in Asia, MICCAI Theme Special Session, Daejeon, Korea'
+  date: '2025-09-26'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: MICCAI Community Building in Nepal and Asia
+  venue: 'MICCAI Outreach Program, Daejeon, Korea'
+  date: '2025-09-24'
+  scope: international
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI Centers of Excellence Ecosystem in LMICs: An Opportunity to Democratize Innovation and Build an Equitable World'
+  venue: 'Motivational talk to new students, Newton School of Technology, Rishihood University, Delhi, India'
+  date: '2025-08-16'
+  scope: regional
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: 'AI Centers of Excellence Ecosystem for Transformation in LMICs: Eg of Nepal'
+  venue: 'Learning and Development Session, Swiss Club Nepal, Nepal Swiss Chamber of Commerce and Industries'
+  date: '2025-07-15'
+  scope: local
+  persona: dreamer
+  kind: invited-talk
+  review: true
+- title: Health Care AI in Resource-constrained Settings
+  venue: 'Summer School in AI, CVIT Summer School Series, IIT Hyderabad, India'
+  date: '2025-07-09'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'AI in Medical Imaging: Methods and Challenges'
+  venue: 'Summer School in AI, CVIT Summer School Series, IIT Hyderabad, India'
+  date: '2025-07-09'
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Low Resource Settings with AI
+  venue: 'To young doctors / USMLE aspirants of Nepal, Kathmandu'
+  date: '2025-06-07'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Transforming Healthcare in Low Resource Settings with AI
+  venue: 'Pediatrics Department, Tribhuvan University Teaching Hospital, Kathmandu'
+  date: '2025-06-05'
+  scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Health Care AI in Resource-constrained Settings
+  venue: 'Lecture to MSc students, University of Cambridge, UK (online)'
+  date: '2025-03-05'
+  scope: international
+  persona: scientist
+  kind: lecture
+  review: true
+- title: 'AI Center of Excellence Ecosystem: How Banks can Leverage This?'
+  venue: 'Banking Leaders of Nepal, Kathmandu'
+  date: '2025-01-27'
+  scope: national
+  persona: entrepreneur
+  kind: invited-talk
+  review: true
 - title: Professional Excellence, ICT Award 2024
   venue: ICT Award 2024, Kathmandu
   date: '2025-01-20'
@@ -98,12 +270,18 @@
   video: mrmcbpNgWPI
   language: ne
 - title: Low Resource and Trustworthy AI in Healthcare
-  venue: ANAIS 2024 (Jan 5) & HAICon 2025 (Jan 8), Kathmandu, Nepal
-  date: '2025'
+  venue: 'Health AI for all Conference (HAICon) 2025, Kathmandu'
+  date: '2025-01-08'
+  scope: national
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: Low Resource and Trustworthy AI in Healthcare
+  venue: Annual Nepal AI School (ANAIS) 2024, Premier International School, Lalitpur
+  date: '2025-01-05'
   scope: international
   persona: dreamer
   kind: invited-talk
-  review: true
   video: uBFT5rrVR8I
   featured: true
 - title: 'AI Centers of Excellence Ecosystem for Transformation in LMICs: Eg of Nepal'
@@ -121,6 +299,9 @@
   kind: tv
   video: k53ZafbWYPo
   language: ne
+  role: guest
+  people:
+    - { name: Krishna Malla, role: host }
 - title: 'AI Landscape in Nepal: Centers of Excellence Ecosystem for Transformation'
   venue: AI Conference by Govt of Nepal
   date: '2024-10-27'
@@ -241,6 +422,9 @@
   kind: interview
   video: I2b453jqDbg
   language: ne
+  role: guest
+  people:
+    - { name: Maheshwor Acharya, role: host, affiliation: interviewer }
 - title: Transforming Global SRMH with AI
   venue: UNFPA, UN House, Lalitpur
   date: '2023-09-01'
@@ -476,27 +660,6 @@
     - { name: Niranjan Shrestha, role: moderator, affiliation: Laxmi Group }
   # affiliations as of Jan 2020: Binod Bhattarai was at Imperial (now Aberdeen, linked); Suresh Manandhar was NAAMII's director (now Wiseyak)
   language: ne
-- title: Is deep learning the nirvana of AI? — panel, India Science Festival
-  venue: India Science Festival, Pune, India
-  date: 2020-01
-  scope: regional
-  persona: scientist
-  kind: panel
-  url: https://www.indiasciencefest.org/
-  language: en
-  role: panelist
-  people:
-    - { name: Manish Gupta, role: moderator, affiliation: 'Director, Google Research India', url: 'https://cerai.iitm.ac.in/people/manish-gupta/' }
-  # from the old site; no video or list of the other panelists
-- title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
-  venue: India Science Festival
-  date: 2020-01
-  scope: regional
-  persona: scientist
-  kind: invited-talk
-  review: dossier had Jan 2019; old site + video say Jan 2020
-  video: R0_fRAOK4rc
-  featured: true
 - title: >-
     Research Outside Universities in Nepal: Need, Opportunities and Challenges of Multidisciplinary Collaborative
     Research and Innovation
@@ -531,7 +694,7 @@
   review: true
 - title: Speech on behalf of Nepal's young scientists — National Science Day
   venue: National Science Day, Government of Nepal, Kathmandu
-  date: 2019-09
+  date: '2019-09-23'
   scope: national
   persona: dreamer
   kind: invited-talk
@@ -580,6 +743,13 @@
   venue: Civil Engineering Dept, IoE, Pulchowk Campus
   date: '2019-07-25'
   scope: local
+  persona: scientist
+  kind: invited-talk
+  review: true
+- title: 'Modeling and Simulation of Realistic Longitudinal Brain MRIs with Atrophy in Alzheimer''s Disease'
+  venue: 'Summer School in NeuroImaging, Symbiosis International University, Pune, India'
+  date: '2019-07-24'
+  scope: regional
   persona: scientist
   kind: invited-talk
   review: true
@@ -632,6 +802,38 @@
   persona: scientist
   kind: invited-talk
   review: true
+- title: Is deep learning the nirvana of AI? — panel, India Science Festival
+  venue: India Science Festival, Pune, India
+  date: 2019-01
+  scope: regional
+  persona: scientist
+  kind: panel
+  url: https://www.indiasciencefest.org/
+  language: en
+  role: panelist
+  people:
+    - { name: Manish Gupta, role: moderator, affiliation: 'Director, Google Research India', url: 'https://cerai.iitm.ac.in/people/manish-gupta/' }
+  # from the old site; no video or list of the other panelists
+- title: 'Can AI democratize healthcare innovation: Learnings from Nepal'
+  venue: India Science Festival
+  date: 2019-01
+  scope: regional
+  persona: scientist
+  kind: invited-talk
+  video: R0_fRAOK4rc
+  featured: true
+- title: With Binod Bhattarai on NAAMII and the first AI winter school — The Connection, News 24
+  venue: THE CONNECTION with Kishor Niraula, News 24 TV, Kathmandu
+  date: '2018-12-20'
+  scope: national
+  persona: dreamer
+  kind: tv
+  video: Os9mYQ3kguU
+  language: ne
+  role: guest
+  people:
+    - { name: Kishor Niraula, role: host }
+    - { name: Binod Bhattarai, role: guest }
 - title: Machine Learning in Ultrasound for Assisted Navigation
   venue: Centre for Doctoral Training, Imperial College London, UK
   date: '2018-12-04'
@@ -660,14 +862,6 @@
   persona: scientist
   kind: lecture
   video: D8I15_KsOII
-- title: With Binod Bhattarai on NAAMII and the first AI winter school — The Connection, News 24
-  venue: THE CONNECTION with Kishor Niraula, News 24 TV, Kathmandu
-  date: 2018-12
-  scope: national
-  persona: dreamer
-  kind: tv
-  video: Os9mYQ3kguU
-  language: ne
 - title: 'Medical Imaging Informatics: An Opportunity to Democratize Innovation in Medicine'
   venue: Dept. of Computer Science, University of York, UK
   date: '2018-11-07'

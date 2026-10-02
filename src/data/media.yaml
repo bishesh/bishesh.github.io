@@ -4,6 +4,25 @@
 # Media page too, so do not repeat them here.
 # Merged from a web research pass 2026-09-26 (each page fetched, name confirmed). `review:` = unverified; `hidden: true` keeps it off the page.
 
+- title: Interview-based article on the RISE-MICCAI keynote
+  outlet: MICCAI Morning newsletter, Issue 4, MICCAI 2026, Strasbourg
+  date: '2026-09-30'
+  language: en
+  scope: international
+  kind: interview
+  persona: dreamer
+  role: guest
+  people:
+    - { name: John Baxter, role: host, affiliation: interviewer }
+  review: Title is a placeholder and there is no link yet; add the article's headline and URL.
+- title: Collaborating around AI for Global Health
+  outlet: ETH for Development (ETH4D), ETH Zurich, Switzerland
+  date: 2024-12
+  language: en
+  scope: international
+  kind: interview
+  persona: scientist
+  url: https://eth4d.ethz.ch/news-and-events/eth4d-news/2024/12/collaborating-around-ai-for-global-health.html
 - title: Nothing artificial about his intelligence
   outlet: Nepali Times
   date: '2023-09-28'
@@ -181,7 +200,7 @@
   hidden: false
 - title: Democratizing Innovation in Medicine with Computational Biomedicine
   outlet: Chautaari
-  date: 2018-06
+  date: '2018-06-27'
   language: en
   scope: national
   kind: interview
