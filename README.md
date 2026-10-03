@@ -8,8 +8,8 @@ A static site built with [Astro](https://astro.build), served on GitHub Pages. A
 ```sh
 npm install
 npm run dev          # http://localhost:8080, live-reloads on save (Astro 7 detaches it; `npx astro dev stop` ends it)
-npm run build        # builds docs/ AND validates every data entry
-npm run deploy       # on master: build, commit docs/, push (this is what updates the live site)
+npm run build        # builds dist/ AND validates every data entry
+npm run deploy       # on master, with everything committed: build into docs/, commit, push (updates the live site)
 ```
 
 ## Updating content
@@ -37,8 +37,9 @@ are quiet echoes of NAAMII, Tangible and Terahs, plus typography and components.
 ## Deploying
 
 GitHub Pages serves the `docs/` folder of `master` (Settings → Pages → "Deploy from a branch", `master` / `/docs`).
-There is no GitHub Actions build, so the built site is committed: edit `src/data/`, then run `npm run deploy` on
-`master`. Pushing source changes without `npm run deploy` leaves the live site unchanged, and that includes edits
-made in the GitHub web editor.
+There is no GitHub Actions build, so the built site is committed. Only `npm run deploy` writes `docs/`; ordinary
+commits and pushes leave the live site unchanged until the next deploy.
 
-The old Nikola site is kept as the tags `nikola-site` (what was served) and `nikola-src` (its source).
+The old Nikola site is on the `nikola-branch` branch, as the built pages it served. To browse it without leaving
+`master`: `git worktree add ../bishesh-nikola nikola-branch && python3 -m http.server 8090 -d ../bishesh-nikola`.
+Its Nikola source (`posts/`, `pages/`, `bibtex/`, `conf.py`) is the tag `nikola-src`.
