@@ -436,7 +436,7 @@
     - Poudel N
     - Piryani R
     - '**Khanal B**'
-  venue: arXiv preprint
+  venue: First Workshop on Challenges in Processing South Asian Languages (CHiPSAL), COLING 2025:320-326
   year: 2024
   type: workshop
   themes:
@@ -462,6 +462,23 @@
     - foundation-models
     - imaging-methods
   arxiv: '2412.14100'
+- title: Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images
+  authors:
+    - Nakarmi S
+    - Pudasaini S
+    - Thapaliya S
+    - Upretee P
+    - Shrestha R
+    - Giri B
+    - Neupane BB
+    - '**Khanal B**'
+  venue: Machine Learning for Biomedical Imaging (MELBA), 2024
+  year: 2024
+  type: journal
+  themes:
+    - frugal-diagnostics
+  doi: 10.59275/j.melba.2024-a333
+  arxiv: '2304.05339'
 - title: 'Community-based screening of cervical cancer in an urban setting in Nepal: a cross-sectional study'
   authors:
     - Shrestha A
@@ -559,22 +576,6 @@
     - foundation-models
     - robust-learning
   review: two 'Khanal B' — check which is Bishesh
-- title: Deep-learning assisted detection and quantification of (oo)cysts of Giardia and Cryptosporidium on smartphone microscopy images
-  authors:
-    - Nakarmi S
-    - Pudasaini S
-    - Thapaliya S
-    - Upretee P
-    - Shrestha R
-    - Giri B
-    - Neupane BB
-    - '**Khanal B**'
-  venue: arXiv preprint
-  year: 2023
-  type: preprint
-  themes:
-    - frugal-diagnostics
-  arxiv: '2304.05339'
 - title: 'Simplifying medical ultrasound: 4th International Workshop, ASMUS 2023 (with MICCAI 2023), Vancouver'
   authors:
     - Kainz B
@@ -597,16 +598,6 @@
   type: other
   themes:
     - trustworthy-ai-policy
-- title: Improving medical image classification
-  authors:
-    - Bhattarai B
-    - '**Khanal B**'
-    - Linte CA
-  venue: Data Engineering in Medical Imaging (DEMI), MICCAI Workshop. LNCS 14314. 2023:78. Springer
-  year: 2023
-  type: workshop
-  themes:
-    - robust-learning
 - title: Challenges of deep learning methods for COVID-19 detection using public datasets
   authors:
     - Hasan MK
@@ -1047,24 +1038,6 @@
   themes:
     - ultrasound
     - modelling-simulation
-- title: Deep pose estimation for image-based registration
-  authors:
-    - Hou B
-    - Miolane N
-    - '**Khanal B**'
-    - Lee M
-    - Alansary A
-    - McDonagh S
-    - Hajnal JV
-    - Rueckert D
-    - Glocker B
-    - Kainz B
-  venue: '2018'
-  year: 2018
-  type: preprint
-  themes:
-    - modelling-simulation
-  authors_source: openalex:W2906552534
 - title: Spectral analysis towards geometric auto-encoding of subcortical structures
   authors:
     - Le Folgoc L
@@ -1073,45 +1046,12 @@
     - Kamnitsas K
     - Walker I
     - Glocker B
-  venue: '2018'
+  venue: Medical Imaging with Deep Learning (MIDL), Amsterdam, 2018 (abstract)
   year: 2018
-  type: preprint
+  type: conference
   themes:
     - modelling-simulation
-- title: Image-based registration in canonical atlas space
-  authors:
-    - Hou B
-    - '**Khanal B**'
-    - Alansary A
-    - McDonagh S
-    - Davidson A
-    - Rutherford M
-    - Hajnal JV
-    - Rueckert D
-    - Glocker B
-    - Kainz B
-  venue: '2018'
-  year: 2018
-  type: preprint
-  themes:
-    - modelling-simulation
-- title: Standard plane localisation in 3D fetal ultrasound using network with geometric and image loss
-  authors:
-    - Li Y
-    - Cerrolaza JJ
-    - Sinclair M
-    - Hou B
-    - Alansary A
-    - '**Khanal B**'
-    - Matthew J
-    - Kainz B
-    - Rueckert D
-  venue: '2018'
-  year: 2018
-  type: preprint
-  themes:
-    - ultrasound
-    - modelling-simulation
+  url: https://openreview.net/forum?id=r1PuOWnoz
 - title: 'Adapted and oversegmenting graphs: application to geometric deep learning'
   authors:
     - Gomez A
