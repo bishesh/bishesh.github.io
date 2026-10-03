@@ -2,17 +2,21 @@
 import Base from "../layouts/Base.astro";
 import Glyph from "../components/Glyph.astro";
 import TalkCard from "../components/TalkCard.astro";
-import { copy, md, getTalks, featuredFirst } from "../lib/site";
+import { copy, mdInline, getTalks } from "../lib/site";
 const home = copy("home");
-const talks = featuredFirst((await getTalks()).filter((t) => t.video)).slice(0, 3);
+const talks = (await getTalks()).filter((t) => t.home).sort((a, b) => String(b.date).localeCompare(String(a.date)));
 ---
 <Base isHome>
   <div class="dusk">
     <section class="container hero">
       <div>
-        <h1>Bishesh Khanal</h1>
+        <h1 class="visually-hidden">Bishesh Khanal</h1>
         <p class="roles"><b class="d">Dreamer</b>, <b class="s">scientist</b> and <b class="e">entrepreneur</b> — building AI for the real world, from Nepal.</p>
-        <div class="prose" set:html={md(home.intro)} />
+        <ul class="facts">
+          {home.facts.map((f: any) => (
+            <li><span class={`dot ${f.persona ?? ""}`} /><span set:html={f.text.split(" · ").map((t: string) => `<span class="item">${mdInline(t)}</span>`).join(' <span class="sep">·</span> ')} /></li>
+          ))}
+        </ul>
         <div class="actions">
           <a class="btn solid" href="/scientist/">Research</a>
           <a class="btn" href="/talks/">Talks &amp; media</a>

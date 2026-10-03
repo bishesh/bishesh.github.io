@@ -1,11 +1,16 @@
 portrait: /assets/img/portrait.jpg   # 4:5
 cv_url: /cv/
-intro: |
-  I am the founding Chairperson of [NAAMII](https://naamii.org.np), Nepal's AI centre of excellence,
-  which I helped build from an idea into an institute of 52 full-time staff. I am also co-founder and
-  Chief Scientific Officer of **Tangible**. I trained at INRIA, King's College London and Imperial
-  College London. My research has moved from medical imaging, to AI for health in low-resource
-  settings, and now to how learning, skills and work are being reorganized by AI.
+# Hero lines: one per row, a dot in the persona's colour (none = neutral), "·" separates items.
+facts:
+  - persona: dreamer
+    text: Founding Chairperson · Founding & former Executive Director, [NAAMII](https://naamii.org)
+  - persona: scientist
+    text: Research Scientist, NAAMII
+  - persona: scientist
+    text: AI in medical imaging · AI for health in low-resource settings · infrastructure to reorganize work in a post-AI world
+  - persona: entrepreneur
+    text: Co-founder & Chief Scientific Officer, **Tangible**
+  - text: PhD, INRIA Sophia Antipolis, France · Postdoc, King's College & Imperial College London
 personas:
   - key: dreamer
     name: Dreamer

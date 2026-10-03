@@ -72,6 +72,7 @@ const talks = defineCollection({
     video: z.string().optional(), url: z.string().url().optional(), language: z.enum(["en", "ne"]).optional(), role, people,
     image: z.string().optional(), // a photo for the card when there is no video: a path under public/ or a URL
     featured: z.boolean().optional(), hidden: z.boolean().optional(), review: z.union([z.string(), z.boolean()]).optional(),
+    home: z.boolean().optional(), // shown in the home page's "On stage" row, newest first
   }),
 });
 

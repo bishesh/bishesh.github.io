@@ -2,7 +2,7 @@
 # Imported from cortex/dossier by scripts/import-dossier.mjs on 2026-09-26.
 # `review:` marks a keyword guess or a dossier "verify" note — delete it once checked.
 # scope: international (venue or audience outside Nepal; also ANAIS and HAICon) | national  ·  persona: dreamer | scientist | entrepreneur
-# kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  featured: true puts a talk with video on the home page
+# kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  home: true puts a talk in the home page row (newest first)
 # role: host | guest | panelist | moderator — your role  ·  people: the others, each
 #   { name, role: host | co-host | guest | moderator | panelist, affiliation (as at the event), url (a profile) }
 # image: a photo for the card when there is no video (put it in public/assets/img/talks/)
@@ -16,6 +16,7 @@
   url: https://rise-miccai.org/
   language: en
   featured: true
+  home: true
 - title: 'From curiosity to discovery: the journey of Dr. Bishesh Khanal — ICT Samachar'
   venue: ICT Samachar, Kathmandu
   date: '2026-09-11'
@@ -81,6 +82,7 @@
     - { name: Dr. Robert Moshiro, role: panelist, affiliation: 'Paediatrician, Dar es Salaam, Tanzania' }
     - { name: Dr. Markus Vogel, role: panelist, affiliation: 'CMIO, Microsoft (Nuance), Düsseldorf' }
   # people and places from Markus Vogel's LinkedIn post (16 Mar 2026); title, date and venue from the GTP programme
+  home: true
 - title: Transforming Global Child Health with AI
   venue: '44th GTP Annual Conference 2026, Dinslaken, Germany'
   date: '2026-03-14'
@@ -182,6 +184,7 @@
     - { name: Sadao Kurohashi, role: panelist, affiliation: National Institute of Informatics; Kyoto University, url: 'https://www.un.org/en/node/234205' }
     - { name: Nayat Sánchez-Pi, role: panelist, affiliation: 'Inria; Inria Chile; Binational Franco-Chilean Center on AI', url: 'https://www.un.org/en/node/234866' }
   featured: true
+  home: true
 - title: Equitable Global AI Innovation Ecosystem and Open Science
   venue: 'Talk in the panel AI, Open Science and the Global Digital Divide, 4th UN Open Science and Open Scholarship Conference, United Nations University, Tokyo, Japan'
   date: '2025-10-16'

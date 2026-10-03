@@ -14,7 +14,7 @@ const cut = (s: string, n: number) => (s.length > n ? s.slice(0, n - 1).trimEnd(
         <img loading="lazy" src={`https://i.ytimg.com/vi/${yid}/hqdefault.jpg`} alt="" />
         <span class="play"><svg width="10" height="10" viewBox="0 0 10 10"><path d="M2 1l7 4-7 4z" fill="currentColor" /></svg>Watch</span>
       </>
-    ) : <span class="ph">{cut(t.venue, 70)}</span>}
+    ) : t.image ? <img loading="lazy" src={t.image} alt="" /> : <span class="ph">{cut(t.venue, 70)}</span>}
   </div>
   <div class="t">{t.title}</div>
   <div class="v"><i class={`dot ${t.persona}`} title={t.persona} /><span>{cut(t.venue, 90)}{t.date && ` · ${fuzzyDate(t.date)}`}</span></div>
