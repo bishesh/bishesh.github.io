@@ -16,7 +16,6 @@
   persona: scientist
   kind: invited-talk
   language: en
-  review: 'persona is a guess: the talk is reorganizing work and health AI'
   source: 2026-10-09_simnova-ai-native-workforce
 - title: 'From Ideas to Impact: What Does It Take to Make Healthcare Innovation Work in Nepal?'
   venue: Theme 3 panel, SIMNOVA Nepal 2026, National Simulation Lab, NAMS, Kathmandu
@@ -26,6 +25,9 @@
   kind: panel
   role: panelist
   people:
+    - name: Dr. Bishow Karki
+      role: moderator
+      affiliation: Founder & President, Global Surgery Simulation Network (GSSN)
     - name: Asst. Prof. Sanjivan Satyal
       role: panelist
       affiliation: Pulchowk Campus, IOE
@@ -42,7 +44,6 @@
       role: panelist
       affiliation: Nyano Care
   language: en
-  review: persona is a guess; moderator not in the programme
   source: 2026-10-09_simnova-ai-native-workforce
 - title: 'Big Things Can Happen From Small Places: a journey of building an excellence ecosystem in resource-constrained settings'
   venue: RISE-MICCAI Luncheon, MICCAI 2026, Schuman Auditorium, Strasbourg, France
