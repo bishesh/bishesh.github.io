@@ -1,5 +1,7 @@
 # Talks — the site renders this file directly. Edit here (GitHub web editor is fine).
 # Imported from cortex/dossier by scripts/import-dossier.mjs on 2026-09-26.
+# From 30 Sep 2026 on, talks come from ../presentations (its talks.yaml): `npm run import:talks`. Entries with
+# `source:` are managed there; fix them in that repo's <talk>/context.md, since a re-import overwrites them.
 # `review:` marks a keyword guess or a dossier "verify" note — delete it once checked.
 # scope: international (venue or audience outside Nepal; also ANAIS and HAICon) | national  ·  persona: dreamer | scientist | entrepreneur
 # kind: keynote | invited-talk | panel | podcast | interview | lecture | tv  ·  video: YouTube id or URL  ·  home: true puts a talk in the home page row (newest first)
@@ -7,6 +9,41 @@
 #   { name, role: host | co-host | guest | moderator | panelist, affiliation (as at the event), url (a profile) }
 # image: a photo for the card when there is no video (put it in public/assets/img/talks/)
 
+- title: 'Making the World''s Healthcare Workforce and Systems AI Native: Reorganizing Work and Responsible Transformation'
+  venue: SIMNOVA Nepal 2026 (International Conference on Simulation Education, Healthcare Innovation & Global Collaboration), National Simulation Lab, NAMS, Kathmandu
+  date: '2026-10-09'
+  scope: international
+  persona: scientist
+  kind: invited-talk
+  language: en
+  review: 'persona is a guess: the talk is reorganizing work and health AI'
+  source: 2026-10-09_simnova-ai-native-workforce
+- title: 'From Ideas to Impact: What Does It Take to Make Healthcare Innovation Work in Nepal?'
+  venue: Theme 3 panel, SIMNOVA Nepal 2026, National Simulation Lab, NAMS, Kathmandu
+  date: '2026-10-09'
+  scope: international
+  persona: scientist
+  kind: panel
+  role: panelist
+  people:
+    - name: Asst. Prof. Sanjivan Satyal
+      role: panelist
+      affiliation: Pulchowk Campus, IOE
+    - name: Dr. Bigyan Raj Gyawali
+      role: panelist
+      affiliation: Institute of Medicine (IOM)
+    - name: Dr. Pradeep Raj Regmi
+      role: panelist
+      affiliation: Radiologist, TUTH / IOM
+    - name: Asst. Prof. Basanta Joshi
+      role: panelist
+      affiliation: CARD, IOE
+    - name: Er. Ashish Thapa
+      role: panelist
+      affiliation: Nyano Care
+  language: en
+  review: persona is a guess; moderator not in the programme
+  source: 2026-10-09_simnova-ai-native-workforce
 - title: 'Big Things Can Happen From Small Places: a journey of building an excellence ecosystem in resource-constrained settings'
   venue: RISE-MICCAI Luncheon, MICCAI 2026, Schuman Auditorium, Strasbourg, France
   date: '2026-09-30'
@@ -17,6 +54,7 @@
   language: en
   featured: true
   home: true
+  source: 2026-09-30_rise-miccai-keynote
 - title: 'From curiosity to discovery: the journey of Dr. Bishesh Khanal — ICT Samachar'
   venue: ICT Samachar, Kathmandu
   date: '2026-09-11'

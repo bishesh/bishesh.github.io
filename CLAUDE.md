@@ -21,6 +21,13 @@ restyling a page, section or component, load the `site-design` skill.
 
 Commit and push as usual. Ordinary commits never change the live site, because only the deploy writes `docs/`.
 
+## Talks come from ../presentations
+
+From the RISE-MICCAI keynote (30 Sep 2026) on, the presentations repo is the source of truth for talks. Its
+`talks.yaml` (derived from each talk's `context.md`) is in this site's talk fields; `npm run import:talks` merges it
+into `src/data/talks.yaml`, replacing the entries that carry `source:` and leaving older talks alone. Fix a managed
+talk in `../presentations/<talk>/context.md` (then its `scripts/talks-index.py`), not here: a re-import overwrites it.
+
 ## Deploying (only when Bishesh says "deploy")
 
 1. Commit any outstanding source changes; `npm run deploy` refuses to run with uncommitted source.

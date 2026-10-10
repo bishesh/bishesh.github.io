@@ -6,6 +6,7 @@
     "dev": "astro dev",
     "build": "astro build", "preview": "astro preview", "check": "astro sync && astro build",
     "import": "node scripts/import-dossier.mjs",
+    "import:talks": "node scripts/import-presentations.mjs",
     "deploy": "sh scripts/deploy.sh"
   },
   "repository": {
